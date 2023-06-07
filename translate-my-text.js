@@ -59,14 +59,14 @@ document.querySelector('.vp-write-text').onclick = () => {
 
     translateBtn.onclick = (e) => {
         window.plugin.player.on('gloss:start', () => {
-            if (writing) detailsReset(translateBtn);
+            if (writing) resetDetails(translateBtn);
             writing = false;
         })
         window.plugin.player.translate(textArea.value);
     }
 
     headerBtn.onclick = (e) => {
-        detailsReset(headerBtn);
+        resetDetails(headerBtn);
     }
 
     textArea.oninput = () => {
@@ -74,7 +74,7 @@ document.querySelector('.vp-write-text').onclick = () => {
         else viewBtn.setAttribute('disabled', true);
     }
 
-    function detailsReset(btn) {
+    function resetDetails(btn) {
         headerTitle.textContent = 'Feedback';
         title.textContent = 'Informe a glosa correta';
         textArea.style.height = textAreaOldHeight;
