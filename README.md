@@ -4,7 +4,8 @@ Repositório de scripts com funcionalidades adicionais para o VLibras Widget.
 🚧 Em desenvolvimento...
 
 ## Scripts
-### **translate-my-text.js**
+### **<a href="https://raw.githubusercontent.com/diegofrr/vlibras-widget-plus/main/translate-my-text.js">translate-my-text.js</a>**
+
 **Descrição:**<br>
 Adiciona um botão ao Widget que permite o usuário digitar um texto específico para traduzir.
 
