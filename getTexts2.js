@@ -1,4 +1,4 @@
-// Script para captura dos textosda página ao passar do mouse
+// Script para captura dos textos da página no passar do mouse
 // by: diegofrr
 
 // const vw = document.querySelector('div[vw]');
