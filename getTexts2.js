@@ -1,3 +1,6 @@
+// Script para captura dos textosda página ao passar do mouse
+// by: diegofrr
+
 // const vw = document.querySelector('div[vw]');
 
 function hasLinkAncestor(element) {
