@@ -35,7 +35,7 @@ function isValid(element) {
         : hasTextContent(element)
         || hasLinkAncestor(element)
         || Array.from(element.childNodes).some(e => hasTextContent(e))
-        || ['SELECT', 'IMG'].includes(element.tagName)
+        || ['SELECT', 'IMG', 'BUTTON'].includes(element.tagName)
 }
 
 function highlightElement(event) {
@@ -52,7 +52,7 @@ function printContent(event) {
     console.log(
         `${element.tagName === 'IMG' ? element.alt
             : element.tagName === 'SELECT' ? element.querySelector('option').textContent
-                : element.textContent}`.trim()
+                : element.textContent}`.replace(/\s+/g, ' ').trim()
     )
 
     const linkElement = element.tagName === "A" ? element : hasLinkAncestor(element);
@@ -167,15 +167,9 @@ style.innerHTML = `
 }
 
 .vlibras-text--hover {
-    // background: lightgreen !important;
     cursor: pointer !important;
     opacity: 1 !important;
-
-    // text-decoration-thickness: 120% !important;
-    // text-decoration-line: line-through !important;
-    // text-decoration-color: rgba(0, 63, 134, 0.2) !important;
     text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
-    // color: #000 !important;
 }
 `
 
