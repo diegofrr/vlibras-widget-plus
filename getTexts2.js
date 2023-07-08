@@ -3,25 +3,32 @@
 
 // const vw = document.querySelector('div[vw]');
 
+function hasClickEvent(element) {
+    if (element.onclick) element;
+
+    if (typeof element.addEventListener === 'function') {
+        let eventListeners = getEventListeners(element);
+        if (eventListeners && eventListeners.click &&
+            eventListeners.click.length > 0) element;
+    }
+
+    if (typeof element.attachEvent === 'function') {
+        let attachedEvents = element.outerHTML.split(' ');
+        for (var i = 0; i < attachedEvents.length; i++) {
+            if (attachedEvents[i].startsWith('onclick=')) element;
+        }
+    }
+    return null;
+}
+
 function hasLinkAncestor(element) {
     let parent = element.parentNode;
 
     while (parent) {
-        if (parent.tagName === "A") {
-            parent.addEventListener('click', clickHandler);
-            parent.addEventListener('mouseout', removeClickHandler);
-
-            function clickHandler(e) { e.preventDefault() }
-
-            function removeClickHandler() {
-                parent.removeEventListener('click', clickHandler);
-                parent.removeEventListener('mouseout', removeClickHandler);
-            }
-            return parent;
-        }
-        parent = parent.parentNode;
+        if (parent.tagName === "A") return parent;
+        else parent = parent.parentNode;
     }
-    return null;
+    return hasClickEvent(element);
 }
 
 function hasTextContent(element) {
@@ -38,7 +45,7 @@ function isValid(element) {
         : hasTextContent(element)
         || hasLinkAncestor(element)
         || Array.from(element.childNodes).some(e => hasTextContent(e))
-        || ['A', 'BUTTON', 'SELECT', 'IMG'].includes(element.tagName)
+        || ['A', 'SELECT', 'IMG'].includes(element.tagName)
 }
 
 function highlightElement(event) {
@@ -50,24 +57,27 @@ function highlightElement(event) {
 function printContent(event) {
     const element = event.target;
     if (!isValid(element)) return;
-    else if (element.tagName !== 'INPUT') event.preventDefault();
+    else if (element.tagName !== 'INPUT') {
+        event.preventDefault();
+        event.stopPropagation();
+    }
 
     console.log(
         `${element.tagName === 'IMG' ? element.alt
             : element.tagName === 'SELECT' ? element.querySelector('option').textContent
-                : element.textContent}`.replace(/\s+/g, ' ').trim()
-    )
+                : element.textContent}`.replace(/\s+/g, ' ').trim());
 
     const linkElement = element.tagName === "A" ? element : hasLinkAncestor(element);
-    let link = linkElement?.getAttribute('href');
 
-    if (link.trim() && link !== 'javascript:void(0);') {
-        removeTooltips();
-        showTooltip(event, linkElement);
-    } else if (element.tagName === 'BUTTON') {
-        showTooltip(event, element)
-    }
+    if (linkElement) showTooltip(event, linkElement)
+    else if (element.tagName === 'BUTTON' ||
+        element.onclick) showTooltip(event, element)
+}
 
+function clickHandler(element) {
+    document.removeEventListener("click", printContent, true);
+    element.click();
+    document.addEventListener("click", printContent, true);
 }
 
 function removeHighlight(event) {
@@ -75,19 +85,17 @@ function removeHighlight(event) {
 }
 
 function showTooltip(event, linkElement) {
+    removeTooltips();
+
     const tooltip = document.createElement("div");
-    tooltip.innerText = "Abrir link";
+    tooltip.innerText = "Acessar link";
     tooltip.classList.add("link_tooltip");
 
-    tooltip.style.top = event.pageY + 32 + 'px';
+    tooltip.style.top = event.pageY + 42 + 'px';
     tooltip.style.left = event.pageX - 20 + 'px';
 
     document.body.appendChild(tooltip);
-    tooltip.onclick = () => {
-        document.removeEventListener("click", printContent);
-        linkElement.click();
-        document.addEventListener("click", printContent);
-    };
+    tooltip.onclick = () => clickHandler(linkElement);
 
     document.addEventListener("click", removeTooltips);
 }
@@ -101,7 +109,7 @@ function activate() {
     document.addEventListener("mouseover", highlightElement);
     document.addEventListener("mouseout", removeHighlight);
     document.addEventListener("scroll", removeTooltips);
-    document.addEventListener("click", printContent);
+    document.addEventListener("click", printContent, true);
 }
 
 function deactivate() {
@@ -109,7 +117,7 @@ function deactivate() {
     document.removeEventListener("mouseover", highlightElement);
     document.removeEventListener("mouseout", removeHighlight);
     document.removeEventListener("scroll", removeTooltips);
-    document.removeEventListener("click", printContent);
+    document.removeEventListener("click", printContent, true);
 }
 
 activate()
@@ -121,15 +129,15 @@ style.innerHTML = `
     z-index: 9999999 !important;
     background-color: white;
     padding: 10px 15px !important;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     border: 1px solid #ddd !important;
     font-size: 16px !important;
-    color: #2470E0 !important;
+    color: #0c326f !important;
     white-space: nowrap;
-    animation: showTooltip .3s ease;
     text-decoration: none;
     line-height: 1 !important;
+    animation: showTooltip .3s ease;
 }
 
 @keyframes showTooltip {
@@ -144,8 +152,9 @@ style.innerHTML = `
 }
 
 .link_tooltip:hover {
-    text-decoration: underline;
-    box-shadow: 0 0 10px #DDD;
+//  text-decoration: underline;
+    box-shadow: 0 0 10px #00000036;
+    color: #2470E0 !important;
 }
 
 .link_tooltip::before {
@@ -171,13 +180,14 @@ style.innerHTML = `
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .vlibras-text--hover {
     cursor: pointer !important;
     opacity: 1 !important;
     text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
+    cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
 }
 `
 
