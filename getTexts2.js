@@ -3,32 +3,15 @@
 
 // const vw = document.querySelector('div[vw]');
 
-function hasClickEvent(element) {
-    if (element.onclick) element;
-
-    if (typeof element.addEventListener === 'function') {
-        let eventListeners = getEventListeners(element);
-        if (eventListeners && eventListeners.click &&
-            eventListeners.click.length > 0) element;
-    }
-
-    if (typeof element.attachEvent === 'function') {
-        let attachedEvents = element.outerHTML.split(' ');
-        for (var i = 0; i < attachedEvents.length; i++) {
-            if (attachedEvents[i].startsWith('onclick=')) element;
-        }
-    }
-    return null;
-}
-
 function hasLinkAncestor(element) {
     let parent = element.parentNode;
 
     while (parent) {
-        if (parent.tagName === "A") return parent;
-        else parent = parent.parentNode;
+        if (parent.tagName === 'BODY') return;
+        if (parent.tagName === "A" || element.onclick) return parent;
+        parent = parent.parentNode;
     }
-    return hasClickEvent(element);
+    return null;
 }
 
 function hasTextContent(element) {
@@ -45,7 +28,7 @@ function isValid(element) {
         : hasTextContent(element)
         || hasLinkAncestor(element)
         || Array.from(element.childNodes).some(e => hasTextContent(e))
-        || ['A', 'SELECT', 'IMG'].includes(element.tagName)
+        || ['SELECT', 'IMG'].includes(element.tagName)
 }
 
 function highlightElement(event) {
@@ -124,71 +107,71 @@ activate()
 
 const style = document.createElement('style');
 style.innerHTML = `
-.link_tooltip {
-    position: absolute;
-    z-index: 9999999 !important;
-    background-color: white;
-    padding: 10px 15px !important;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 1px solid #ddd !important;
-    font-size: 16px !important;
-    color: #0c326f !important;
-    white-space: nowrap;
-    text-decoration: none;
-    line-height: 1 !important;
-    animation: showTooltip .3s ease;
-}
-
-@keyframes showTooltip {
-    0% {
-        margin-top: 10px;
-        opacity: 0;
+    .link_tooltip {
+        position: absolute;
+        z-index: 9999999 !important;
+        background-color: white;
+        padding: 10px 15px !important;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 1px solid #ddd !important;
+        font-size: 16px !important;
+        color: #0c326f !important;
+        white-space: nowrap;
+        text-decoration: none;
+        line-height: 1 !important;
+        animation: showTooltip .3s ease;
     }
-    100% {
-        margin-top: 0;
-        opacity: 1;
+
+    @keyframes showTooltip {
+        0% {
+            margin-top: 10px;
+            opacity: 0;
+        }
+        100% {
+            margin-top: 0;
+            opacity: 1;
+        }
     }
-}
 
-.link_tooltip:hover {
-//  text-decoration: underline;
-    box-shadow: 0 0 10px #00000036;
-    color: #2470E0 !important;
-}
+    .link_tooltip:hover {
+    //  text-decoration: underline;
+        box-shadow: 0 0 10px #00000036;
+        color: #2470E0 !important;
+    }
 
-.link_tooltip::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background: white;
-    left: 10px;
-    top: -5px;
-    transform: rotate(45deg);
-    z-index: -1;
-    border: 1px solid #DDD;
-}
+    .link_tooltip::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: white;
+        left: 10px;
+        top: -5px;
+        transform: rotate(45deg);
+        z-index: -1;
+        border: 1px solid #DDD;
+    }
 
-.link_tooltip::after {
-    content: "";
-    width: 100%;
-    background-color: white;
-    height: 100%;
-    z-index: -1;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 8px;
-}
+    .link_tooltip::after {
+        content: "";
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        z-index: -1;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+    }
 
-.vlibras-text--hover {
-    cursor: pointer !important;
-    opacity: 1 !important;
-    text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
-    cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
-}
-`
+    .vlibras-text--hover {
+        cursor: pointer !important;
+        opacity: 1 !important;
+        text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
+        cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
+    }
+    `
 
 document.body.appendChild(style);
