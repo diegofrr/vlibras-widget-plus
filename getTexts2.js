@@ -38,7 +38,7 @@ function isValid(element) {
         : hasTextContent(element)
         || hasLinkAncestor(element)
         || Array.from(element.childNodes).some(e => hasTextContent(e))
-        || ['SELECT', 'IMG', 'BUTTON'].includes(element.tagName)
+        || ['A', 'BUTTON', 'SELECT', 'IMG'].includes(element.tagName)
 }
 
 function highlightElement(event) {
@@ -48,8 +48,8 @@ function highlightElement(event) {
 }
 
 function printContent(event) {
-    const element = document.querySelector('.vlibras-text--hover');
-    if (!element) return;
+    const element = event.target;
+    if (!isValid(element)) return;
     else if (element.tagName !== 'INPUT') event.preventDefault();
 
     console.log(
@@ -61,11 +61,11 @@ function printContent(event) {
     const linkElement = element.tagName === "A" ? element : hasLinkAncestor(element);
     let link = linkElement?.getAttribute('href');
 
-    if (link?.trim() && !link.includes('#')) {
+    if (link && link !== 'javascript:void(0);') {
         removeTooltips();
         showTooltip(event, linkElement);
     } else if (element.tagName === 'BUTTON') {
-        showTooltip(event, element)
+        // showTooltip(event, element)
     }
 
 }
@@ -83,7 +83,11 @@ function showTooltip(event, linkElement) {
     tooltip.style.left = event.pageX - 20 + 'px';
 
     document.body.appendChild(tooltip);
-    tooltip.onclick = () => linkElement.click();
+    tooltip.onclick = () => {
+        document.removeEventListener("click", printContent);
+        linkElement.click();
+        document.addEventListener("click", printContent);
+    };
 
     document.addEventListener("click", removeTooltips);
 }
@@ -114,18 +118,18 @@ const style = document.createElement('style');
 style.innerHTML = `
 .link_tooltip {
     position: absolute;
-    z-index: 99999999 !important;
+    z-index: 9999999 !important;
     background-color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 10px 15px !important;
+    border-radius: 6px;
     cursor: pointer;
-    z-index: 9999 !important;
     border: 1px solid #ddd !important;
-    font-size: 1rem !important;
+    font-size: 16px !important;
     color: #2470E0 !important;
     white-space: nowrap;
     animation: showTooltip .3s ease;
     text-decoration: none;
+    line-height: 1 !important;
 }
 
 @keyframes showTooltip {
@@ -141,6 +145,7 @@ style.innerHTML = `
 
 .link_tooltip:hover {
     text-decoration: underline;
+    box-shadow: 0 0 10px #DDD;
 }
 
 .link_tooltip::before {
@@ -166,13 +171,14 @@ style.innerHTML = `
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .vlibras-text--hover {
     cursor: pointer !important;
     opacity: 1 !important;
     text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
+    cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
 }
 `
 
