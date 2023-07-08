@@ -61,11 +61,11 @@ function printContent(event) {
     const linkElement = element.tagName === "A" ? element : hasLinkAncestor(element);
     let link = linkElement?.getAttribute('href');
 
-    if (link && link !== 'javascript:void(0);') {
+    if (link.trim() && link !== 'javascript:void(0);') {
         removeTooltips();
         showTooltip(event, linkElement);
     } else if (element.tagName === 'BUTTON') {
-        // showTooltip(event, element)
+        showTooltip(event, element)
     }
 
 }
@@ -178,7 +178,6 @@ style.innerHTML = `
     cursor: pointer !important;
     opacity: 1 !important;
     text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
-    cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
 }
 `
 
