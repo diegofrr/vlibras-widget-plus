@@ -1,15 +1,16 @@
 // Script para captura dos textos da página no passar do mouse
 // by: diegofrr
 
+const _root = Array.from(document.body.children);
 // const vw = document.querySelector('div[vw]');
 
 function hasLinkAncestor(element) {
-    let parent = element.parentNode;
-
-    while (parent) {
-        if (parent.tagName === 'BODY') return;
-        if (parent.tagName === "A" || element.onclick) return parent;
-        parent = parent.parentNode;
+    while (element) {
+        if (_root.includes(element)) break;
+        if (element.tagName === "A" || element.onclick) {
+            return element
+        };
+        element = element.parentNode;
     }
     return null;
 }
@@ -34,13 +35,12 @@ function isValid(element) {
 function highlightElement(event) {
     const element = event.target;
     if (isValid(element)) element.classList.add('vlibras-text--hover');
-    else return;
 }
 
 function printContent(event) {
     const element = event.target;
     if (!isValid(element)) return;
-    else if (element.tagName !== 'INPUT') {
+    else if (!['INPUT', 'TEXTAREA'].includes(element.tagName)) {
         event.preventDefault();
         event.stopPropagation();
     }
@@ -53,8 +53,7 @@ function printContent(event) {
     const linkElement = element.tagName === "A" ? element : hasLinkAncestor(element);
 
     if (linkElement) showTooltip(event, linkElement)
-    else if (element.tagName === 'BUTTON' ||
-        element.onclick) showTooltip(event, element)
+    else if (element.tagName === 'BUTTON') showTooltip(event, element)
 }
 
 function clickHandler(element) {
@@ -74,8 +73,11 @@ function showTooltip(event, linkElement) {
     tooltip.innerText = "Acessar link";
     tooltip.classList.add("link_tooltip");
 
-    tooltip.style.top = event.pageY + 42 + 'px';
-    tooltip.style.left = event.pageX - 20 + 'px';
+    const _ = event.clientY > window.innerHeight - 60;
+
+    if (_) tooltip.style.top = window.innerHeight - 52 + 'px';
+    else tooltip.style.top = _ + event.clientY + 42 + 'px';
+    tooltip.style.left = event.clientX - 20 + 'px';
 
     document.body.appendChild(tooltip);
     tooltip.onclick = () => clickHandler(linkElement);
@@ -108,7 +110,7 @@ activate()
 const style = document.createElement('style');
 style.innerHTML = `
     .link_tooltip {
-        position: absolute;
+        position: fixed;
         z-index: 9999999 !important;
         background-color: white;
         padding: 10px 15px !important;
@@ -121,6 +123,7 @@ style.innerHTML = `
         text-decoration: none;
         line-height: 1 !important;
         animation: showTooltip .3s ease;
+        box-shadow: 0 0 10px #00000036;
     }
 
     @keyframes showTooltip {
@@ -138,6 +141,7 @@ style.innerHTML = `
     //  text-decoration: underline;
         box-shadow: 0 0 10px #00000036;
         color: #2470E0 !important;
+        text-decoration: underline;
     }
 
     .link_tooltip::before {
