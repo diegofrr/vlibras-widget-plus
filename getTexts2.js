@@ -20,6 +20,8 @@ function hasTextContent(element) {
 }
 
 function isValid(element) {
+    window.getSelection().removeAllRanges();
+
     // if (vw.contains(element)
     //     || element.classList.contains('link_tooltip')) return false;
 
@@ -32,7 +34,15 @@ function isValid(element) {
 
 function highlightElement(event) {
     const element = event.target;
-    if (isValid(element)) element.classList.add('vlibras-text--hover');
+    if (isValid(element)) {
+        element.classList.add('vlibras-text--hover');
+
+        range = new Range();
+        range.setStart(element, 0);
+        range.setEnd(element, element.childNodes.length);
+
+        window.getSelection().addRange(range);
+    }
 }
 
 function printContent(event) {
@@ -169,9 +179,7 @@ style.innerHTML = `
     }
 
     .vlibras-text--hover {
-        cursor: pointer !important;
         opacity: 1 !important;
-        text-decoration: line-through 120% rgba(0,63,134,0.2) !important;
         cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
     }
     `
