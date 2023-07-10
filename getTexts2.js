@@ -7,9 +7,7 @@ const _root = Array.from(document.body.children);
 function hasLinkAncestor(element) {
     while (element) {
         if (_root.includes(element)) break;
-        if (element.tagName === "A" || element.onclick) {
-            return element
-        };
+        if (element.tagName === "A" || element.onclick) return element;
         element = element.parentNode;
     }
     return null;
@@ -73,7 +71,7 @@ function showTooltip(event, linkElement) {
     tooltip.innerText = "Acessar link";
     tooltip.classList.add("link_tooltip");
 
-    const _ = event.clientY > window.innerHeight - 60;
+    const _ = event.clientY > window.innerHeight - 80;
 
     if (_) tooltip.style.top = window.innerHeight - 52 + 'px';
     else tooltip.style.top = _ + event.clientY + 42 + 'px';
@@ -111,7 +109,7 @@ const style = document.createElement('style');
 style.innerHTML = `
     .link_tooltip {
         position: fixed;
-        z-index: 9999999 !important;
+        z-index: 2147483647 !important;
         background-color: white;
         padding: 10px 15px !important;
         border-radius: 8px;
