@@ -7,11 +7,17 @@ const _root = Array.from(document.body.children);
 function hasLinkAncestor(element) {
     while (element) {
         if (_root.includes(element)) break;
-        if (element.tagName === "A" || element.onclick) return element;
+        if (element.tagName === "A"
+            || (element.onclick && !isSVG(element))) return element;
         element = element.parentNode;
     }
     return null;
 }
+
+function isSVG(element) {
+    return ['SVG', 'PATH'].includes(element.tagName?.toUpperCase());
+}
+
 
 function hasTextContent(element) {
     return (element.nodeType === Node.TEXT_NODE &&
