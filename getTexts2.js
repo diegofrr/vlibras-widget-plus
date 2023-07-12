@@ -61,8 +61,8 @@ function printContent(event) {
 
     console.log(
         `${element.tagName === 'IMG' ? element.alt
-            : element.tagName === 'SELECT' ? element.querySelector('option').textContent
-                : element.textContent}`.replace(/\s+/g, ' ').trim());
+            : element.tagName === 'SELECT' ? element.querySelector('option').innerText
+                : element.innerText}`.replace(/\s+/g, ' ').trim());
 
     const linkElement = element.tagName === "A" ? element : hasLinkAncestor(element);
 
@@ -190,6 +190,10 @@ style.innerHTML = `
     .vlibras-text--hover {
         opacity: 1 !important;
         cursor: url(https://imgur.com/31ROcSm.png), pointer !important;
+    }
+
+    .vlibras-text--hover img::selection {
+        background: transparent !important;
     }
     `
 
