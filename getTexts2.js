@@ -87,11 +87,14 @@ function showTooltip(event, linkElement) {
     tooltip.innerText = "Acessar link";
     tooltip.classList.add("link_tooltip");
 
-    const _ = event.clientY > window.innerHeight - 80;
+    const yView = event.clientY > window.innerHeight - 80;
+    const xView = event.clientX > window.innerWidth - 120;
 
-    if (_) tooltip.style.top = window.innerHeight - 52 + 'px';
-    else tooltip.style.top = _ + event.clientY + 42 + 'px';
-    tooltip.style.left = event.clientX - 20 + 'px';
+    if (yView) tooltip.style.bottom = '20px';
+    else tooltip.style.top = yView + event.clientY + 42 + 'px';
+
+    if (xView) tooltip.style.right = '20px';
+    else tooltip.style.left = event.clientX - 20 + 'px';
 
     document.body.appendChild(tooltip);
     tooltip.onclick = () => clickHandler(linkElement);
