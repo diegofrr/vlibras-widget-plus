@@ -22,10 +22,6 @@ function hasTextContent(element) {
     );
 }
 
-function hasBackgroundImage(element) {
-    return window.getComputedStyle(element).backgroundImage !== 'none'
-}
-
 function isValid(element) {
     window.getSelection().removeAllRanges();
     if (element.tagName === 'IMG' && !element.click) return false;
