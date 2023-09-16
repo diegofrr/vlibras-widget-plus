@@ -20,7 +20,7 @@ window.plugin = new window.VLibras.Plugin({
 
     enableMoveWindow: true,
     playWellcome: false,
-    rootPath: 'http://127.0.0.1:5500/widget/app',
+    rootPath: '/app',
     personalization: '',
     opacity: 1,
     wrapper: document.querySelector('[vw-plugin-wrapper]'),
