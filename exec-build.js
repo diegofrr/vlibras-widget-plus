@@ -3,7 +3,15 @@ const BUILD_URL = 'https://raw.githubusercontent.com/diegofrr/vlibras-widget-plu
 root = ['[vp', '[vw', '.vpw-', '.vp-', '.vw-']
 
 document.querySelectorAll('style').forEach(style => {
-    if (root.some(i => style.textContent.includes(i))) style.remove()
+    if (root.some(i => style.textContent.includes(i))) style.remove();
 })
 
-fetch(BUILD_URL).then(res => res.text()).then(js => eval(js))
+fetch(BUILD_URL).then(r => r.text()).then(eval);
+
+const consoleStyle = 'font-size: 32px; color: red; font-weight: bold';
+
+const vwCount = document.querySelectorAll('[vw]').length;
+if (vwCount > 1) console.log(`%c${vwCount} Widgets`, consoleStyle);
+
+const isLocal = document.querySelector('[vw]').innerHTML.includes(location.origin);
+if (isLocal) console.log(`%cBuild local`, consoleStyle);
