@@ -13,5 +13,5 @@ const consoleStyle = 'font-size: 32px; color: #ffc83d; font-weight: bold';
 const vwCount = document.querySelectorAll('[vw]').length;
 if (vwCount > 1) console.log(`%c${vwCount} Widgets 😢`, consoleStyle);
 
-const isLocal = document.querySelector('[vw]').innerHTML.includes(location.origin);
+const isLocal = document.querySelector('[vw]').innerHTML.includes(location.host);
 if (isLocal) console.log(`%cBuild local 😵`, consoleStyle);
