@@ -15,3 +15,14 @@ if (vwCount > 1) console.log(`%c${vwCount} Widgets 😢`, consoleStyle);
 
 const isLocal = document.querySelector('[vw]').innerHTML.includes(location.host);
 if (isLocal) console.log(`%cBuild local 😵`, consoleStyle);
+
+window.plugin = new window.VLibras.Plugin({
+
+    enableMoveWindow: true,
+    playWellcome: false,
+    rootPath: 'http://127.0.0.1:5500/widget/app',
+    personalization: '',
+    opacity: 1,
+    wrapper: document.querySelector('[vw-plugin-wrapper]'),
+    position: 'R'
+});
