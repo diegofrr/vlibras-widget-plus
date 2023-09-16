@@ -8,10 +8,10 @@ document.querySelectorAll('style').forEach(style => {
 
 fetch(BUILD_URL).then(r => r.text()).then(eval);
 
-const consoleStyle = 'font-size: 32px; color: red; font-weight: bold';
+const consoleStyle = 'font-size: 32px; color: #ffc83d; font-weight: bold';
 
 const vwCount = document.querySelectorAll('[vw]').length;
-if (vwCount > 1) console.log(`%c${vwCount} Widgets`, consoleStyle);
+if (vwCount > 1) console.log(`%c${vwCount} Widgets 😢`, consoleStyle);
 
 const isLocal = document.querySelector('[vw]').innerHTML.includes(location.origin);
-if (isLocal) console.log(`%cBuild local`, consoleStyle);
+if (isLocal) console.log(`%cBuild local 😵`, consoleStyle);
