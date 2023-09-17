@@ -1,4 +1,5 @@
 const BUILD_URL = 'https://raw.githubusercontent.com/diegofrr/vlibras-widget-plus/main/vlibras-plugin.js'
+const CONSOLE_STYLE = 'font-size: 32px; color: #ffc83d; font-weight: bold';
 
 root = ['[vp', '[vw', '.vpw-', '.vp-', '.vw-']
 
@@ -6,15 +7,7 @@ document.querySelectorAll('style').forEach(style => {
     if (root.some(i => style.textContent.includes(i))) style.remove();
 })
 
-const consoleStyle = 'font-size: 32px; color: #ffc83d; font-weight: bold';
-
-const vwCount = document.querySelectorAll('[vw]').length;
-if (vwCount > 1) console.log(`%c${vwCount} Widgets 😢`, consoleStyle);
-
-const isLocal = document.querySelector('[vw]').innerHTML.includes(location.host);
-if (isLocal) console.log(`%cBuild local 😵`, consoleStyle);
-
-fetch(BUILD_URL).then(r => r.text()).then(eval).then(loadPlugin);
+fetch(BUILD_URL).then(r => r.text()).then(eval).then(loadPlugin).then(remove);
 
 function loadPlugin() {
     window.plugin = new window.VLibras.Plugin({
@@ -24,3 +17,18 @@ function loadPlugin() {
         opacity: 1,
     });
 }
+
+function remove() {
+    document.querySelectorAll('[vw]').forEach(vw => {
+        if (!vw.querySelector('[vp]')) {
+            vw.removeAttribute('vw');
+            vw.removeAttribute('vw-access-button')
+        }
+    })
+}
+
+const vwCount = document.querySelectorAll('[vw]').length;
+if (vwCount > 1) console.log(`%c${vwCount} Widgets 😢`, CONSOLE_STYLE);
+
+const isLocal = document.querySelector('[vw]').innerHTML.includes(location.host);
+if (isLocal) console.log(`%cBuild local 😵`, CONSOLE_STYLE);
