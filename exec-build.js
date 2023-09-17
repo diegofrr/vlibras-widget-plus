@@ -6,8 +6,6 @@ document.querySelectorAll('style').forEach(style => {
     if (root.some(i => style.textContent.includes(i))) style.remove();
 })
 
-fetch(BUILD_URL).then(r => r.text()).then(eval);
-
 const consoleStyle = 'font-size: 32px; color: #ffc83d; font-weight: bold';
 
 const vwCount = document.querySelectorAll('[vw]').length;
@@ -16,13 +14,13 @@ if (vwCount > 1) console.log(`%c${vwCount} Widgets 😢`, consoleStyle);
 const isLocal = document.querySelector('[vw]').innerHTML.includes(location.host);
 if (isLocal) console.log(`%cBuild local 😵`, consoleStyle);
 
-window.plugin = new window.VLibras.Plugin({
+fetch(BUILD_URL).then(r => r.text()).then(eval).then(loadPlugin);
 
-    enableMoveWindow: true,
-    playWellcome: false,
-    rootPath: 'https://diegofrr.github.io/vlibras-widget-plus/app',
-    personalization: '',
-    opacity: 1,
-    wrapper: document.querySelector('[vw-plugin-wrapper]'),
-    position: 'R'
-});
+function loadPlugin() {
+    window.plugin = new window.VLibras.Plugin({
+        rootPath: 'https://diegofrr.github.io/vlibras-widget-plus/app',
+        wrapper: document.querySelector('[vw-plugin-wrapper]'),
+        position: 'R',
+        opacity: 1,
+    });
+}
