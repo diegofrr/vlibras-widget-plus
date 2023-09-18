@@ -7,7 +7,7 @@ document.querySelectorAll('style').forEach(style => {
     if (root.some(i => style.textContent.includes(i))) style.remove();
 })
 
-fetch(BUILD_URL).then(r => r.text()).then(eval).then(loadPlugin).then(remove);
+fetch(BUILD_URL).then(r => r.text()).then(eval).then(remove);
 
 function loadPlugin() {
     window.plugin = new window.VLibras.Plugin({
