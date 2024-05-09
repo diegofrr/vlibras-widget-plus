@@ -1,0 +1,31 @@
+Avaliar Vídeo Referência
+========================
+
+O vídeo referência pode ser avaliado apenas para usuários cujo perfil seja "Especialista". 
+Os passos para avaliar uma vídeo referência são:
+
+1. Na aba **"Tarefas disponíveis"** o usuário terá acesso a todas os sinais que estão no estado 
+**"Aguardando Avaliação Vídeo Referência"**. Para se tornar responsável pela tarefa de avaliar 
+a vídeo referência basta navegar até **"Criação de Sinal"** > **"Aguardando Avaliação Vídeo Referência"**, 
+clicar em **"Assumir tarefa"** na coluna de ações e confirmar.
+
+.. figure:: ../_static/tarefas_disponiveis_avaliar_video.jpg
+   :align: center
+
+2. Em seguida a tarefa fica disponível para o usuário realizar a ação de avaliação. Para avaliar 
+basta navegar até **"Criação de Sinal"** > **"Aguardando Avaliação Vídeo Referência"** e clicar em 
+**"Avaliar Vídeo de Referência"**.
+
+.. figure:: ../_static/avaliar_video.jpg
+   :align: center
+
+3. O especialista responsável pela avaliação pode visualizar o vídeo enviado no item **"Vídeo referência"**. 
+No canto inferior da janela, o especialista pode **"Reprovar vídeo de referência"** ou **"Aprovar vídeo de referência"**.
+Para caso de aprovação, o sinal passa para o estado de **"Aguardando Animação"**, e em caso de reprovação, o sinal volta 
+para o estado **"Aguardando Vídeo Referência"**,
+
+.. note::
+  Atualmente é necessário no mínimo 3 (três) avaliações positivas ou negativas para ocorrer a mudança de estado do sinal.
+
+.. figure:: ../_static/avaliar_video_modal.jpg
+   :align: center

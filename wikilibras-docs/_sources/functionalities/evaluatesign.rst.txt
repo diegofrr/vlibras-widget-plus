@@ -1,0 +1,30 @@
+Avaliar Proposição
+==================
+
+A proposição do sinal pode ser avaliada apenas para usuários cujo perfil seja 
+**"Moderador"** ou **"Administrador"**. Os passos para avaliar uma proposição são:
+
+1. Na aba **"Tarefas disponíveis"** o usuário terá acesso a todas as proposições que estão no estado 
+**"Aguardando Avaliação da Proposição"**. Para se tornar responsável pela tarefa de avaliar a proposição 
+basta ir até o bloco de **"Criação de Sinal"** > **"Aguardando Avaliação da Proposição"**, clicar em **"Assumir tarefa"**
+na coluna de ações e confirmar.
+
+.. figure:: ../_static/tarefas_disponiveis_proposicao.jpg
+   :align: center
+
+2. Em seguida a tarefa fica disponível em **"Minhas tarefas"** para o usuário realizar a ação de avaliação. Para avaliar 
+basta navegar até **"Criação de Sinal"** > **"Aguardando Avaliação da Proposição"** e clicar em **"Avaliar Poposição do Sinal"**.
+
+.. figure:: ../_static/evaluate_sign.jpg
+   :align: center
+
+3. Neste momento o moderador pode atualizar, caso deseje, qualquer campo relacionado ao sinal.
+No canto inferior o moderador pode aprovar ou reprovar o sinal, além de deixar um comentário referente 
+sua avaliação. Para caso de aprovação, o sinal passa para o estado de **"Aguardando Vídeo Referência"**
+e em caso de reprovação o sinal é excluído automaticamente do sistema.
+
+.. note::
+  A glosa do sinal deve ser atualizada neste momento pelo moderador.
+
+.. figure:: ../_static/evaluate_sign_modal.jpg
+   :align: center

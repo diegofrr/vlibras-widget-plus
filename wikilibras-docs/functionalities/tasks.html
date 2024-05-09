@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultar Tarefas &mdash; Documentação Manual de Uso da Ferramenta VLibras Wikilibras 2.0.0</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=459d1c6b"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=000972dd"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Consultar Dicionário" href="dictionary.html" />
+    <link rel="prev" title="Logar na Plataforma" href="login.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Manual de Uso da Ferramenta VLibras Wikilibras
+          </a>
+              <div class="version">
+                2.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Introdução</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/presentation.html">Apresentação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/overview.html">Visão Geral</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compatibilidade</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation/systemrequirements.html">Requisitos do Sistema</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Informações</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="profiles.html">Perfis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Fluxo de Trabalho - Sinais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflowtranslation.html">Fluxo de Trabalho - Tradução</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Funcionalidades</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="login.html">Logar na Plataforma</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Consultar Tarefas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#minhas-tarefas">Minhas Tarefas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tarefas-disponiveis">Tarefas Disponíveis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tarefas-pendentes">Tarefas Pendentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tarefas-concluidas">Tarefas Concluídas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dictionary.html">Consultar Dicionário</a></li>
+<li class="toctree-l1"><a class="reference internal" href="status.html">Consultar Estatísticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createsign.html">Propor Sinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluatesign.html">Avaliar Proposição</a></li>
+<li class="toctree-l1"><a class="reference internal" href="videoreference.html">Adicionar Vídeo Referência</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluatevideo.html">Avaliar Vídeo Referência</a></li>
+<li class="toctree-l1"><a class="reference internal" href="animation.html">Adicionar Animação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluateanimation.html">Avaliar Animação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taskprofile.html">Solicitar Perfil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluateprofile.html">Avaliar Solicitação de Perfil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createreview.html">Propor Correção de Sinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluatereview.html">Avaliar Correção de Sinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="duplicatesign.html">Propor Duplicação de Sinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluatesignduplication.html">Avaliar Duplicação de sinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removesign.html">Propor Remoção de sinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluatesignremoval.html">Avaliar Remoção de sinal</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Manual de Uso da Ferramenta VLibras Wikilibras</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Consultar Tarefas</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/functionalities/tasks.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="consultar-tarefas">
+<h1>Consultar Tarefas<a class="headerlink" href="#consultar-tarefas" title="Link para este cabeçalho"></a></h1>
+<p>Existem 4 (quatro) tipos de consultas de tarefas que podem ser visualizadas na plataforma.
+Cada consulta baseia-se nas suas permissões como um usuário dentro do sistema.</p>
+<section id="minhas-tarefas">
+<h2>Minhas Tarefas<a class="headerlink" href="#minhas-tarefas" title="Link para este cabeçalho"></a></h2>
+<p>Em “Minhas tarefas” o usuário tem acesso a todas as tarefas em que o mesmo é responsável.
+A tela apresenta o tipo da tarefa seguinda por um conjunto de estados em que cada tarefa se encontra.
+Ao clicar na tarefa desejada o conjunto de ações disponíveis fica visível para o usuário.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>O usuário tem o prazo de 1 (uma) semana para finalizar a tarefa caso contrário
+a tarefa volta a ficar disponível automaticamente.</p>
+</div>
+<figure class="align-center">
+<img alt="../_images/minhas_tarefas.jpg" src="../_images/minhas_tarefas.jpg" />
+</figure>
+</section>
+<section id="tarefas-disponiveis">
+<h2>Tarefas Disponíveis<a class="headerlink" href="#tarefas-disponiveis" title="Link para este cabeçalho"></a></h2>
+<p>Na aba <strong>“Tarefas disponíveis”</strong> é onde o usuário torna-se responsável por uma tarefa.
+Para torna-se responsável por uma tarefa basta clicar na tarefa desejada, em seguinda
+<strong>“Assumir tarefa”</strong>.</p>
+<figure class="align-center">
+<img alt="../_images/tarefas_disponiveis.jpg" src="../_images/tarefas_disponiveis.jpg" />
+</figure>
+<p>Ao final deste processo a tarefa passa para aba de “Minhas tarefas”.</p>
+</section>
+<section id="tarefas-pendentes">
+<h2>Tarefas Pendentes<a class="headerlink" href="#tarefas-pendentes" title="Link para este cabeçalho"></a></h2>
+<p>Em <strong>“Tarefas pendentes”</strong> apresenta um conjunto de tarefas onde usuário
+logado teve participação porém as mesmas não chegaram a um estado de conclusão.</p>
+<figure class="align-center">
+<img alt="../_images/tarefas_pendentes.jpg" src="../_images/tarefas_pendentes.jpg" />
+</figure>
+<p>Nessa aba não é possível realizar nenhuma ação que modifique a tarefa.</p>
+</section>
+<section id="tarefas-concluidas">
+<h2>Tarefas Concluídas<a class="headerlink" href="#tarefas-concluidas" title="Link para este cabeçalho"></a></h2>
+<p>Em <strong>“Tarefas concluídas”</strong> apresenta um conjunto de tarefas onde usuário
+logado teve participação e as mesmas chegaram a um estado de conclusão.</p>
+<figure class="align-center">
+<img alt="../_images/tarefas_concluidas.jpg" src="../_images/tarefas_concluidas.jpg" />
+</figure>
+<p>Nessa aba não é possível realizar nenhuma ação que modifique a tarefa.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="login.html" class="btn btn-neutral float-left" title="Logar na Plataforma" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="dictionary.html" class="btn btn-neutral float-right" title="Consultar Dicionário" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Direitos autorais .</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

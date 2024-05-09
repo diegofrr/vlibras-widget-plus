@@ -1,0 +1,31 @@
+Avaliar Correção de Sinal
+================================
+
+Assim como a responsabilidade de avaliar a proporção de sinal, a avaliação de correção também devem 
+ser realizadas por usuários cujo perfil seja **"Moderador"** ou **"Administrador"**. 
+Os passos para avaliar uma correção são:
+
+1. Na aba **"Tarefas disponíveis"** o usuaário deve navegar até **"Correção de Sinal"** > 
+**"Aguardando Avaliação da Proposição"**, clicar em **"Assumir tarefa"** na coluna de ações e confirmar.
+
+.. figure:: ../_static/review/evaluate/tarefas_disponiveis_correcao.jpg
+   :align: center
+
+2. Em seguida a tarefa fica disponível para o usuário realizar a ação de avaliação. Para avaliar 
+o usuário deve ir até a aba **"Minhas tarefas"**, navegar até **"Correção de Sinal"** > **"Aguardando Avaliação da Proposição"** 
+e clicar em **"Avaliar Poposição do Sinal"**.
+
+.. figure:: ../_static/review/evaluate/evaluate_review.jpg
+   :align: center
+
+3. Neste momento o responsável pode atualizar, caso deseje, qualquer campo relacionado ao sinal.
+No canto inferior é possível aprovar ou reprovar o sinal, além de deixar um comentário referente 
+sua avaliação. Para caso de aprovação, o sinal passa para o estado de **"Aguardando Vídeo Referência"**
+e, em caso de reprovação, a proposta de correção é excluída do sistema.
+
+.. note::
+  A glosa do sinal deve ser atualizada neste momento pelo moderador.
+
+.. figure:: ../_static/review/evaluate/evaluate_review_modal.jpg
+   :align: center
+

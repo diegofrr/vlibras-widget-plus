@@ -1,0 +1,21 @@
+Propor Sinal
+============
+
+Qualquer perfil está habilitado para propor um novo sinal na plataforma WikiLibras.
+Para isso, é necessário ir até a aba **"Propor sinal"** e preencher o formulário com
+os dados referentes ao sinal.
+
+.. figure:: ../_static/propor_sinal.jpg
+   :align: center
+
+
+Os itens  **"Assunto"**, **"Classe gramatical"**, e **"Nacionalidade"** são importantes pois 
+ajudam a diferenciar os diversos tipos de sinais com mesmo nome. Caso você não encontre um assunto 
+que se encaixe com o sinal proposto, é possível especificá-lo junto ao nome deste sinal utilizando **"&"**
+seguindo o padrão **"SINAL&ASSUNTO"**.
+
+.. figure:: ../_static/propor_sinal2.jpg
+   :align: center
+
+Após preencher todos os dados necessários, o envio da solicitação de sinal deve ser feito clicando em
+**"Enviar proposição"**. Após o envio, a proposição ficará disponível para a equipe avaliar.

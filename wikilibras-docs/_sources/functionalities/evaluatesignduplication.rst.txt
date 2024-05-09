@@ -1,0 +1,26 @@
+Avaliar Duplicação de sinal
+===========================
+
+A duplicação de um sinal pode ser avaliada apenas por usuários que possuem o perfil **"Administrador"** ou **"Moderador"**.
+Os passos para avaliar uma duplicação são:
+
+1. Na aba **"Tarefas disponíveis"** o usuário terá acesso a todas os sinais que estão no estado 
+**"Aguardando Avaliação de Duplicação de Sinal"**. Para se tornar responsável pela tarefa de avaliar a duplicação do sinal 
+basta navegar até **"Duplicação de Sinal"** > **"Aguardando Avaliação de Duplicação de Sinal"**, clicar em 
+**"Assumir tarefa"** na coluna de ações do sinal e confirmar.
+
+.. figure:: ../_static/duplicate/04-pegar_tarefa_duplicacao.jpg
+   :align: center
+
+2. Em seguida a tarefa fica disponível na aba **"Minhas tarefas"** para o usuário realizar a ação de avaliação de duplicação de sinal. 
+Para avaliar o usuário deve navegar até **"Duplicação de Sinal"** > **"Aguardando Avaliação de Duplicação de Sinal"**, 
+clicar em **"Avaliar Duplicação de Sinal"** na coluna de ações do sinal e confirmar.
+
+.. figure:: ../_static/duplicate/05-propor_duplicacao_sinal.jpg
+   :align: center
+
+3. O usuário poderá avaliar a duplicação de um sinal clicando em **"Aprovar proposta de duplicação"**, 
+caso queira aprovar ou em **"Reprovar proposta de duplicação"**, caso queira reprovar.
+
+.. figure:: ../_static/duplicate/06-avaliar_duplicacao_sinal.jpg
+   :align: center

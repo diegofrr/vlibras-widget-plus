@@ -1,0 +1,22 @@
+Propor Remoção de sinal
+=======================
+
+A remoção de sinal pode ser proposta por todos usuários, visto que todos os usuários possuem o perfil **"Colaborador"**.
+Os passos para propor uma remoção são:
+
+1. Na aba **"Remover sinal"** o usuário poderá pesquisar o sinal que deseja propor a remoção no campo **"Pesquisar sinais..."**.
+
+.. figure:: ../_static/remove/01-remover_sinal.jpg
+   :align: center
+
+2. Após pesquisar o sinal, aparecerá o sinal que ele deseja propor a remoção. Para propor a remoção, é necessário clicar no 
+botão "VER COMPLETA".
+
+.. figure:: ../_static/remove/02-procurar_sinal.jpg
+   :align: center
+
+3. Irá aparecer uma janela com todas as informações do sinal, então para propor a remoção de um sinal, o usuário precisará clicar no 
+botão **"Solicitar remoção"**.
+
+.. figure:: ../_static/remove/03-propor_remocao_sinal.jpg
+   :align: center

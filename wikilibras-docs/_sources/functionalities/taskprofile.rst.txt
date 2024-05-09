@@ -1,0 +1,16 @@
+Solicitar Perfil
+================
+
+Qualquer usuário pode solicitar um novo perfil. A análise do perfil solicitado 
+só pode ser feita pelos moderadores da plataforma.
+
+Os passos para solicitar um perfil são:
+
+1. O usuário deve ir em **"Solicitar permissão"** e selecionar o perfil desejado; 
+2. Em seguida, informar as razões pelo qual deseja adquirir um novo perfil no item **"Motivo da solicitação"**;
+3. Por fim, o usuário deve compactar em formato ZIP e enviar todos arquivos indicados para cada perfil.
+
+.. figure:: ../_static/perfil_aba.jpg
+   :align: center
+
+Após enviar a solicitação, seu pedido fica disponível para ser avaliado por um administrador ou moderador da plataforma.

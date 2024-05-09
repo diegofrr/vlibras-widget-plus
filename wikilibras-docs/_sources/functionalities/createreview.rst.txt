@@ -1,0 +1,17 @@
+Propor Correção de Sinal
+==========================
+
+Qualquer usuário está habilitato a sugerir a correção de um sinal. 
+Os passos para propor um correção são:
+
+1. Na aba **"Corrigir Sinal"** o usuário deve pesquisar pelo sinal que desejar solicitar 
+a correção e selecionar a opção **"Corrigir Sinal"** na coluna de ações.
+
+.. figure:: ../_static/review/review/corrigir_sinal.jpg
+   :align: center
+
+2. Em seguida, o usuário tem a dispor as informações referente ao sinal e que podem ser alteradas. 
+Após os ajustes necessários, o envio da solicitação de correção deve ser feito clicando em **"Solicitar correção"**.
+
+.. figure:: ../_static/review/review/corrigir_sinal_modal.jpg
+   :align: center

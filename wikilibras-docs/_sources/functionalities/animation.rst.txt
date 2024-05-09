@@ -1,0 +1,68 @@
+Adicionar Animação
+==================
+
+Instruções para animar
+----------------------
+1. Deverá realizar o download do modelo 3D do avatar (".blend") disponível no `site do VLibras <https://www.gov.br>`_;
+2. Instalar software Blender da versão 2.79;
+3. Executar o Blender e abrir o modelo 3D do avatar baixado.
+
+Para poder animar o sinal no blender, deve seguir os passos descritos abaixo:
+
+.. figure:: ../_static/animation/1.png
+   :align: center
+
+1. O arquivo ".blend" já contém o avatar pré-configurado para a geração de um sinal, ele ainda possui uma ACTION, que é uma espécie de linha do tempo, na qual devem ser inseridos quadros chaves (keyframes)
+
+.. figure:: ../_static/animation/2.png
+   :align: center
+
+2. Não deverá ser adicionada nenhuma outra ACTION, isso é importante para que seu vídeo seja gerado após submeter na tarefa.
+
+.. figure:: ../_static/animation/3.png
+   :align: center
+
+3. Os quadros chaves servem para marcar a posição espacial de cada "OSSO" (BONE) no decorrer do tempo.
+
+.. figure:: ../_static/animation/4.png
+   :align: center
+
+4. Para animar basta mover e rotacionar alguns "OSSOS", alguns ossos são apenas para rotação, outros para posição.
+
+.. figure:: ../_static/animation/5.png
+   :align: center
+
+5. Ao finalizar sua animação, deverá salvar o arquivo e submeter na sua respectiva tarefa.
+
+.. figure:: ../_static/animation/6.png
+   :align: center
+
+Após finalizada a animação o usuário precisa realizar a inserção da animação no WikiLibras.
+
+A inserção da animação pode ser realizada apenas para usuários cujo perfil seja **"Animador"**. 
+Os passos para adicionar uma animação são:
+
+1. Na aba  **"Tarefas Disponíveis"** o usuário terá acesso a todos os sinais que estão no estado **"Aguardando Animação"**. Para se tornar responsável pela tarefa de adicionar uma animação basta ir até o bloco de **"Criação de Sinal"** > **"Aguardando Animação"**, clicar em **"Assumir tarefa"** na coluna de ações e confirmar.
+
+.. figure:: ../_static/tarefas_disponiveis_animar.jpg
+   :align: center
+
+2. Em seguida a tarefa fica disponível para o usuário realizar a ação de inserção da animação. Para adicionar uma animação basta navegar até **"Criação de Sinal"** > **"Aguardando Animação"** e clicar em **"Criação de Animação"**.
+
+.. figure:: ../_static/criar_animacao.jpg
+   :align: center
+
+3. O usuário DEVE baixar o arquivo blend disponível para realizar a animação. Além disso, é importante usar a versão do Blender especificada na plataforma para ter sucesso no processo de avaliação.
+
+.. figure:: ../_static/info_blender.jpg
+   :align: center
+
+4. No item **"Vídeo referência"** o animador têm acesso ao vídeo de auxílio para construção da animação.
+
+5. Por fim, o usuário deve fazer o *upload* do arquivo da animação no item "Animação", adicionar um comentário (opcional) e em seguida clicar em **"Enviar animação"** para finalizar o processo.
+
+.. figure:: ../_static/upload_blender.jpg
+   :align: center
+
+.. note::
+  O formato ".blend" é o único formato de animação aceito na plataforma WikiLibras.

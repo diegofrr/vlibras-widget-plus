@@ -1,0 +1,25 @@
+Avaliar Remoção de sinal
+========================
+
+A remoção de um sinal pode ser avaliada apenas por usuários que possuem o perfil **"Administrador"** ou **"Moderador"**.
+Os passos para avaliar uma remoção são:
+
+1. Na aba **"Tarefas disponíveis"** o usuário terá acesso a todas os sinais que estão no estado **"Aguardando Avaliaçaõ de Remoção de Sinal"**.
+Para se tornar responsável pela tarefa de avaliar a remoção do sinal o usuário deve navegar até 
+**"Remoção de Sinal"** > **"Aguardando Avaliação de Remoção de Sinal"**, clicar em **"Assumir tarefa"** 
+na coluna de ações do sinal e confirmar.
+
+.. figure:: ../_static/remove/04-pegar_tarefa_remocao_sinal.jpg
+   :align: center
+
+2. Em seguida a tarefa fica disponível na aba **"Minhas tarefas"** para o usuário realizar a ação de avaliação de remoção do sinal.
+Para avaliar, o usuário deve navegar até **"Remoção de Sinal"** > **"Aguardando Avaliação de Remoção de Sinal"** e clicar em **"Avaliar Remoção de Sinal"**.
+
+.. figure:: ../_static/remove/05-proposicao_remocao_sinal.jpg
+   :align: center
+
+3. O usuário poderá avaliar a remoção do sinal clicando em **"Aprovar proposta de remoção"**, caso queira aprovar, 
+ou em **"Reprovar proposta de remoção"**, caso queira reprovar.
+
+.. figure:: ../_static/remove/06-avaliar_remocao_sinal.jpg
+   :align: center
