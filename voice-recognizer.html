@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reconhecimento de Fala</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 10px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #stop-btn {
+        background-color: #dc3545;
+        display: none;
+      }
+
+      #stop-btn:hover {
+        background-color: #c82333;
+      }
+
+      #transcript-container {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        font-weight: bold;
+        color: #007bff;
+        display: none;
+      }
+
+      #clear-btn {
+        display: none;
+      }
+
+      .container {
+        text-align: center;
+        background-color: white;
+        max-width: 600px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Reconhecimento de Fala</h1>
+        <span>Web Speech API</span>
+      </div>
+
+      <button id="start-btn">Iniciar Gravação</button>
+      <button id="stop-btn">Parar Gravação</button>
+      <div id="transcript-container"></div>
+      <button id="clear-btn">Limpar</button>
+    </div>
+
+    <script>
+      if (
+        "SpeechRecognition" in window ||
+        "webkitSpeechRecognition" in window
+      ) {
+        const recognition = new (window.SpeechRecognition ||
+          window.webkitSpeechRecognition)();
+        const startButton = document.getElementById("start-btn");
+        const stopButton = document.getElementById("stop-btn");
+        const transcriptResult = document.getElementById(
+          "transcript-container"
+        );
+        const clearButton = document.getElementById("clear-btn");
+
+        clearButton.onclick = () => {
+          transcriptResult.textContent = "";
+          transcriptResult.style.display = "none";
+          clearButton.style.display = "none";
+        };
+
+        recognition.lang = "pt-BR";
+        recognition.continuous = true;
+
+        recognition.onresult = function (event) {
+          const transcript = event.results[event.resultIndex][0].transcript;
+          transcriptResult.textContent += transcript + " ";
+          transcriptResult.style.display = "block";
+          clearButton.style.display = "inline-block";
+        };
+
+        recognition.onend = function () {
+          startButton.disabled = false;
+          stopButton.style.display = "none";
+          startButton.textContent = "Iniciar Gravação";
+        };
+
+        startButton.addEventListener("click", () => {
+          recognition.start();
+          startButton.disabled = true;
+          stopButton.style.display = "inline-block";
+          startButton.textContent = "Gravando...";
+        });
+
+        stopButton.addEventListener("click", () => {
+          recognition.stop();
+        });
+      } else {
+        console.log("API de reconhecimento de fala não suportada.");
+        document.getElementById("transcript-container").textContent =
+          "Reconhecimento de fala não suportado neste navegador.";
+      }
+    </script>
+  </body>
+</html>
