@@ -1,0 +1,18 @@
+{
+    "id": 6,
+    "name": "Diêgo Ferreira",
+    "email": "diegofrr.19@gmail.com",
+    "profilePhoto": null,
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiI3MDk1MDEyNjQ0NiIsImlhdCI6MTczMjgzMjQyMCwiZXhwIjoxNzMyOTE4ODIwfQ.Hp0kgViocVZ3IKXOm6gbh37toTx7ZkhXSr1eISJxiUE",
+    "cpf": "70950126446",
+    "credit": 0,
+    "isGuest": false,
+    "created_at": "2024-11-20T01:32:24.734Z",
+    "updated_at": "2024-11-28T22:18:34.195Z",
+    "pele": null,
+    "olhos": null,
+    "cabelo": null,
+    "camisa": null,
+    "calca": null,
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiI3MDk1MDEyNjQ0NiIsImlhdCI6MTczMjgzMjQyMCwiZXhwIjoxNzMyOTE4ODIwfQ.bYVQAcDqKVUAhNLx-tsBTSWKFoADo31dv8Ds-2P5Go0"
+}
