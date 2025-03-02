@@ -1,27 +1,52 @@
 # ✌️ VLibras Widget+
 
-## Fonte e Tipografia
+<p align="center">Em desenvolvimento...</p>
 
-* **Ajuste de Tamanho da Fonte** – Permite aumentar ou diminuir o tamanho do texto sem afetar outros elementos da página.
-* **Alteração da Família de Fonte** – Oferece opções de fontes mais legíveis, como Arial, OpenDyslexic, Verdana, entre outras.
-* **Espaçamento entre Linhas e Letras** – Permite personalizar o espaçamento entre caracteres e entre linhas para melhor leitura.
-* **Modo Texto em Caixa Alta** – Converte todo o texto para maiúsculas ou minúsculas, conforme a necessidade do usuário.
-* **Negrito e Contraste da Fonte** – Dá a opção de aumentar a espessura da fonte para melhorar a visibilidade.
+# 📝 Texto e Tipografia
 
-## Ferramentas de Leitura e Compreensão
+- Aumentar texto
+- Espaço entre letras
+- Espaço entre linhas
+- Cor do texto
+- Alterar tipo de fonte
+- Destacar títulos
 
-* **Modo Leitor** – Remove elementos visuais distrativos (anúncios, pop-ups, menus) e apresenta o conteúdo de forma limpa. ([cdn.jsdelivr.net/gh/mozilla/readability/Readability.js](https://cdn.jsdelivr.net/gh/mozilla/readability/Readability.js))
-* **Resumidor de Página** – Usa IA para gerar resumos automáticos de textos longos, facilitando a compreensão.
-* **Destaque de Texto** – Permite selecionar e destacar partes importantes da página.
-* **Dicionário Simplificado** – Explicação automática de palavras difíceis, útil para pessoas com dislexia ou dificuldades cognitivas ([pt.wiktionary.org/w/api.php?action=query&prop=extracts&format=json&origin=*&titles=libras&utf8=1&explaintext=1](https://pt.wiktionary.org/w/api.php?action=query&prop=extracts&format=json&origin=*&titles=libras&utf8=1&explaintext=1)).
+# 📖 Leitura e Compreensão
 
-## Ferramentas de Visibilidade e Foco
+- Clique para ouvir
+- Guia de leitura
+- Modo leitor
+- Estrutura da página
+- Dicionário
 
-* **Modo Alto Contraste** – Melhora a legibilidade para pessoas com baixa visão ou daltonismo.
-* **Foco do Mouse** – Cria um efeito de destaque ao redor do ponteiro do mouse, facilitando a navegação para pessoas com dificuldades motoras.
-* **Modo Cursor Grande** – Torna o cursor maior e mais visível.
+# 👀 Foco e Acessibilidade Visual
 
-## Ferramentas de Navegação Alternativa
+- Cursor grande
+- Máscara de Leitura
+- Amplificar Conteúdo
+- Destacar links
 
-* **Navegação por Teclado** – Facilita a navegação sem o uso do mouse, útil para pessoas com mobilidade reduzida.
-* **Leitor de Código QR** – Para acessar conteúdos de forma alternativa em dispositivos móveis.
+# 🎨 Cores e Contraste
+
+- Alto Contraste
+- Preto e branco
+- Filtro para daltonismo
+- Modo Noturno
+- Cores da página
+
+# 🚫 Redução de Distrações
+
+- Pausar animações
+- Esconder imagens
+
+## Como testar
+
+Executar no console do navegador o bundle da ferramenta ([vlibras-widget-plus.js](https://github.com/diegofrr/vlibras-widget-plus/blob/main/dist/vlibras-widget-plus.js)).
+
+Ou rodar o script abaixo:
+
+```javascript
+fetch("https://tinyurl.com/widget-plus")
+  .then((e) => e.text())
+  .then(eval);
+```
