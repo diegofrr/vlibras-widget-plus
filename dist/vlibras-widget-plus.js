@@ -1,7 +1,4 @@
-const dist = "https://diegofrr.github.io/vlibras-widget-plus/dist";
-
-window.VLibrasWidgetPlus = {};
-window.VLibrasWidgetPlus.path = dist;
+const dist = "http://localhost:5500/dist";
 
 const template = `
   <div id="vwp-access-wrapper">
@@ -66,19 +63,23 @@ wrapper.id = "vwp-app-wrapper";
 shadow.innerHTML = template;
 document.body.appendChild(wrapper);
 
-const accessButton = shadow.querySelector("#vwp-access-button");
 let widget;
+const initBtn = shadow.querySelector("#vwp-access-button");
 
-accessButton.addEventListener("click", async () => {
-  if (widget) return (widget.dataset.active = true);
+const open = () => {
+	if (widget) return (widget.dataset.active = true);
 
-  const script = document.createElement("script");
-  script.id = "vwp-app-script";
-  script.src = `${dist}/vlibras-widget-plus-app.umd.cjs`;
-  script.async = true;
-  script.onload = () => {
-    widget = document.getElementById("vwp-app-root");
-    widget.dataset.active = true;
-  };
-  document.body.appendChild(script);
-});
+  	const script = document.createElement("script");
+  	script.src = `${dist}/vlibras-widget-plus-app.umd.cjs`;
+  	script.async = true;
+  	script.onload = () => {
+    	widget = document.getElementById("vwp-app-root");
+    	widget.dataset.active = true;
+  	};
+  	document.body.appendChild(script);
+}
+
+initBtn.onclick = open;
+
+window.VLibrasWidgetPlus = {};
+window.VLibrasWidgetPlus = { path: dist, initBtn, open }

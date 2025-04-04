@@ -19,10 +19,8 @@ export const initGTagAnalytics = () => {
   const script = document.createElement('script');
   script.src = 'https://www.googletagmanager.com/gtag/js?id=G-33MNM4MG8B';
   script.async = true;
-  script.onload = () => {
-    configureAndSend();
-  };
-  document.head.appendChild(script);
+  script.onload = () => configureAndSend()
+  document.head.prepend(script);
 };
 
 function configureAndSend() {
