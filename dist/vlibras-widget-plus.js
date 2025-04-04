@@ -1,4 +1,4 @@
-const dist = "http://localhost:5500/dist";
+const dist = "https://diegofrr.github.io/vlibras-widget-plus/dist";
 
 const template = `
   <div id="vwp-access-wrapper">
