@@ -6051,7 +6051,7 @@ const Wc = ({ data: e }) => {
         disabled: !r,
         "aria-label": t("al.definition_to_libras"),
         onClick: o,
-        className: "bg-primary px-4 py-2 rounded-md hover:brightness-90 hidden",
+        className: "bg-primary text-primary-foreground px-4 py-2 rounded-md hover:brightness-90 hidden",
         children: [
           /* @__PURE__ */ a(q2, { "aria-hidden": !0, size: 20 }),
           t("definition_to_libras")
@@ -6063,7 +6063,7 @@ const Wc = ({ data: e }) => {
       {
         "aria-label": t("al.read_definition"),
         onClick: i,
-        className: "bg-primary px-4 py-2 rounded-md hover:brightness-90",
+        className: "bg-primary text-primary-foreground px-4 py-2 rounded-md hover:brightness-90",
         children: [
           /* @__PURE__ */ a(j1, { size: 20 }),
           t("read_definition")
