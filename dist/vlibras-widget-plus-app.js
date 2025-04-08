@@ -4712,7 +4712,7 @@ const $l = (e) => e.split(" ").map((t) => t.charAt(0).toUpperCase() + t.slice(1)
 P.subscribe((e, t) => {
   const n = Object.keys(Vo(Uo, ["isActive"])).some((o) => {
     const i = e[o];
-    return ["textReader", "textColor", "dictionary", "dyslexicFont"].includes(o) ? i == null ? void 0 : i.isActive : !!i;
+    return ["textReader", "textColor", "dictionary"].includes(o) ? i == null ? void 0 : i.isActive : !!i;
   });
   n !== t.isActive && P.setState({ isActive: n }), window.VLibrasWidgetPlus && (window.VLibrasWidgetPlus.isOpen = e.isOpenWidget);
 });
