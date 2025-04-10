@@ -82,4 +82,4 @@ const open = () => {
 initBtn.onclick = open;
 
 window.VLibrasWidgetPlus = {};
-window.VLibrasWidgetPlus = { path: dist, initBtn, open }
+window.VLibrasWidgetPlus = { path: dist, initBtn, open };
