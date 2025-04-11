@@ -1,4 +1,4 @@
-var et, P, Un, Ae, gr, Gn, Wn, Xn, X1, B1, z1, Kn, Qe = {}, Yn = [], li = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, tt = Array.isArray;
+var et, P, Un, Ae, gr, Gn, Wn, Xn, X1, B1, F1, Kn, Qe = {}, Yn = [], li = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, tt = Array.isArray;
 function ce(e, t) {
   for (var r in t) e[r] = t[r];
   return e;
@@ -40,21 +40,21 @@ function Qn(e) {
     return Qn(e);
   }
 }
-function F1(e) {
+function z1(e) {
   (!e.__d && (e.__d = !0) && Ae.push(e) && !ft.__r++ || gr !== P.debounceRendering) && ((gr = P.debounceRendering) || Gn)(ft);
 }
 function ft() {
   for (var e, t, r, n, i, a, s, l = 1; Ae.length; ) Ae.length > l && Ae.sort(Wn), e = Ae.shift(), l = Ae.length, e.__d && (r = void 0, i = (n = (t = e).__v).__e, a = [], s = [], t.__P && ((r = ce({}, n)).__v = n.__v + 1, P.vnode && P.vnode(r), Y1(t.__P, r, n, t.__n, t.__P.namespaceURI, 32 & n.__u ? [i] : null, a, i ?? $e(n), !!(32 & n.__u), s), r.__v = n.__v, r.__.__k[r.__i] = r, to(a, r, s), r.__e != i && Qn(r)));
   ft.__r = 0;
 }
-function Jn(e, t, r, n, i, a, s, l, c, d, p) {
-  var u, h, f, _, C, L, A = n && n.__k || Yn, b = t.length;
-  for (c = di(r, t, A, c, b), u = 0; u < b; u++) (f = r.__k[u]) != null && (h = f.__i === -1 ? Qe : A[f.__i] || Qe, f.__i = u, L = Y1(e, f, h, i, a, s, l, c, d, p), _ = f.__e, f.ref && h.ref != f.ref && (h.ref && Q1(h.ref, null, f), p.push(f.ref, f.__c || _, f)), C == null && _ != null && (C = _), 4 & f.__u || h.__k === f.__k ? c = eo(f, c, e) : typeof f.type == "function" && L !== void 0 ? c = L : _ && (c = _.nextSibling), f.__u &= -7);
-  return r.__e = C, c;
+function Jn(e, t, r, n, i, a, s, l, d, c, p) {
+  var u, h, f, _, m, L, A = n && n.__k || Yn, y = t.length;
+  for (d = di(r, t, A, d, y), u = 0; u < y; u++) (f = r.__k[u]) != null && (h = f.__i === -1 ? Qe : A[f.__i] || Qe, f.__i = u, L = Y1(e, f, h, i, a, s, l, d, c, p), _ = f.__e, f.ref && h.ref != f.ref && (h.ref && Q1(h.ref, null, f), p.push(f.ref, f.__c || _, f)), m == null && _ != null && (m = _), 4 & f.__u || h.__k === f.__k ? d = eo(f, d, e) : typeof f.type == "function" && L !== void 0 ? d = L : _ && (d = _.nextSibling), f.__u &= -7);
+  return r.__e = m, d;
 }
 function di(e, t, r, n, i) {
-  var a, s, l, c, d, p = r.length, u = p, h = 0;
-  for (e.__k = new Array(i), a = 0; a < i; a++) (s = t[a]) != null && typeof s != "boolean" && typeof s != "function" ? (c = a + h, (s = e.__k[a] = typeof s == "string" || typeof s == "number" || typeof s == "bigint" || s.constructor == String ? Ye(null, s, null, null, null) : tt(s) ? Ye(G, { children: s }, null, null, null) : s.constructor === void 0 && s.__b > 0 ? Ye(s.type, s.props, s.key, s.ref ? s.ref : null, s.__v) : s).__ = e, s.__b = e.__b + 1, l = null, (d = s.__i = ui(s, r, c, u)) !== -1 && (u--, (l = r[d]) && (l.__u |= 2)), l == null || l.__v === null ? (d == -1 && (i > p ? h-- : i < p && h++), typeof s.type != "function" && (s.__u |= 4)) : d != c && (d == c - 1 ? h-- : d == c + 1 ? h++ : (d > c ? h-- : h++, s.__u |= 4))) : e.__k[a] = null;
+  var a, s, l, d, c, p = r.length, u = p, h = 0;
+  for (e.__k = new Array(i), a = 0; a < i; a++) (s = t[a]) != null && typeof s != "boolean" && typeof s != "function" ? (d = a + h, (s = e.__k[a] = typeof s == "string" || typeof s == "number" || typeof s == "bigint" || s.constructor == String ? Ye(null, s, null, null, null) : tt(s) ? Ye(G, { children: s }, null, null, null) : s.constructor === void 0 && s.__b > 0 ? Ye(s.type, s.props, s.key, s.ref ? s.ref : null, s.__v) : s).__ = e, s.__b = e.__b + 1, l = null, (c = s.__i = ui(s, r, d, u)) !== -1 && (u--, (l = r[c]) && (l.__u |= 2)), l == null || l.__v === null ? (c == -1 && (i > p ? h-- : i < p && h++), typeof s.type != "function" && (s.__u |= 4)) : c != d && (c == d - 1 ? h-- : c == d + 1 ? h++ : (c > d ? h-- : h++, s.__u |= 4))) : e.__k[a] = null;
   if (u) for (a = 0; a < p; a++) (l = r[a]) != null && (2 & l.__u) == 0 && (l.__e == n && (n = $e(l)), no(l, l));
   return n;
 }
@@ -76,15 +76,15 @@ function fe(e, t) {
   }) : t.push(e)), t;
 }
 function ui(e, t, r, n) {
-  var i, a, s = e.key, l = e.type, c = t[r];
-  if (c === null && e.key == null || c && s == c.key && l === c.type && (2 & c.__u) == 0) return r;
-  if (n > (c != null && (2 & c.__u) == 0 ? 1 : 0)) for (i = r - 1, a = r + 1; i >= 0 || a < t.length; ) {
+  var i, a, s = e.key, l = e.type, d = t[r];
+  if (d === null && e.key == null || d && s == d.key && l === d.type && (2 & d.__u) == 0) return r;
+  if (n > (d != null && (2 & d.__u) == 0 ? 1 : 0)) for (i = r - 1, a = r + 1; i >= 0 || a < t.length; ) {
     if (i >= 0) {
-      if ((c = t[i]) && (2 & c.__u) == 0 && s == c.key && l === c.type) return i;
+      if ((d = t[i]) && (2 & d.__u) == 0 && s == d.key && l === d.type) return i;
       i--;
     }
     if (a < t.length) {
-      if ((c = t[a]) && (2 & c.__u) == 0 && s == c.key && l === c.type) return a;
+      if ((d = t[a]) && (2 & d.__u) == 0 && s == d.key && l === d.type) return a;
       a++;
     }
   }
@@ -100,7 +100,7 @@ function ut(e, t, r, n, i) {
     if (typeof n == "string" && (e.style.cssText = n = ""), n) for (t in n) r && t in r || vr(e.style, t, "");
     if (r) for (t in r) n && r[t] === n[t] || vr(e.style, t, r[t]);
   }
-  else if (t[0] == "o" && t[1] == "n") a = t != (t = t.replace(Xn, "$1")), t = t.toLowerCase() in e || t == "onFocusOut" || t == "onFocusIn" ? t.toLowerCase().slice(2) : t.slice(2), e.l || (e.l = {}), e.l[t + a] = r, r ? n ? r.t = n.t : (r.t = X1, e.addEventListener(t, a ? z1 : B1, a)) : e.removeEventListener(t, a ? z1 : B1, a);
+  else if (t[0] == "o" && t[1] == "n") a = t != (t = t.replace(Xn, "$1")), t = t.toLowerCase() in e || t == "onFocusOut" || t == "onFocusIn" ? t.toLowerCase().slice(2) : t.slice(2), e.l || (e.l = {}), e.l[t + a] = r, r ? n ? r.t = n.t : (r.t = X1, e.addEventListener(t, a ? F1 : B1, a)) : e.removeEventListener(t, a ? F1 : B1, a);
   else {
     if (i == "http://www.w3.org/2000/svg") t = t.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
     else if (t != "width" && t != "height" && t != "href" && t != "list" && t != "form" && t != "tabIndex" && t != "download" && t != "rowSpan" && t != "colSpan" && t != "role" && t != "popover" && t in e) try {
@@ -111,7 +111,7 @@ function ut(e, t, r, n, i) {
     typeof r == "function" || (r == null || r === !1 && t[4] != "-" ? e.removeAttribute(t) : e.setAttribute(t, t == "popover" && r == 1 ? "" : r));
   }
 }
-function mr(e) {
+function Cr(e) {
   return function(t) {
     if (this.l) {
       var r = this.l[t.type + e];
@@ -121,40 +121,40 @@ function mr(e) {
     }
   };
 }
-function Y1(e, t, r, n, i, a, s, l, c, d) {
-  var p, u, h, f, _, C, L, A, b, g, m, y, v, S, I, B, J, H = t.type;
+function Y1(e, t, r, n, i, a, s, l, d, c) {
+  var p, u, h, f, _, m, L, A, y, g, C, b, v, S, I, B, J, H = t.type;
   if (t.constructor !== void 0) return null;
-  128 & r.__u && (c = !!(32 & r.__u), a = [l = t.__e = r.__e]), (p = P.__b) && p(t);
+  128 & r.__u && (d = !!(32 & r.__u), a = [l = t.__e = r.__e]), (p = P.__b) && p(t);
   e: if (typeof H == "function") try {
-    if (A = t.props, b = "prototype" in H && H.prototype.render, g = (p = H.contextType) && n[p.__c], m = p ? g ? g.props.value : p.__ : n, r.__c ? L = (u = t.__c = r.__c).__ = u.__E : (b ? t.__c = u = new H(A, m) : (t.__c = u = new de(A, m), u.constructor = H, u.render = hi), g && g.sub(u), u.props = A, u.state || (u.state = {}), u.context = m, u.__n = n, h = u.__d = !0, u.__h = [], u._sb = []), b && u.__s == null && (u.__s = u.state), b && H.getDerivedStateFromProps != null && (u.__s == u.state && (u.__s = ce({}, u.__s)), ce(u.__s, H.getDerivedStateFromProps(A, u.__s))), f = u.props, _ = u.state, u.__v = t, h) b && H.getDerivedStateFromProps == null && u.componentWillMount != null && u.componentWillMount(), b && u.componentDidMount != null && u.__h.push(u.componentDidMount);
+    if (A = t.props, y = "prototype" in H && H.prototype.render, g = (p = H.contextType) && n[p.__c], C = p ? g ? g.props.value : p.__ : n, r.__c ? L = (u = t.__c = r.__c).__ = u.__E : (y ? t.__c = u = new H(A, C) : (t.__c = u = new de(A, C), u.constructor = H, u.render = hi), g && g.sub(u), u.props = A, u.state || (u.state = {}), u.context = C, u.__n = n, h = u.__d = !0, u.__h = [], u._sb = []), y && u.__s == null && (u.__s = u.state), y && H.getDerivedStateFromProps != null && (u.__s == u.state && (u.__s = ce({}, u.__s)), ce(u.__s, H.getDerivedStateFromProps(A, u.__s))), f = u.props, _ = u.state, u.__v = t, h) y && H.getDerivedStateFromProps == null && u.componentWillMount != null && u.componentWillMount(), y && u.componentDidMount != null && u.__h.push(u.componentDidMount);
     else {
-      if (b && H.getDerivedStateFromProps == null && A !== f && u.componentWillReceiveProps != null && u.componentWillReceiveProps(A, m), !u.__e && (u.shouldComponentUpdate != null && u.shouldComponentUpdate(A, u.__s, m) === !1 || t.__v == r.__v)) {
-        for (t.__v != r.__v && (u.props = A, u.state = u.__s, u.__d = !1), t.__e = r.__e, t.__k = r.__k, t.__k.some(function(F) {
-          F && (F.__ = t);
-        }), y = 0; y < u._sb.length; y++) u.__h.push(u._sb[y]);
+      if (y && H.getDerivedStateFromProps == null && A !== f && u.componentWillReceiveProps != null && u.componentWillReceiveProps(A, C), !u.__e && (u.shouldComponentUpdate != null && u.shouldComponentUpdate(A, u.__s, C) === !1 || t.__v == r.__v)) {
+        for (t.__v != r.__v && (u.props = A, u.state = u.__s, u.__d = !1), t.__e = r.__e, t.__k = r.__k, t.__k.some(function(z) {
+          z && (z.__ = t);
+        }), b = 0; b < u._sb.length; b++) u.__h.push(u._sb[b]);
         u._sb = [], u.__h.length && s.push(u);
         break e;
       }
-      u.componentWillUpdate != null && u.componentWillUpdate(A, u.__s, m), b && u.componentDidUpdate != null && u.__h.push(function() {
-        u.componentDidUpdate(f, _, C);
+      u.componentWillUpdate != null && u.componentWillUpdate(A, u.__s, C), y && u.componentDidUpdate != null && u.__h.push(function() {
+        u.componentDidUpdate(f, _, m);
       });
     }
-    if (u.context = m, u.props = A, u.__P = e, u.__e = !1, v = P.__r, S = 0, b) {
+    if (u.context = C, u.props = A, u.__P = e, u.__e = !1, v = P.__r, S = 0, y) {
       for (u.state = u.__s, u.__d = !1, v && v(t), p = u.render(u.props, u.state, u.context), I = 0; I < u._sb.length; I++) u.__h.push(u._sb[I]);
       u._sb = [];
     } else do
       u.__d = !1, v && v(t), p = u.render(u.props, u.state, u.context), u.state = u.__s;
     while (u.__d && ++S < 25);
-    u.state = u.__s, u.getChildContext != null && (n = ce(ce({}, n), u.getChildContext())), b && !h && u.getSnapshotBeforeUpdate != null && (C = u.getSnapshotBeforeUpdate(f, _)), B = p, p != null && p.type === G && p.key == null && (B = ro(p.props.children)), l = Jn(e, tt(B) ? B : [B], t, r, n, i, a, s, l, c, d), u.base = t.__e, t.__u &= -161, u.__h.length && s.push(u), L && (u.__E = u.__ = null);
-  } catch (F) {
-    if (t.__v = null, c || a != null) if (F.then) {
-      for (t.__u |= c ? 160 : 128; l && l.nodeType == 8 && l.nextSibling; ) l = l.nextSibling;
+    u.state = u.__s, u.getChildContext != null && (n = ce(ce({}, n), u.getChildContext())), y && !h && u.getSnapshotBeforeUpdate != null && (m = u.getSnapshotBeforeUpdate(f, _)), B = p, p != null && p.type === G && p.key == null && (B = ro(p.props.children)), l = Jn(e, tt(B) ? B : [B], t, r, n, i, a, s, l, d, c), u.base = t.__e, t.__u &= -161, u.__h.length && s.push(u), L && (u.__E = u.__ = null);
+  } catch (z) {
+    if (t.__v = null, d || a != null) if (z.then) {
+      for (t.__u |= d ? 160 : 128; l && l.nodeType == 8 && l.nextSibling; ) l = l.nextSibling;
       a[a.indexOf(l)] = null, t.__e = l;
     } else for (J = a.length; J--; ) K1(a[J]);
     else t.__e = r.__e, t.__k = r.__k;
-    P.__e(F, t, r);
+    P.__e(z, t, r);
   }
-  else a == null && t.__v == r.__v ? (t.__k = r.__k, t.__e = r.__e) : l = t.__e = pi(r.__e, t, r, n, i, a, s, c, d);
+  else a == null && t.__v == r.__v ? (t.__k = r.__k, t.__e = r.__e) : l = t.__e = pi(r.__e, t, r, n, i, a, s, d, c);
   return (p = P.diffed) && p(t), 128 & t.__u ? void 0 : l;
 }
 function to(e, t, r) {
@@ -172,32 +172,32 @@ function to(e, t, r) {
 function ro(e) {
   return typeof e != "object" || e == null ? e : tt(e) ? e.map(ro) : ce({}, e);
 }
-function pi(e, t, r, n, i, a, s, l, c) {
-  var d, p, u, h, f, _, C, L = r.props, A = t.props, b = t.type;
-  if (b == "svg" ? i = "http://www.w3.org/2000/svg" : b == "math" ? i = "http://www.w3.org/1998/Math/MathML" : i || (i = "http://www.w3.org/1999/xhtml"), a != null) {
-    for (d = 0; d < a.length; d++) if ((f = a[d]) && "setAttribute" in f == !!b && (b ? f.localName == b : f.nodeType == 3)) {
-      e = f, a[d] = null;
+function pi(e, t, r, n, i, a, s, l, d) {
+  var c, p, u, h, f, _, m, L = r.props, A = t.props, y = t.type;
+  if (y == "svg" ? i = "http://www.w3.org/2000/svg" : y == "math" ? i = "http://www.w3.org/1998/Math/MathML" : i || (i = "http://www.w3.org/1999/xhtml"), a != null) {
+    for (c = 0; c < a.length; c++) if ((f = a[c]) && "setAttribute" in f == !!y && (y ? f.localName == y : f.nodeType == 3)) {
+      e = f, a[c] = null;
       break;
     }
   }
   if (e == null) {
-    if (b == null) return document.createTextNode(A);
-    e = document.createElementNS(i, b, A.is && A), l && (P.__m && P.__m(t, a), l = !1), a = null;
+    if (y == null) return document.createTextNode(A);
+    e = document.createElementNS(i, y, A.is && A), l && (P.__m && P.__m(t, a), l = !1), a = null;
   }
-  if (b === null) L === A || l && e.data === A || (e.data = A);
+  if (y === null) L === A || l && e.data === A || (e.data = A);
   else {
-    if (a = a && et.call(e.childNodes), L = r.props || Qe, !l && a != null) for (L = {}, d = 0; d < e.attributes.length; d++) L[(f = e.attributes[d]).name] = f.value;
-    for (d in L) if (f = L[d], d != "children") {
-      if (d == "dangerouslySetInnerHTML") u = f;
-      else if (!(d in A)) {
-        if (d == "value" && "defaultValue" in A || d == "checked" && "defaultChecked" in A) continue;
-        ut(e, d, null, f, i);
+    if (a = a && et.call(e.childNodes), L = r.props || Qe, !l && a != null) for (L = {}, c = 0; c < e.attributes.length; c++) L[(f = e.attributes[c]).name] = f.value;
+    for (c in L) if (f = L[c], c != "children") {
+      if (c == "dangerouslySetInnerHTML") u = f;
+      else if (!(c in A)) {
+        if (c == "value" && "defaultValue" in A || c == "checked" && "defaultChecked" in A) continue;
+        ut(e, c, null, f, i);
       }
     }
-    for (d in A) f = A[d], d == "children" ? h = f : d == "dangerouslySetInnerHTML" ? p = f : d == "value" ? _ = f : d == "checked" ? C = f : l && typeof f != "function" || L[d] === f || ut(e, d, f, L[d], i);
+    for (c in A) f = A[c], c == "children" ? h = f : c == "dangerouslySetInnerHTML" ? p = f : c == "value" ? _ = f : c == "checked" ? m = f : l && typeof f != "function" || L[c] === f || ut(e, c, f, L[c], i);
     if (p) l || u && (p.__html === u.__html || p.__html === e.innerHTML) || (e.innerHTML = p.__html), t.__k = [];
-    else if (u && (e.innerHTML = ""), Jn(t.type === "template" ? e.content : e, tt(h) ? h : [h], t, r, n, b == "foreignObject" ? "http://www.w3.org/1999/xhtml" : i, a, s, a ? a[0] : r.__k && $e(r, 0), l, c), a != null) for (d = a.length; d--; ) K1(a[d]);
-    l || (d = "value", b == "progress" && _ == null ? e.removeAttribute("value") : _ !== void 0 && (_ !== e[d] || b == "progress" && !_ || b == "option" && _ !== L[d]) && ut(e, d, _, L[d], i), d = "checked", C !== void 0 && C !== e[d] && ut(e, d, C, L[d], i));
+    else if (u && (e.innerHTML = ""), Jn(t.type === "template" ? e.content : e, tt(h) ? h : [h], t, r, n, y == "foreignObject" ? "http://www.w3.org/1999/xhtml" : i, a, s, a ? a[0] : r.__k && $e(r, 0), l, d), a != null) for (c = a.length; c--; ) K1(a[c]);
+    l || (c = "value", y == "progress" && _ == null ? e.removeAttribute("value") : _ !== void 0 && (_ !== e[c] || y == "progress" && !_ || y == "option" && _ !== L[c]) && ut(e, c, _, L[c], i), c = "checked", m !== void 0 && m !== e[c] && ut(e, c, m, L[c], i));
   }
   return e;
 }
@@ -248,7 +248,7 @@ function gi(e) {
       n = null;
     }, this.shouldComponentUpdate = function(a) {
       this.props.value !== a.value && n.forEach(function(s) {
-        s.__e = !0, F1(s);
+        s.__e = !0, z1(s);
       });
     }, this.sub = function(a) {
       n.add(a);
@@ -271,71 +271,71 @@ et = Yn.slice, P = { __e: function(e, t, r, n) {
   throw e;
 } }, Un = 0, de.prototype.setState = function(e, t) {
   var r;
-  r = this.__s != null && this.__s !== this.state ? this.__s : this.__s = ce({}, this.state), typeof e == "function" && (e = e(ce({}, r), this.props)), e && ce(r, e), e != null && this.__v && (t && this._sb.push(t), F1(this));
+  r = this.__s != null && this.__s !== this.state ? this.__s : this.__s = ce({}, this.state), typeof e == "function" && (e = e(ce({}, r), this.props)), e && ce(r, e), e != null && this.__v && (t && this._sb.push(t), z1(this));
 }, de.prototype.forceUpdate = function(e) {
-  this.__v && (this.__e = !0, e && this.__h.push(e), F1(this));
+  this.__v && (this.__e = !0, e && this.__h.push(e), z1(this));
 }, de.prototype.render = G, Ae = [], Gn = typeof Promise == "function" ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, Wn = function(e, t) {
   return e.__v.__b - t.__v.__b;
-}, ft.__r = 0, Xn = /(PointerCapture)$|Capture$/i, X1 = 0, B1 = mr(!1), z1 = mr(!0), Kn = 0;
+}, ft.__r = 0, Xn = /(PointerCapture)$|Capture$/i, X1 = 0, B1 = Cr(!1), F1 = Cr(!0), Kn = 0;
 var vi = 0;
 function o(e, t, r, n, i, a) {
   t || (t = {});
-  var s, l, c = t;
-  if ("ref" in c) for (l in c = {}, t) l == "ref" ? s = t[l] : c[l] = t[l];
-  var d = { type: e, props: c, key: r, ref: s, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --vi, __i: -1, __u: 0, __source: i, __self: a };
-  if (typeof e == "function" && (s = e.defaultProps)) for (l in s) c[l] === void 0 && (c[l] = s[l]);
-  return P.vnode && P.vnode(d), d;
+  var s, l, d = t;
+  if ("ref" in d) for (l in d = {}, t) l == "ref" ? s = t[l] : d[l] = t[l];
+  var c = { type: e, props: d, key: r, ref: s, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --vi, __i: -1, __u: 0, __source: i, __self: a };
+  if (typeof e == "function" && (s = e.defaultProps)) for (l in s) d[l] === void 0 && (d[l] = s[l]);
+  return P.vnode && P.vnode(c), c;
 }
-var _e, z, wt, Cr, Oe = 0, io = [], D = P, yr = D.__b, br = D.__r, _r = D.diffed, wr = D.__c, xr = D.unmount, Ar = D.__;
-function ze(e, t) {
-  D.__h && D.__h(z, e, Oe || t), Oe = 0;
-  var r = z.__H || (z.__H = { __: [], __h: [] });
+var _e, F, wt, mr, Oe = 0, io = [], D = P, yr = D.__b, br = D.__r, _r = D.diffed, wr = D.__c, xr = D.unmount, Ar = D.__;
+function Fe(e, t) {
+  D.__h && D.__h(F, e, Oe || t), Oe = 0;
+  var r = F.__H || (F.__H = { __: [], __h: [] });
   return e >= r.__.length && r.__.push({}), r.__[e];
 }
 function N(e) {
   return Oe = 1, J1(uo, e);
 }
 function J1(e, t, r) {
-  var n = ze(_e++, 2);
+  var n = Fe(_e++, 2);
   if (n.t = e, !n.__c && (n.__ = [r ? r(t) : uo(void 0, t), function(l) {
-    var c = n.__N ? n.__N[0] : n.__[0], d = n.t(c, l);
-    c !== d && (n.__N = [d, n.__[1]], n.__c.setState({}));
-  }], n.__c = z, !z.__f)) {
-    var i = function(l, c, d) {
+    var d = n.__N ? n.__N[0] : n.__[0], c = n.t(d, l);
+    d !== c && (n.__N = [c, n.__[1]], n.__c.setState({}));
+  }], n.__c = F, !F.__f)) {
+    var i = function(l, d, c) {
       if (!n.__c.__H) return !0;
       var p = n.__c.__H.__.filter(function(h) {
         return !!h.__c;
       });
       if (p.every(function(h) {
         return !h.__N;
-      })) return !a || a.call(this, l, c, d);
+      })) return !a || a.call(this, l, d, c);
       var u = n.__c.props !== l;
       return p.forEach(function(h) {
         if (h.__N) {
           var f = h.__[0];
           h.__ = h.__N, h.__N = void 0, f !== h.__[0] && (u = !0);
         }
-      }), a && a.call(this, l, c, d) || u;
+      }), a && a.call(this, l, d, c) || u;
     };
-    z.__f = !0;
-    var a = z.shouldComponentUpdate, s = z.componentWillUpdate;
-    z.componentWillUpdate = function(l, c, d) {
+    F.__f = !0;
+    var a = F.shouldComponentUpdate, s = F.componentWillUpdate;
+    F.componentWillUpdate = function(l, d, c) {
       if (this.__e) {
         var p = a;
-        a = void 0, i(l, c, d), a = p;
+        a = void 0, i(l, d, c), a = p;
       }
-      s && s.call(this, l, c, d);
-    }, z.shouldComponentUpdate = i;
+      s && s.call(this, l, d, c);
+    }, F.shouldComponentUpdate = i;
   }
   return n.__N || n.__;
 }
 function M(e, t) {
-  var r = ze(_e++, 3);
-  !D.__s && er(r.__H, t) && (r.__ = e, r.u = t, z.__H.__h.push(r));
+  var r = Fe(_e++, 3);
+  !D.__s && er(r.__H, t) && (r.__ = e, r.u = t, F.__H.__h.push(r));
 }
 function rt(e, t) {
-  var r = ze(_e++, 4);
-  !D.__s && er(r.__H, t) && (r.__ = e, r.u = t, z.__h.push(r));
+  var r = Fe(_e++, 4);
+  !D.__s && er(r.__H, t) && (r.__ = e, r.u = t, F.__h.push(r));
 }
 function ie(e) {
   return Oe = 5, gt(function() {
@@ -356,7 +356,7 @@ function ao(e, t, r) {
   }, r == null ? r : r.concat(e));
 }
 function gt(e, t) {
-  var r = ze(_e++, 7);
+  var r = Fe(_e++, 7);
   return er(r.__H, t) && (r.__ = e(), r.__H = t, r.__h = e), r.__;
 }
 function vt(e, t) {
@@ -365,22 +365,22 @@ function vt(e, t) {
   }, t);
 }
 function so(e) {
-  var t = z.context[e.__c], r = ze(_e++, 9);
-  return r.c = e, t ? (r.__ == null && (r.__ = !0, t.sub(z)), t.props.value) : e.__;
+  var t = F.context[e.__c], r = Fe(_e++, 9);
+  return r.c = e, t ? (r.__ == null && (r.__ = !0, t.sub(F)), t.props.value) : e.__;
 }
 function lo(e, t) {
   D.useDebugValue && D.useDebugValue(t ? t(e) : e);
 }
 function co() {
-  var e = ze(_e++, 11);
+  var e = Fe(_e++, 11);
   if (!e.__) {
-    for (var t = z.__v; t !== null && !t.__m && t.__ !== null; ) t = t.__;
+    for (var t = F.__v; t !== null && !t.__m && t.__ !== null; ) t = t.__;
     var r = t.__m || (t.__m = [0, 0]);
     e.__ = "P" + r[0] + "-" + r[1]++;
   }
   return e.__;
 }
-function mi() {
+function Ci() {
   for (var e; e = io.shift(); ) if (e.__P && e.__H) try {
     e.__H.__h.forEach(pt), e.__H.__h.forEach(H1), e.__H.__h = [];
   } catch (t) {
@@ -388,21 +388,21 @@ function mi() {
   }
 }
 D.__b = function(e) {
-  z = null, yr && yr(e);
+  F = null, yr && yr(e);
 }, D.__ = function(e, t) {
   e && t.__k && t.__k.__m && (e.__m = t.__k.__m), Ar && Ar(e, t);
 }, D.__r = function(e) {
   br && br(e), _e = 0;
-  var t = (z = e.__c).__H;
-  t && (wt === z ? (t.__h = [], z.__h = [], t.__.forEach(function(r) {
+  var t = (F = e.__c).__H;
+  t && (wt === F ? (t.__h = [], F.__h = [], t.__.forEach(function(r) {
     r.__N && (r.__ = r.__N), r.u = r.__N = void 0;
-  })) : (t.__h.forEach(pt), t.__h.forEach(H1), t.__h = [], _e = 0)), wt = z;
+  })) : (t.__h.forEach(pt), t.__h.forEach(H1), t.__h = [], _e = 0)), wt = F;
 }, D.diffed = function(e) {
   _r && _r(e);
   var t = e.__c;
-  t && t.__H && (t.__H.__h.length && (io.push(t) !== 1 && Cr === D.requestAnimationFrame || ((Cr = D.requestAnimationFrame) || Ci)(mi)), t.__H.__.forEach(function(r) {
+  t && t.__H && (t.__H.__h.length && (io.push(t) !== 1 && mr === D.requestAnimationFrame || ((mr = D.requestAnimationFrame) || mi)(Ci)), t.__H.__.forEach(function(r) {
     r.u && (r.__H = r.u), r.u = void 0;
-  })), wt = z = null;
+  })), wt = F = null;
 }, D.__c = function(e, t) {
   t.some(function(r) {
     try {
@@ -427,19 +427,19 @@ D.__b = function(e) {
   }), r.__H = void 0, t && D.__e(t, r.__v));
 };
 var kr = typeof requestAnimationFrame == "function";
-function Ci(e) {
+function mi(e) {
   var t, r = function() {
     clearTimeout(n), kr && cancelAnimationFrame(t), setTimeout(e);
   }, n = setTimeout(r, 100);
   kr && (t = requestAnimationFrame(r));
 }
 function pt(e) {
-  var t = z, r = e.__c;
-  typeof r == "function" && (e.__c = void 0, r()), z = t;
+  var t = F, r = e.__c;
+  typeof r == "function" && (e.__c = void 0, r()), F = t;
 }
 function H1(e) {
-  var t = z;
-  e.__c = e.__(), z = t;
+  var t = F;
+  e.__c = e.__(), F = t;
 }
 function er(e, t) {
   return !e || e.length !== t.length || t.some(function(r, n) {
@@ -451,13 +451,13 @@ function uo(e, t) {
 }
 const Sr = (e) => {
   let t;
-  const r = /* @__PURE__ */ new Set(), n = (d, p) => {
-    const u = typeof d == "function" ? d(t) : d;
+  const r = /* @__PURE__ */ new Set(), n = (c, p) => {
+    const u = typeof c == "function" ? c(t) : c;
     if (!Object.is(u, t)) {
       const h = t;
       t = p ?? (typeof u != "object" || u === null) ? u : Object.assign({}, t, u), r.forEach((f) => f(t, h));
     }
-  }, i = () => t, l = { setState: n, getState: i, getInitialState: () => c, subscribe: (d) => (r.add(d), () => r.delete(d)) }, c = t = e(n, i, l);
+  }, i = () => t, l = { setState: n, getState: i, getInitialState: () => d, subscribe: (c) => (r.add(c), () => r.delete(c)) }, d = t = e(n, i, l);
   return l;
 }, yi = (e) => e ? Sr(e) : Sr;
 function po(e, t) {
@@ -497,7 +497,7 @@ function go(e) {
 function vo() {
   return [!1, fo];
 }
-var mo = rt;
+var Co = rt;
 function D1(e, t) {
   this.props = e, this.context = t;
 }
@@ -542,11 +542,11 @@ P.__e = function(e, t, r, n) {
   xi(e, t, r, n);
 };
 var Pr = P.unmount;
-function Co(e, t, r) {
+function mo(e, t, r) {
   return e && (e.__c && e.__c.__H && (e.__c.__H.__.forEach(function(n) {
     typeof n.__c == "function" && n.__c();
   }), e.__c.__H = null), (e = po({}, e)).__c != null && (e.__c.__P === r && (e.__c.__P = t), e.__c = null), e.__k = e.__k && e.__k.map(function(n) {
-    return Co(n, t, r);
+    return mo(n, t, r);
   })), e;
 }
 function yo(e, t, r) {
@@ -590,11 +590,11 @@ P.unmount = function(e) {
   var l = function() {
     if (!--n.__u) {
       if (n.state.__a) {
-        var c = n.state.__a;
-        n.__v.__k[0] = yo(c, c.__c.__P, c.__c.__O);
+        var d = n.state.__a;
+        n.__v.__k[0] = yo(d, d.__c.__P, d.__c.__O);
       }
-      var d;
-      for (n.setState({ __a: n.__b = null }); d = n.o.pop(); ) d.forceUpdate();
+      var c;
+      for (n.setState({ __a: n.__b = null }); c = n.o.pop(); ) c.forceUpdate();
     }
   };
   n.__u++ || 32 & t.__u || n.setState({ __a: n.__b = n.__v.__k[0] }), e.then(s, s);
@@ -604,7 +604,7 @@ P.unmount = function(e) {
   if (this.__b) {
     if (this.__v.__k) {
       var r = document.createElement("div"), n = this.__v.__k[0].__c;
-      this.__v.__k[0] = Co(this.__b, r, n.__O = n.__P);
+      this.__v.__k[0] = mo(this.__b, r, n.__O = n.__P);
     }
     this.__b = null;
   }
@@ -683,13 +683,13 @@ function Oi() {
 function Bi() {
   return this.cancelBubble;
 }
-function zi() {
+function Fi() {
   return this.defaultPrevented;
 }
 P.event = function(e) {
-  return Ir && (e = Ir(e)), e.persist = Oi, e.isPropagationStopped = Bi, e.isDefaultPrevented = zi, e.nativeEvent = e;
+  return Ir && (e = Ir(e)), e.persist = Oi, e.isPropagationStopped = Bi, e.isDefaultPrevented = Fi, e.nativeEvent = e;
 };
-var tr, Fi = { enumerable: !1, configurable: !0, get: function() {
+var tr, zi = { enumerable: !1, configurable: !0, get: function() {
   return this.class;
 } }, Rr = P.vnode;
 P.vnode = function(e) {
@@ -698,15 +698,15 @@ P.vnode = function(e) {
     for (var s in r) {
       var l = r[s];
       if (!(s === "value" && "defaultValue" in r && l == null || Ii && s === "children" && n === "noscript" || s === "class" || s === "className")) {
-        var c = s.toLowerCase();
-        s === "defaultValue" && "value" in r && r.value == null ? s = "value" : s === "download" && l === !0 ? l = "" : c === "translate" && l === "no" ? l = !1 : c[0] === "o" && c[1] === "n" ? c === "ondoubleclick" ? s = "ondblclick" : c !== "onchange" || n !== "input" && n !== "textarea" || Ri(r.type) ? c === "onfocus" ? s = "onfocusin" : c === "onblur" ? s = "onfocusout" : Pi.test(s) && (s = c) : c = s = "oninput" : a && Mi.test(s) ? s = s.replace(Ei, "-$&").toLowerCase() : l === null && (l = void 0), c === "oninput" && i[s = c] && (s = "oninputCapture"), i[s] = l;
+        var d = s.toLowerCase();
+        s === "defaultValue" && "value" in r && r.value == null ? s = "value" : s === "download" && l === !0 ? l = "" : d === "translate" && l === "no" ? l = !1 : d[0] === "o" && d[1] === "n" ? d === "ondoubleclick" ? s = "ondblclick" : d !== "onchange" || n !== "input" && n !== "textarea" || Ri(r.type) ? d === "onfocus" ? s = "onfocusin" : d === "onblur" ? s = "onfocusout" : Pi.test(s) && (s = d) : d = s = "oninput" : a && Mi.test(s) ? s = s.replace(Ei, "-$&").toLowerCase() : l === null && (l = void 0), d === "oninput" && i[s = d] && (s = "oninputCapture"), i[s] = l;
       }
     }
-    n == "select" && i.multiple && Array.isArray(i.value) && (i.value = fe(r.children).forEach(function(d) {
-      d.props.selected = i.value.indexOf(d.props.value) != -1;
-    })), n == "select" && i.defaultValue != null && (i.value = fe(r.children).forEach(function(d) {
-      d.props.selected = i.multiple ? i.defaultValue.indexOf(d.props.value) != -1 : i.defaultValue == d.props.value;
-    })), r.class && !r.className ? (i.class = r.class, Object.defineProperty(i, "className", Fi)) : (r.className && !r.class || r.class && r.className) && (i.class = i.className = r.className), t.props = i;
+    n == "select" && i.multiple && Array.isArray(i.value) && (i.value = fe(r.children).forEach(function(c) {
+      c.props.selected = i.value.indexOf(c.props.value) != -1;
+    })), n == "select" && i.defaultValue != null && (i.value = fe(r.children).forEach(function(c) {
+      c.props.selected = i.multiple ? i.defaultValue.indexOf(c.props.value) != -1 : i.defaultValue == c.props.value;
+    })), r.class && !r.className ? (i.class = r.class, Object.defineProperty(i, "className", zi)) : (r.className && !r.class || r.class && r.className) && (i.class = i.className = r.className), t.props = i;
   }(e), e.$$typeof = _o, Rr && Rr(e);
 };
 var Nr = P.__r;
@@ -721,21 +721,21 @@ P.diffed = function(e) {
 };
 var Hi = { ReactCurrentDispatcher: { current: { readContext: function(e) {
   return tr.__n[e.__c].props.value;
-}, useCallback: vt, useContext: so, useDebugValue: lo, useDeferredValue: go, useEffect: M, useId: co, useImperativeHandle: ao, useInsertionEffect: mo, useLayoutEffect: rt, useMemo: gt, useReducer: J1, useRef: ie, useState: N, useSyncExternalStore: ho, useTransition: vo } } };
+}, useCallback: vt, useContext: so, useDebugValue: lo, useDeferredValue: go, useEffect: M, useId: co, useImperativeHandle: ao, useInsertionEffect: Co, useLayoutEffect: rt, useMemo: gt, useReducer: J1, useRef: ie, useState: N, useSyncExternalStore: ho, useTransition: vo } } };
 function Ti(e) {
   return ge.bind(null, e);
 }
-function mt(e) {
+function Ct(e) {
   return !!e && e.$$typeof === _o;
 }
 function Di(e) {
-  return mt(e) && e.type === G;
+  return Ct(e) && e.type === G;
 }
 function Zi(e) {
   return !!e && !!e.displayName && (typeof e.displayName == "string" || e.displayName instanceof String) && e.displayName.startsWith("Memo(");
 }
 function Vi(e) {
-  return mt(e) ? fi.apply(null, arguments) : e;
+  return Ct(e) ? fi.apply(null, arguments) : e;
 }
 function qi(e) {
   return !!e.__k && (be(null, e), !0);
@@ -747,7 +747,7 @@ var Ui = function(e, t) {
   return e(t);
 }, Gi = function(e, t) {
   return e(t);
-}, Wi = G, Xi = mt, Or = { useState: N, useId: co, useReducer: J1, useEffect: M, useLayoutEffect: rt, useInsertionEffect: mo, useTransition: vo, useDeferredValue: go, useSyncExternalStore: ho, startTransition: fo, useRef: ie, useImperativeHandle: ao, useMemo: gt, useCallback: vt, useContext: so, useDebugValue: lo, version: "18.3.1", Children: wi, render: Ni, hydrate: $i, unmountComponentAtNode: qi, createPortal: Li, createElement: ge, createContext: gi, createFactory: Ti, cloneElement: Vi, createRef: ci, Fragment: G, isValidElement: mt, isElement: Xi, isFragment: Di, isMemo: Zi, findDOMNode: ji, Component: de, PureComponent: D1, memo: bi, forwardRef: W, flushSync: Gi, unstable_batchedUpdates: Ui, StrictMode: Wi, Suspense: ht, SuspenseList: Ke, lazy: Ai, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: Hi };
+}, Wi = G, Xi = Ct, Or = { useState: N, useId: co, useReducer: J1, useEffect: M, useLayoutEffect: rt, useInsertionEffect: Co, useTransition: vo, useDeferredValue: go, useSyncExternalStore: ho, startTransition: fo, useRef: ie, useImperativeHandle: ao, useMemo: gt, useCallback: vt, useContext: so, useDebugValue: lo, version: "18.3.1", Children: wi, render: Ni, hydrate: $i, unmountComponentAtNode: qi, createPortal: Li, createElement: ge, createContext: gi, createFactory: Ti, cloneElement: Vi, createRef: ci, Fragment: G, isValidElement: Ct, isElement: Xi, isFragment: Di, isMemo: Zi, findDOMNode: ji, Component: de, PureComponent: D1, memo: bi, forwardRef: W, flushSync: Gi, unstable_batchedUpdates: Ui, StrictMode: Wi, Suspense: ht, SuspenseList: Ke, lazy: Ai, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: Hi };
 const Ki = (e) => e;
 function Yi(e, t = Ki) {
   const r = Or.useSyncExternalStore(
@@ -760,7 +760,7 @@ function Yi(e, t = Ki) {
 const Br = (e) => {
   const t = yi(e), r = (n) => Yi(t, n);
   return Object.assign(r, t), r;
-}, Fe = (e) => e ? Br(e) : Br;
+}, ze = (e) => e ? Br(e) : Br;
 function Qi(e, t) {
   let r;
   try {
@@ -771,7 +771,7 @@ function Qi(e, t) {
   return {
     getItem: (i) => {
       var a;
-      const s = (c) => c === null ? null : JSON.parse(c, void 0), l = (a = r.getItem(i)) != null ? a : null;
+      const s = (d) => d === null ? null : JSON.parse(d, void 0), l = (a = r.getItem(i)) != null ? a : null;
       return l instanceof Promise ? l.then(s) : s(l);
     },
     setItem: (i, a) => r.setItem(
@@ -805,39 +805,39 @@ const Z1 = (e) => (t) => {
 }, Ji = (e, t) => (r, n, i) => {
   let a = {
     storage: Qi(() => localStorage),
-    partialize: (C) => C,
+    partialize: (m) => m,
     version: 0,
-    merge: (C, L) => ({
+    merge: (m, L) => ({
       ...L,
-      ...C
+      ...m
     }),
     ...t
   }, s = !1;
-  const l = /* @__PURE__ */ new Set(), c = /* @__PURE__ */ new Set();
-  let d = a.storage;
-  if (!d)
+  const l = /* @__PURE__ */ new Set(), d = /* @__PURE__ */ new Set();
+  let c = a.storage;
+  if (!c)
     return e(
-      (...C) => {
+      (...m) => {
         console.warn(
           `[zustand persist middleware] Unable to update item '${a.name}', the given storage is currently unavailable.`
-        ), r(...C);
+        ), r(...m);
       },
       n,
       i
     );
   const p = () => {
-    const C = a.partialize({ ...n() });
-    return d.setItem(a.name, {
-      state: C,
+    const m = a.partialize({ ...n() });
+    return c.setItem(a.name, {
+      state: m,
       version: a.version
     });
   }, u = i.setState;
-  i.setState = (C, L) => {
-    u(C, L), p();
+  i.setState = (m, L) => {
+    u(m, L), p();
   };
   const h = e(
-    (...C) => {
-      r(...C), p();
+    (...m) => {
+      r(...m), p();
     },
     n,
     i
@@ -845,81 +845,81 @@ const Z1 = (e) => (t) => {
   i.getInitialState = () => h;
   let f;
   const _ = () => {
-    var C, L;
-    if (!d) return;
-    s = !1, l.forEach((b) => {
+    var m, L;
+    if (!c) return;
+    s = !1, l.forEach((y) => {
       var g;
-      return b((g = n()) != null ? g : h);
+      return y((g = n()) != null ? g : h);
     });
-    const A = ((L = a.onRehydrateStorage) == null ? void 0 : L.call(a, (C = n()) != null ? C : h)) || void 0;
-    return Z1(d.getItem.bind(d))(a.name).then((b) => {
-      if (b)
-        if (typeof b.version == "number" && b.version !== a.version) {
+    const A = ((L = a.onRehydrateStorage) == null ? void 0 : L.call(a, (m = n()) != null ? m : h)) || void 0;
+    return Z1(c.getItem.bind(c))(a.name).then((y) => {
+      if (y)
+        if (typeof y.version == "number" && y.version !== a.version) {
           if (a.migrate) {
             const g = a.migrate(
-              b.state,
-              b.version
+              y.state,
+              y.version
             );
-            return g instanceof Promise ? g.then((m) => [!0, m]) : [!0, g];
+            return g instanceof Promise ? g.then((C) => [!0, C]) : [!0, g];
           }
           console.error(
             "State loaded from storage couldn't be migrated since no migrate function was provided"
           );
         } else
-          return [!1, b.state];
+          return [!1, y.state];
       return [!1, void 0];
-    }).then((b) => {
+    }).then((y) => {
       var g;
-      const [m, y] = b;
+      const [C, b] = y;
       if (f = a.merge(
-        y,
+        b,
         (g = n()) != null ? g : h
-      ), r(f, !0), m)
+      ), r(f, !0), C)
         return p();
     }).then(() => {
-      A == null || A(f, void 0), f = n(), s = !0, c.forEach((b) => b(f));
-    }).catch((b) => {
-      A == null || A(void 0, b);
+      A == null || A(f, void 0), f = n(), s = !0, d.forEach((y) => y(f));
+    }).catch((y) => {
+      A == null || A(void 0, y);
     });
   };
   return i.persist = {
-    setOptions: (C) => {
+    setOptions: (m) => {
       a = {
         ...a,
-        ...C
-      }, C.storage && (d = C.storage);
+        ...m
+      }, m.storage && (c = m.storage);
     },
     clearStorage: () => {
-      d == null || d.removeItem(a.name);
+      c == null || c.removeItem(a.name);
     },
     getOptions: () => a,
     rehydrate: () => _(),
     hasHydrated: () => s,
-    onHydrate: (C) => (l.add(C), () => {
-      l.delete(C);
+    onHydrate: (m) => (l.add(m), () => {
+      l.delete(m);
     }),
-    onFinishHydration: (C) => (c.add(C), () => {
-      c.delete(C);
+    onFinishHydration: (m) => (d.add(m), () => {
+      d.delete(m);
     })
   }, a.skipHydration || _(), f || h;
 }, wo = Ji;
 function ea(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
 }
-var At, zr;
+var At, Fr;
 function xo() {
-  if (zr) return At;
-  zr = 1;
+  if (Fr) return At;
+  Fr = 1;
   var e = Object.prototype.toString;
   return At = function(r) {
     var n = e.call(r), i = n === "[object Arguments]";
     return i || (i = n !== "[object Array]" && r !== null && typeof r == "object" && typeof r.length == "number" && r.length >= 0 && e.call(r.callee) === "[object Function]"), i;
   }, At;
 }
-var kt, Fr;
+var kt, zr;
 function ta() {
-  if (Fr) return kt;
-  Fr = 1;
+  if (zr) return kt;
+  zr = 1;
   var e;
   if (!Object.keys) {
     var t = Object.prototype.hasOwnProperty, r = Object.prototype.toString, n = xo(), i = Object.prototype.propertyIsEnumerable, a = !i.call({ toString: null }, "toString"), s = i.call(function() {
@@ -931,10 +931,10 @@ function ta() {
       "isPrototypeOf",
       "propertyIsEnumerable",
       "constructor"
-    ], c = function(h) {
+    ], d = function(h) {
       var f = h.constructor;
       return f && f.prototype === h;
-    }, d = {
+    }, c = {
       $applicationCache: !0,
       $console: !0,
       $external: !0,
@@ -963,9 +963,9 @@ function ta() {
         return !1;
       for (var h in window)
         try {
-          if (!d["$" + h] && t.call(window, h) && window[h] !== null && typeof window[h] == "object")
+          if (!c["$" + h] && t.call(window, h) && window[h] !== null && typeof window[h] == "object")
             try {
-              c(window[h]);
+              d(window[h]);
             } catch {
               return !0;
             }
@@ -975,31 +975,31 @@ function ta() {
       return !1;
     }(), u = function(h) {
       if (typeof window > "u" || !p)
-        return c(h);
+        return d(h);
       try {
-        return c(h);
+        return d(h);
       } catch {
         return !1;
       }
     };
     e = function(f) {
-      var _ = f !== null && typeof f == "object", C = r.call(f) === "[object Function]", L = n(f), A = _ && r.call(f) === "[object String]", b = [];
-      if (!_ && !C && !L)
+      var _ = f !== null && typeof f == "object", m = r.call(f) === "[object Function]", L = n(f), A = _ && r.call(f) === "[object String]", y = [];
+      if (!_ && !m && !L)
         throw new TypeError("Object.keys called on a non-object");
-      var g = s && C;
+      var g = s && m;
       if (A && f.length > 0 && !t.call(f, 0))
-        for (var m = 0; m < f.length; ++m)
-          b.push(String(m));
+        for (var C = 0; C < f.length; ++C)
+          y.push(String(C));
       if (L && f.length > 0)
-        for (var y = 0; y < f.length; ++y)
-          b.push(String(y));
+        for (var b = 0; b < f.length; ++b)
+          y.push(String(b));
       else
         for (var v in f)
-          !(g && v === "prototype") && t.call(f, v) && b.push(String(v));
+          !(g && v === "prototype") && t.call(f, v) && y.push(String(v));
       if (a)
         for (var S = u(f), I = 0; I < l.length; ++I)
-          !(S && l[I] === "constructor") && t.call(f, l[I]) && b.push(l[I]);
-      return b;
+          !(S && l[I] === "constructor") && t.call(f, l[I]) && y.push(l[I]);
+      return y;
     };
   }
   return kt = e, kt;
@@ -1017,8 +1017,8 @@ function ra() {
         var l = Object.keys(arguments);
         return l && l.length === arguments.length;
       }(1, 2);
-      s || (Object.keys = function(c) {
-        return t(c) ? i(e.call(c)) : i(c);
+      s || (Object.keys = function(d) {
+        return t(d) ? i(e.call(d)) : i(d);
       });
     } else
       Object.keys = n;
@@ -1026,7 +1026,7 @@ function ra() {
   }, St = n, St;
 }
 var Lt, Tr;
-function Ct() {
+function mt() {
   if (Tr) return Lt;
   Tr = 1;
   var e = Object.defineProperty || !1;
@@ -1067,7 +1067,7 @@ var Rt, jr;
 function ko() {
   if (jr) return Rt;
   jr = 1;
-  var e = /* @__PURE__ */ Ct(), t = /* @__PURE__ */ Ao(), r = /* @__PURE__ */ nt(), n = /* @__PURE__ */ yt();
+  var e = /* @__PURE__ */ mt(), t = /* @__PURE__ */ Ao(), r = /* @__PURE__ */ nt(), n = /* @__PURE__ */ yt();
   return Rt = function(a, s, l) {
     if (!a || typeof a != "object" && typeof a != "function")
       throw new r("`obj` must be an object or a function`");
@@ -1081,15 +1081,15 @@ function ko() {
       throw new r("`nonConfigurable`, if provided, must be a boolean or null");
     if (arguments.length > 6 && typeof arguments[6] != "boolean")
       throw new r("`loose`, if provided, must be a boolean");
-    var c = arguments.length > 3 ? arguments[3] : null, d = arguments.length > 4 ? arguments[4] : null, p = arguments.length > 5 ? arguments[5] : null, u = arguments.length > 6 ? arguments[6] : !1, h = !!n && n(a, s);
+    var d = arguments.length > 3 ? arguments[3] : null, c = arguments.length > 4 ? arguments[4] : null, p = arguments.length > 5 ? arguments[5] : null, u = arguments.length > 6 ? arguments[6] : !1, h = !!n && n(a, s);
     if (e)
       e(a, s, {
         configurable: p === null && h ? h.configurable : !p,
-        enumerable: c === null && h ? h.enumerable : !c,
+        enumerable: d === null && h ? h.enumerable : !d,
         value: l,
-        writable: d === null && h ? h.writable : !d
+        writable: c === null && h ? h.writable : !c
       });
-    else if (u || !c && !d && !p)
+    else if (u || !d && !c && !p)
       a[s] = l;
     else
       throw new t("This environment does not support defining a property as non-configurable, non-writable, or non-enumerable.");
@@ -1099,7 +1099,7 @@ var Nt, Ur;
 function So() {
   if (Ur) return Nt;
   Ur = 1;
-  var e = /* @__PURE__ */ Ct(), t = function() {
+  var e = /* @__PURE__ */ mt(), t = function() {
     return !!e;
   };
   return t.hasArrayLengthDefineBug = function() {
@@ -1116,36 +1116,36 @@ var $t, Gr;
 function Lo() {
   if (Gr) return $t;
   Gr = 1;
-  var e = ra(), t = typeof Symbol == "function" && typeof Symbol("foo") == "symbol", r = Object.prototype.toString, n = Array.prototype.concat, i = /* @__PURE__ */ ko(), a = function(d) {
-    return typeof d == "function" && r.call(d) === "[object Function]";
-  }, s = /* @__PURE__ */ So()(), l = function(d, p, u, h) {
-    if (p in d) {
+  var e = ra(), t = typeof Symbol == "function" && typeof Symbol("foo") == "symbol", r = Object.prototype.toString, n = Array.prototype.concat, i = /* @__PURE__ */ ko(), a = function(c) {
+    return typeof c == "function" && r.call(c) === "[object Function]";
+  }, s = /* @__PURE__ */ So()(), l = function(c, p, u, h) {
+    if (p in c) {
       if (h === !0) {
-        if (d[p] === u)
+        if (c[p] === u)
           return;
       } else if (!a(h) || !h())
         return;
     }
-    s ? i(d, p, u, !0) : i(d, p, u);
-  }, c = function(d, p) {
+    s ? i(c, p, u, !0) : i(c, p, u);
+  }, d = function(c, p) {
     var u = arguments.length > 2 ? arguments[2] : {}, h = e(p);
     t && (h = n.call(h, Object.getOwnPropertySymbols(p)));
     for (var f = 0; f < h.length; f += 1)
-      l(d, h[f], p[h[f]], u[h[f]]);
+      l(c, h[f], p[h[f]], u[h[f]]);
   };
-  return c.supportsDescriptors = !!s, $t = c, $t;
+  return d.supportsDescriptors = !!s, $t = d, $t;
 }
 var Ot = { exports: {} }, Bt, Wr;
 function Mo() {
   return Wr || (Wr = 1, Bt = Object), Bt;
 }
-var zt, Xr;
+var Ft, Xr;
 function oa() {
-  return Xr || (Xr = 1, zt = Error), zt;
+  return Xr || (Xr = 1, Ft = Error), Ft;
 }
-var Ft, Kr;
+var zt, Kr;
 function ia() {
-  return Kr || (Kr = 1, Ft = EvalError), Ft;
+  return Kr || (Kr = 1, zt = EvalError), zt;
 }
 var Ht, Yr;
 function aa() {
@@ -1199,7 +1199,7 @@ function va() {
   }, Xt;
 }
 var Kt, cn;
-function ma() {
+function Ca() {
   return cn || (cn = 1, Kt = function() {
     if (typeof Symbol != "function" || typeof Object.getOwnPropertySymbols != "function")
       return !1;
@@ -1229,10 +1229,10 @@ function ma() {
   }), Kt;
 }
 var Yt, dn;
-function Ca() {
+function ma() {
   if (dn) return Yt;
   dn = 1;
-  var e = typeof Symbol < "u" && Symbol, t = ma();
+  var e = typeof Symbol < "u" && Symbol, t = Ca();
   return Yt = function() {
     return typeof e != "function" || typeof Symbol != "function" || typeof e("foo") != "symbol" || typeof Symbol("bar") != "symbol" ? !1 : t();
   }, Yt;
@@ -1252,43 +1252,43 @@ var e1, hn;
 function ya() {
   if (hn) return e1;
   hn = 1;
-  var e = "Function.prototype.bind called on incompatible ", t = Object.prototype.toString, r = Math.max, n = "[object Function]", i = function(c, d) {
-    for (var p = [], u = 0; u < c.length; u += 1)
-      p[u] = c[u];
-    for (var h = 0; h < d.length; h += 1)
-      p[h + c.length] = d[h];
+  var e = "Function.prototype.bind called on incompatible ", t = Object.prototype.toString, r = Math.max, n = "[object Function]", i = function(d, c) {
+    for (var p = [], u = 0; u < d.length; u += 1)
+      p[u] = d[u];
+    for (var h = 0; h < c.length; h += 1)
+      p[h + d.length] = c[h];
     return p;
-  }, a = function(c, d) {
-    for (var p = [], u = d, h = 0; u < c.length; u += 1, h += 1)
-      p[h] = c[u];
+  }, a = function(d, c) {
+    for (var p = [], u = c, h = 0; u < d.length; u += 1, h += 1)
+      p[h] = d[u];
     return p;
-  }, s = function(l, c) {
-    for (var d = "", p = 0; p < l.length; p += 1)
-      d += l[p], p + 1 < l.length && (d += c);
-    return d;
+  }, s = function(l, d) {
+    for (var c = "", p = 0; p < l.length; p += 1)
+      c += l[p], p + 1 < l.length && (c += d);
+    return c;
   };
-  return e1 = function(c) {
-    var d = this;
-    if (typeof d != "function" || t.apply(d) !== n)
-      throw new TypeError(e + d);
+  return e1 = function(d) {
+    var c = this;
+    if (typeof c != "function" || t.apply(c) !== n)
+      throw new TypeError(e + c);
     for (var p = a(arguments, 1), u, h = function() {
       if (this instanceof u) {
-        var A = d.apply(
+        var A = c.apply(
           this,
           i(p, arguments)
         );
         return Object(A) === A ? A : this;
       }
-      return d.apply(
-        c,
+      return c.apply(
+        d,
         i(p, arguments)
       );
-    }, f = r(0, d.length - p.length), _ = [], C = 0; C < f; C++)
-      _[C] = "$" + C;
-    if (u = Function("binder", "return function (" + s(_, ",") + "){ return binder.apply(this,arguments); }")(h), d.prototype) {
+    }, f = r(0, c.length - p.length), _ = [], m = 0; m < f; m++)
+      _[m] = "$" + m;
+    if (u = Function("binder", "return function (" + s(_, ",") + "){ return binder.apply(this,arguments); }")(h), c.prototype) {
       var L = function() {
       };
-      L.prototype = d.prototype, u.prototype = new L(), L.prototype = null;
+      L.prototype = c.prototype, u.prototype = new L(), L.prototype = null;
     }
     return u;
   }, e1;
@@ -1308,14 +1308,14 @@ var n1, vn;
 function nr() {
   return vn || (vn = 1, n1 = Function.prototype.apply), n1;
 }
-var o1, mn;
+var o1, Cn;
 function ba() {
-  return mn || (mn = 1, o1 = typeof Reflect < "u" && Reflect && Reflect.apply), o1;
+  return Cn || (Cn = 1, o1 = typeof Reflect < "u" && Reflect && Reflect.apply), o1;
 }
-var i1, Cn;
+var i1, mn;
 function Io() {
-  if (Cn) return i1;
-  Cn = 1;
+  if (mn) return i1;
+  mn = 1;
   var e = ot(), t = nr(), r = rr(), n = ba();
   return i1 = n || e.call(r, t), i1;
 }
@@ -1380,34 +1380,34 @@ var d1, xn;
 function No() {
   if (xn) return d1;
   xn = 1;
-  var e, t = /* @__PURE__ */ Mo(), r = /* @__PURE__ */ oa(), n = /* @__PURE__ */ ia(), i = /* @__PURE__ */ aa(), a = /* @__PURE__ */ sa(), s = /* @__PURE__ */ Ao(), l = /* @__PURE__ */ nt(), c = /* @__PURE__ */ la(), d = /* @__PURE__ */ ca(), p = /* @__PURE__ */ da(), u = /* @__PURE__ */ ua(), h = /* @__PURE__ */ pa(), f = /* @__PURE__ */ ha(), _ = /* @__PURE__ */ fa(), C = /* @__PURE__ */ va(), L = Function, A = function(se) {
+  var e, t = /* @__PURE__ */ Mo(), r = /* @__PURE__ */ oa(), n = /* @__PURE__ */ ia(), i = /* @__PURE__ */ aa(), a = /* @__PURE__ */ sa(), s = /* @__PURE__ */ Ao(), l = /* @__PURE__ */ nt(), d = /* @__PURE__ */ la(), c = /* @__PURE__ */ ca(), p = /* @__PURE__ */ da(), u = /* @__PURE__ */ ua(), h = /* @__PURE__ */ pa(), f = /* @__PURE__ */ ha(), _ = /* @__PURE__ */ fa(), m = /* @__PURE__ */ va(), L = Function, A = function(se) {
     try {
       return L('"use strict"; return (' + se + ").constructor;")();
     } catch {
     }
-  }, b = /* @__PURE__ */ yt(), g = /* @__PURE__ */ Ct(), m = function() {
+  }, y = /* @__PURE__ */ yt(), g = /* @__PURE__ */ mt(), C = function() {
     throw new l();
-  }, y = b ? function() {
+  }, b = y ? function() {
     try {
-      return arguments.callee, m;
+      return arguments.callee, C;
     } catch {
       try {
-        return b(arguments, "callee").get;
+        return y(arguments, "callee").get;
       } catch {
-        return m;
+        return C;
       }
     }
-  }() : m, v = Ca()(), S = wa(), I = Eo(), B = Po(), J = nr(), H = rr(), F = {}, ne = typeof Uint8Array > "u" || !S ? e : S(Uint8Array), q = {
+  }() : C, v = ma()(), S = wa(), I = Eo(), B = Po(), J = nr(), H = rr(), z = {}, ne = typeof Uint8Array > "u" || !S ? e : S(Uint8Array), q = {
     __proto__: null,
     "%AggregateError%": typeof AggregateError > "u" ? e : AggregateError,
     "%Array%": Array,
     "%ArrayBuffer%": typeof ArrayBuffer > "u" ? e : ArrayBuffer,
     "%ArrayIteratorPrototype%": v && S ? S([][Symbol.iterator]()) : e,
     "%AsyncFromSyncIteratorPrototype%": e,
-    "%AsyncFunction%": F,
-    "%AsyncGenerator%": F,
-    "%AsyncGeneratorFunction%": F,
-    "%AsyncIteratorPrototype%": F,
+    "%AsyncFunction%": z,
+    "%AsyncGenerator%": z,
+    "%AsyncGeneratorFunction%": z,
+    "%AsyncIteratorPrototype%": z,
     "%Atomics%": typeof Atomics > "u" ? e : Atomics,
     "%BigInt%": typeof BigInt > "u" ? e : BigInt,
     "%BigInt64Array%": typeof BigInt64Array > "u" ? e : BigInt64Array,
@@ -1428,7 +1428,7 @@ function No() {
     "%Float64Array%": typeof Float64Array > "u" ? e : Float64Array,
     "%FinalizationRegistry%": typeof FinalizationRegistry > "u" ? e : FinalizationRegistry,
     "%Function%": L,
-    "%GeneratorFunction%": F,
+    "%GeneratorFunction%": z,
     "%Int8Array%": typeof Int8Array > "u" ? e : Int8Array,
     "%Int16Array%": typeof Int16Array > "u" ? e : Int16Array,
     "%Int32Array%": typeof Int32Array > "u" ? e : Int32Array,
@@ -1441,7 +1441,7 @@ function No() {
     "%Math%": Math,
     "%Number%": Number,
     "%Object%": t,
-    "%Object.getOwnPropertyDescriptor%": b,
+    "%Object.getOwnPropertyDescriptor%": y,
     "%parseFloat%": parseFloat,
     "%parseInt%": parseInt,
     "%Promise%": typeof Promise > "u" ? e : Promise,
@@ -1457,14 +1457,14 @@ function No() {
     "%StringIteratorPrototype%": v && S ? S(""[Symbol.iterator]()) : e,
     "%Symbol%": v ? Symbol : e,
     "%SyntaxError%": s,
-    "%ThrowTypeError%": y,
+    "%ThrowTypeError%": b,
     "%TypedArray%": ne,
     "%TypeError%": l,
     "%Uint8Array%": typeof Uint8Array > "u" ? e : Uint8Array,
     "%Uint8ClampedArray%": typeof Uint8ClampedArray > "u" ? e : Uint8ClampedArray,
     "%Uint16Array%": typeof Uint16Array > "u" ? e : Uint16Array,
     "%Uint32Array%": typeof Uint32Array > "u" ? e : Uint32Array,
-    "%URIError%": c,
+    "%URIError%": d,
     "%WeakMap%": typeof WeakMap > "u" ? e : WeakMap,
     "%WeakRef%": typeof WeakRef > "u" ? e : WeakRef,
     "%WeakSet%": typeof WeakSet > "u" ? e : WeakSet,
@@ -1472,13 +1472,13 @@ function No() {
     "%Function.prototype.apply%": J,
     "%Object.defineProperty%": g,
     "%Object.getPrototypeOf%": I,
-    "%Math.abs%": d,
+    "%Math.abs%": c,
     "%Math.floor%": p,
     "%Math.max%": u,
     "%Math.min%": h,
     "%Math.pow%": f,
     "%Math.round%": _,
-    "%Math.sign%": C,
+    "%Math.sign%": m,
     "%Reflect.getPrototypeOf%": B
   };
   if (S)
@@ -1504,7 +1504,7 @@ function No() {
       te && S && (ee = S(te.prototype));
     }
     return q[V] = ee, ee;
-  }, me = {
+  }, Ce = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -1569,9 +1569,9 @@ function No() {
     }), te;
   }, si = function(V, ee) {
     var j = V, te;
-    if (Z(me, j) && (te = me[j], j = "%" + te[0] + "%"), Z(q, j)) {
+    if (Z(Ce, j) && (te = Ce[j], j = "%" + te[0] + "%"), Z(q, j)) {
       var le = q[j];
-      if (le === F && (le = O(j)), typeof le > "u" && !ee)
+      if (le === z && (le = O(j)), typeof le > "u" && !ee)
         throw new l("intrinsic " + V + " exists, but is not available. Please file an issue!");
       return {
         alias: te,
@@ -1602,8 +1602,8 @@ function No() {
             throw new l("base intrinsic for " + V + " exists, but the property is not available.");
           return;
         }
-        if (b && st + 1 >= j.length) {
-          var dt = b(oe, pe);
+        if (y && st + 1 >= j.length) {
+          var dt = y(oe, pe);
           qe = !!dt, qe && "get" in dt && !("originalValue" in dt.get) ? oe = dt.get : oe = oe[pe];
         } else
           qe = Z(oe, pe), oe = oe[pe];
@@ -1618,28 +1618,28 @@ function xa() {
   if (An) return u1;
   An = 1;
   var e = /* @__PURE__ */ No(), t = /* @__PURE__ */ ko(), r = /* @__PURE__ */ So()(), n = /* @__PURE__ */ yt(), i = /* @__PURE__ */ nt(), a = e("%Math.floor%");
-  return u1 = function(l, c) {
+  return u1 = function(l, d) {
     if (typeof l != "function")
       throw new i("`fn` is not a function");
-    if (typeof c != "number" || c < 0 || c > 4294967295 || a(c) !== c)
+    if (typeof d != "number" || d < 0 || d > 4294967295 || a(d) !== d)
       throw new i("`length` must be a positive 32-bit integer");
-    var d = arguments.length > 2 && !!arguments[2], p = !0, u = !0;
+    var c = arguments.length > 2 && !!arguments[2], p = !0, u = !0;
     if ("length" in l && n) {
       var h = n(l, "length");
       h && !h.configurable && (p = !1), h && !h.writable && (u = !1);
     }
-    return (p || u || !d) && (r ? t(
+    return (p || u || !c) && (r ? t(
       /** @type {Parameters<define>[0]} */
       l,
       "length",
-      c,
+      d,
       !0,
       !0
     ) : t(
       /** @type {Parameters<define>[0]} */
       l,
       "length",
-      c
+      d
     )), l;
   }, u1;
 }
@@ -1655,12 +1655,12 @@ function Aa() {
 var Sn;
 function ka() {
   return Sn || (Sn = 1, function(e) {
-    var t = /* @__PURE__ */ xa(), r = /* @__PURE__ */ Ct(), n = or(), i = Aa();
+    var t = /* @__PURE__ */ xa(), r = /* @__PURE__ */ mt(), n = or(), i = Aa();
     e.exports = function(s) {
-      var l = n(arguments), c = s.length - (arguments.length - 1);
+      var l = n(arguments), d = s.length - (arguments.length - 1);
       return t(
         l,
-        1 + (c > 0 ? c : 0),
+        1 + (d > 0 ? d : 0),
         !0
       );
     }, r ? r(e.exports, "apply", { value: i }) : e.exports.apply = i;
@@ -1700,8 +1700,8 @@ function $o() {
   var e = /* @__PURE__ */ Sa(), t = /* @__PURE__ */ La(), r = t("Object.prototype.propertyIsEnumerable"), n = t("Array.prototype.push");
   return g1 = function(a) {
     var s = e(a), l = [];
-    for (var c in s)
-      r(s, c) && n(l, [c, s[c]]);
+    for (var d in s)
+      r(s, d) && n(l, [d, s[d]]);
     return l;
   }, g1;
 }
@@ -1714,30 +1714,30 @@ function Oo() {
     return typeof Object.entries == "function" ? Object.entries : e;
   }, v1;
 }
-var m1, In;
+var C1, In;
 function Ma() {
-  if (In) return m1;
+  if (In) return C1;
   In = 1;
   var e = Oo(), t = Lo();
-  return m1 = function() {
+  return C1 = function() {
     var n = e();
     return t(Object, { entries: n }, {
       entries: function() {
         return Object.entries !== n;
       }
     }), n;
-  }, m1;
+  }, C1;
 }
-var C1, Rn;
+var m1, Rn;
 function Pa() {
-  if (Rn) return C1;
+  if (Rn) return m1;
   Rn = 1;
   var e = Lo(), t = ka(), r = $o(), n = Oo(), i = Ma(), a = t(n(), Object);
   return e(a, {
     getPolyfill: n,
     implementation: r,
     shim: i
-  }), C1 = a, C1;
+  }), m1 = a, m1;
 }
 var y1, Nn;
 function Ea() {
@@ -1749,10 +1749,10 @@ function Ea() {
     var n = function(a, s) {
       var l = arguments.length;
       s = new Array(l > 1 ? l - 1 : 0);
-      for (var c = 1; c < l; c++)
-        s[c - 1] = arguments[c];
-      var d = 0, p = "Warning: " + a.replace(/%s/g, function() {
-        return s[d++];
+      for (var d = 1; d < l; d++)
+        s[d - 1] = arguments[d];
+      var c = 0, p = "Warning: " + a.replace(/%s/g, function() {
+        return s[c++];
       });
       typeof console < "u" && console.error(p);
       try {
@@ -1763,8 +1763,8 @@ function Ea() {
     r = function(i, a, s) {
       var l = arguments.length;
       s = new Array(l > 2 ? l - 2 : 0);
-      for (var c = 2; c < l; c++)
-        s[c - 2] = arguments[c];
+      for (var d = 2; d < l; d++)
+        s[d - 2] = arguments[d];
       if (a === void 0)
         throw new Error(
           "`warning(condition, format, ...args)` requires a warning message argument"
@@ -1778,19 +1778,19 @@ var b1, $n;
 function Ia() {
   if ($n) return b1;
   $n = 1;
-  var e = Pa(), t = Ea(), r = /* @__PURE__ */ Ro(), n = function(m) {
-    t(!1, m);
+  var e = Pa(), t = Ea(), r = /* @__PURE__ */ Ro(), n = function(C) {
+    t(!1, C);
   }, i = String.prototype.replace, a = String.prototype.split, s = "||||", l = function(g) {
-    var m = g % 100, y = m % 10;
-    return m !== 11 && y === 1 ? 0 : 2 <= y && y <= 4 && !(m >= 12 && m <= 14) ? 1 : 2;
-  }, c = {
+    var C = g % 100, b = C % 10;
+    return C !== 11 && b === 1 ? 0 : 2 <= b && b <= 4 && !(C >= 12 && C <= 14) ? 1 : 2;
+  }, d = {
     // Mapping from pluralization group plural logic.
     pluralTypes: {
       arabic: function(g) {
         if (g < 3)
           return g;
-        var m = g % 100;
-        return m >= 3 && m <= 10 ? 3 : m >= 11 ? 4 : 5;
+        var C = g % 100;
+        return C >= 3 && C <= 10 ? 3 : C >= 11 ? 4 : 5;
       },
       bosnian_serbian: l,
       chinese: function() {
@@ -1813,21 +1813,21 @@ function Ia() {
       polish: function(g) {
         if (g === 1)
           return 0;
-        var m = g % 10;
-        return 2 <= m && m <= 4 && (g % 100 < 10 || g % 100 >= 20) ? 1 : 2;
+        var C = g % 10;
+        return 2 <= C && C <= 4 && (g % 100 < 10 || g % 100 >= 20) ? 1 : 2;
       },
       icelandic: function(g) {
         return g % 10 !== 1 || g % 100 === 11 ? 1 : 0;
       },
       slovenian: function(g) {
-        var m = g % 100;
-        return m === 1 ? 0 : m === 2 ? 1 : m === 3 || m === 4 ? 2 : 3;
+        var C = g % 100;
+        return C === 1 ? 0 : C === 2 ? 1 : C === 3 || C === 4 ? 2 : 3;
       },
       romanian: function(g) {
         if (g === 1)
           return 0;
-        var m = g % 100;
-        return g === 0 || m >= 2 && m <= 19 ? 1 : 2;
+        var C = g % 100;
+        return g === 0 || C >= 2 && C <= 19 ? 1 : 2;
       },
       ukrainian: l
     },
@@ -1851,85 +1851,85 @@ function Ia() {
       ukrainian: ["uk", "ua"]
     }
   };
-  function d(g) {
-    for (var m = {}, y = e(g), v = 0; v < y.length; v += 1)
-      for (var S = y[v][0], I = y[v][1], B = 0; B < I.length; B += 1)
-        m[I[B]] = S;
-    return m;
+  function c(g) {
+    for (var C = {}, b = e(g), v = 0; v < b.length; v += 1)
+      for (var S = b[v][0], I = b[v][1], B = 0; B < I.length; B += 1)
+        C[I[B]] = S;
+    return C;
   }
-  function p(g, m) {
-    var y = d(g.pluralTypeToLanguages);
-    return y[m] || y[a.call(m, /-/, 1)[0]] || y.en;
+  function p(g, C) {
+    var b = c(g.pluralTypeToLanguages);
+    return b[C] || b[a.call(C, /-/, 1)[0]] || b.en;
   }
-  function u(g, m, y) {
-    return g.pluralTypes[m](y);
+  function u(g, C, b) {
+    return g.pluralTypes[C](b);
   }
   function h() {
     var g = {};
-    return function(m, y) {
-      var v = g[y];
-      return v && !m.pluralTypes[v] && (v = null, g[y] = v), v || (v = p(m, y), v && (g[y] = v)), v;
+    return function(C, b) {
+      var v = g[b];
+      return v && !C.pluralTypes[v] && (v = null, g[b] = v), v || (v = p(C, b), v && (g[b] = v)), v;
     };
   }
   function f(g) {
     return g.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
   function _(g) {
-    var m = g && g.prefix || "%{", y = g && g.suffix || "}";
-    if (m === s || y === s)
+    var C = g && g.prefix || "%{", b = g && g.suffix || "}";
+    if (C === s || b === s)
       throw new RangeError('"' + s + '" token is reserved for pluralization');
-    return new RegExp(f(m) + "(.*?)" + f(y), "g");
+    return new RegExp(f(C) + "(.*?)" + f(b), "g");
   }
-  var C = h(), L = /%\{(.*?)\}/g;
-  function A(g, m, y, v, S, I) {
+  var m = h(), L = /%\{(.*?)\}/g;
+  function A(g, C, b, v, S, I) {
     if (typeof g != "string")
       throw new TypeError("Polyglot.transformPhrase expects argument #1 to be string");
-    if (m == null)
+    if (C == null)
       return g;
-    var B = g, J = v || L, H = I || i, F = typeof m == "number" ? { smart_count: m } : m;
-    if (F.smart_count != null && g) {
-      var ne = S || c, q = a.call(g, s), ae = y || "en", O = C(ne, ae), me = u(
+    var B = g, J = v || L, H = I || i, z = typeof C == "number" ? { smart_count: C } : C;
+    if (z.smart_count != null && g) {
+      var ne = S || d, q = a.call(g, s), ae = b || "en", O = m(ne, ae), Ce = u(
         ne,
         O,
-        F.smart_count
+        z.smart_count
       );
-      B = i.call(q[me] || q[0], /^[^\S]*|[^\S]*$/g, "");
+      B = i.call(q[Ce] || q[0], /^[^\S]*|[^\S]*$/g, "");
     }
     return B = H.call(B, J, function(T, Z) {
-      return !r(F, Z) || F[Z] == null ? T : F[Z];
+      return !r(z, Z) || z[Z] == null ? T : z[Z];
     }), B;
   }
-  function b(g) {
-    var m = g || {};
-    this.phrases = {}, this.extend(m.phrases || {}), this.currentLocale = m.locale || "en";
-    var y = m.allowMissing ? A : null;
-    this.onMissingKey = typeof m.onMissingKey == "function" ? m.onMissingKey : y, this.warn = m.warn || n, this.replaceImplementation = m.replace || i, this.tokenRegex = _(m.interpolation), this.pluralRules = m.pluralRules || c;
+  function y(g) {
+    var C = g || {};
+    this.phrases = {}, this.extend(C.phrases || {}), this.currentLocale = C.locale || "en";
+    var b = C.allowMissing ? A : null;
+    this.onMissingKey = typeof C.onMissingKey == "function" ? C.onMissingKey : b, this.warn = C.warn || n, this.replaceImplementation = C.replace || i, this.tokenRegex = _(C.interpolation), this.pluralRules = C.pluralRules || d;
   }
-  return b.prototype.locale = function(g) {
+  return y.prototype.locale = function(g) {
     return g && (this.currentLocale = g), this.currentLocale;
-  }, b.prototype.extend = function(g, m) {
-    for (var y = e(g || {}), v = 0; v < y.length; v += 1) {
-      var S = y[v][0], I = y[v][1], B = m ? m + "." + S : S;
+  }, y.prototype.extend = function(g, C) {
+    for (var b = e(g || {}), v = 0; v < b.length; v += 1) {
+      var S = b[v][0], I = b[v][1], B = C ? C + "." + S : S;
       typeof I == "object" ? this.extend(I, B) : this.phrases[B] = I;
     }
-  }, b.prototype.unset = function(g, m) {
+  }, y.prototype.unset = function(g, C) {
     if (typeof g == "string")
       delete this.phrases[g];
     else
-      for (var y = e(g || {}), v = 0; v < y.length; v += 1) {
-        var S = y[v][0], I = y[v][1], B = m ? m + "." + S : S;
+      for (var b = e(g || {}), v = 0; v < b.length; v += 1) {
+        var S = b[v][0], I = b[v][1], B = C ? C + "." + S : S;
         typeof I == "object" ? this.unset(I, B) : delete this.phrases[B];
       }
-  }, b.prototype.clear = function() {
+  }, y.prototype.clear = function() {
     this.phrases = {};
-  }, b.prototype.replace = function(g) {
+  }, y.prototype.replace = function(g) {
     this.clear(), this.extend(g);
-  }, b.prototype.t = function(g, m) {
-    var y, v, S = m ?? {};
+  }, y.prototype.t = function(g, C) {
+    var b, v, S = C ?? {};
     if (typeof this.phrases[g] == "string")
-      y = this.phrases[g];
+      b = this.phrases[g];
     else if (typeof S._ == "string")
-      y = S._;
+      b = S._;
     else if (this.onMissingKey) {
       var I = this.onMissingKey;
       v = I(
@@ -1942,28 +1942,28 @@ function Ia() {
       );
     } else
       this.warn('Missing translation for key: "' + g + '"'), v = g;
-    return typeof y == "string" && (v = A(
-      y,
+    return typeof b == "string" && (v = A(
+      b,
       S,
       this.currentLocale,
       this.tokenRegex,
       this.pluralRules,
       this.replaceImplementation
     )), v;
-  }, b.prototype.has = function(g) {
+  }, y.prototype.has = function(g) {
     return r(this.phrases, g);
-  }, b.transformPhrase = function(m, y, v) {
-    return A(m, y, v);
-  }, b1 = b, b1;
+  }, y.transformPhrase = function(C, b, v) {
+    return A(C, b, v);
+  }, b1 = y, b1;
 }
 var Ra = Ia();
-const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = "Colapsar", Ba = "Diminuir brilho", za = "Leitor de Texto ativado", Fa = "Filtro de daltonismo", Ha = "Desativar Som", Ta = "Fonte para Dislexia", Da = "Leitor de Texto", Za = "Aumentar Fonte", Va = "Espaço entre letras", qa = "Espaço entre linhas", ja = "Destacar links", Ua = "Destacar títulos", Ga = "Modo Leitor", Wa = "Pausar animações", Xa = "Ocultar imagens", Ka = "Guia de leitura", Ya = "Máscara de leitura", Qa = "Cursor grande", Ja = "Cor do texto", e2 = "Dicionário", t2 = "Personalizada", r2 = "Médio", n2 = "Grande", o2 = "Muito grande", i2 = "Desativado", a2 = "Em breve", s2 = "Ativado", l2 = "Tela inteira", c2 = "Normal", d2 = "Claro", u2 = "Escuro", p2 = "Configurações", h2 = "Resetar", f2 = "Alterar idioma", g2 = "Sem suporte", v2 = "O sintetizador de voz não é suportado pelo seu navegador", m2 = "Interagir", C2 = "Acessar link", y2 = "Mover para cima", b2 = "Mover para baixo", _2 = { blind: "Cego", low_vision: "Baixa visão", cognitive: "Cognitivo", dyslexic: "Dislexia", color_blind: "Daltônico", mobility: "Mobilidade" }, w2 = { reduce_brightness: "Diminuir o brilho da tela", color_blind_filter: "Ativar filtro para daltonismo", disable_sound: "Desativar o som de vídeos e audios", dyslexic_font: "Ativar font para dyslexia", "dictionary.search": "Pesquisar no dicionário", definition_to_libras: "Ler definição em Libras", read_definition: "Ler definição", dictionary: "Dicionário simplificado", text_reader: "Ouvir o texto", font_increase: "Aumentar o tamanho da fonte", letter_spacing: "Modificar espaço entre as letras", line_spacing: "Modificar espaço entre linhas", highlight_links: "Destacar links", highlight_titles: "Destacar títulos", reset: "Resetar definições", close: "Fechar", change_language: "Alterar o idioma da ferramenta", reader_mode: "Ativar modo leitor", toggle_theme: "Alterar o tema", pause_animations: "Pausar animações", hide_images: "Esconder todas as imagens", reading_guide: "Ativar o Guia de leitura", reading_mask: "Ativar a Máscara de leitura", move_reading_mask: "Mover a Máscara de leitura", move_reading_guide: "Mover o Guia de leitura", large_cursor: "Ativar o cursor grande", text_color: "Alterar a cor do texto", open_accessibility_profiles: "Abrir ou fechar perfis de acessibilidade", blind: "Definições para pessoas cegas", low_vision: "Definições para pessoas com baixa visão" }, x2 = { reset: "Resetar definições", close: "Fechar", toggle_theme: "Alterar o tema" }, A2 = { text_and_typography: "Texto e Tipografia", reading_and_comprehension: "Leitura e Compreensão", focus_and_visibility: "Foco e Acessibilidade Visual", colors_filters_and_contrast: "Cores, Filtros e Contraste", distraction_reduction: "Redução de Distrações", accessibility_profiles: "Perfis de Acessibilidade", profiles: "Perfis" }, k2 = "Definição em Libras", S2 = "Ler definição", L2 = {
+const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = "Colapsar", Ba = "Diminuir brilho", Fa = "Leitor de Texto ativado", za = "Filtro de daltonismo", Ha = "Desativar Som", Ta = "Fonte para Dislexia", Da = "Leitor de Texto", Za = "Aumentar Fonte", Va = "Espaço entre letras", qa = "Espaço entre linhas", ja = "Destacar links", Ua = "Destacar títulos", Ga = "Modo Leitor", Wa = "Pausar animações", Xa = "Ocultar imagens", Ka = "Guia de leitura", Ya = "Máscara de leitura", Qa = "Cursor grande", Ja = "Cor do texto", e2 = "Dicionário", t2 = "Personalizada", r2 = "Médio", n2 = "Grande", o2 = "Muito grande", i2 = "Desativado", a2 = "Em breve", s2 = "Ativado", l2 = "Tela inteira", c2 = "Normal", d2 = "Claro", u2 = "Escuro", p2 = "Configurações", h2 = "Resetar", f2 = "Alterar idioma", g2 = "Sem suporte", v2 = "O sintetizador de voz não é suportado pelo seu navegador", C2 = "Interagir", m2 = "Acessar link", y2 = "Mover para cima", b2 = "Mover para baixo", _2 = { blind: "Cego", low_vision: "Baixa visão", cognitive: "Cognitivo", dyslexic: "Dislexia", color_blind: "Daltônico", mobility: "Mobilidade" }, w2 = { reduce_brightness: "Diminuir o brilho da tela", color_blind_filter: "Ativar filtro para daltonismo", disable_sound: "Desativar o som de vídeos e audios", dyslexic_font: "Ativar font para dyslexia", "dictionary.search": "Pesquisar no dicionário", definition_to_libras: "Ler definição em Libras", read_definition: "Ler definição", dictionary: "Dicionário simplificado", text_reader: "Ouvir o texto", font_increase: "Aumentar o tamanho da fonte", letter_spacing: "Modificar espaço entre as letras", line_spacing: "Modificar espaço entre linhas", highlight_links: "Destacar links", highlight_titles: "Destacar títulos", reset: "Resetar definições", close: "Fechar", change_language: "Alterar o idioma da ferramenta", reader_mode: "Ativar modo leitor", toggle_theme: "Alterar o tema", pause_animations: "Pausar animações", hide_images: "Esconder todas as imagens", reading_guide: "Ativar o Guia de leitura", reading_mask: "Ativar a Máscara de leitura", move_reading_mask: "Mover a Máscara de leitura", move_reading_guide: "Mover o Guia de leitura", large_cursor: "Ativar o cursor grande", text_color: "Alterar a cor do texto", open_accessibility_profiles: "Abrir ou fechar perfis de acessibilidade", blind: "Definições para pessoas cegas", low_vision: "Definições para pessoas com baixa visão" }, x2 = { reset: "Resetar definições", close: "Fechar", toggle_theme: "Alterar o tema" }, A2 = { text_and_typography: "Texto e Tipografia", reading_and_comprehension: "Leitura e Compreensão", focus_and_visibility: "Foco e Acessibilidade Visual", colors_filters_and_contrast: "Cores, Filtros e Contraste", distraction_reduction: "Redução de Distrações", accessibility_profiles: "Perfis de Acessibilidade", profiles: "Perfis" }, k2 = "Definição em Libras", S2 = "Ler definição", L2 = {
   color_picker: Na,
   expand: $a,
   collapse: Oa,
   reduce_brightness: Ba,
-  text_reader_is_actived: za,
-  color_blind_filter: Fa,
+  text_reader_is_actived: Fa,
+  color_blind_filter: za,
   disable_sound: Ha,
   dyslexic_font: Ta,
   text_reader: Da,
@@ -1997,8 +1997,8 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
   change_language: f2,
   no_support: g2,
   speech_is_not_supported: v2,
-  interact: m2,
-  access_link: C2,
+  interact: C2,
+  access_link: m2,
   move_top: y2,
   move_bottom: b2,
   profiles: _2,
@@ -2012,7 +2012,7 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
   "dictionary.close": "Fechar dicionário",
   "status.loading": "Carregando...",
   "status.searching": "Pesquisando..."
-}, M2 = "Color Picker", P2 = "Expand", E2 = "Collapse", I2 = "Reduce Brightness", R2 = "Text Reader is actived", N2 = "Color Blind Filter", $2 = "Disable Sound", O2 = "Dyslexic Font", B2 = "Text Reader", z2 = "Increase Font", F2 = "Letter Spacing", H2 = "Line Spacing", T2 = "Highlight Links", D2 = "Highlight Titles", Z2 = "Reader Mode", V2 = "Pause Animations", q2 = "Hide images", j2 = "Reading Guide", U2 = "Reading Mask", G2 = "Large Cursor", W2 = "Text Color", X2 = "Dictionary", K2 = "Custom", Y2 = "Medium", Q2 = "Large", J2 = "Very Large", e5 = "Deactivated", t5 = "Upcoming", r5 = "Actived", n5 = "Full", o5 = "Normal", i5 = "Light", a5 = "Dark", s5 = "Settings", l5 = "Reset", c5 = "Change language", d5 = "No support", u5 = "Speech Synthesis is not supported in this browser", p5 = "Interact", h5 = "Access link", f5 = "Move up", g5 = "Move down", v5 = { blind: "Blind", low_vision: "Low Vision", cognitive: "Cognitive", dyslexic: "Dyslexic", color_blind: "Color Blind", mobility: "Mobility" }, m5 = { reduce_brightness: "Reduce brightness", color_blind_filter: "Activate color blind filter", disable_sound: "Disable the sound of the videos and audios", dyslexic_font: "Activate font for dyslexic", "dictionary.search": "Search in dictionary", dictionary: "Simplified Dictionary", text_reader: "Read text", font_increase: "Increase font", letter_spacing: "Modify letter spacing", line_spacing: "Modify line spacing", highlight_links: "Highlight links", highlight_titles: "Highlight titles", reset: "Reset definitions", close: "Close", change_language: "Change application language", reader_mode: "Activate reader mode", toggle_theme: "Toggle theme", pause_animations: "Pause animations", hide_images: "Hide all images", reading_guide: "Activate reading guide", reading_mask: "Activate reading mask", move_reading_mask: "Move reading mask", move_reading_guide: "Move reading guide", large_cursor: "Activate large cursor", text_color: "Change text color", open_accessibility_profiles: "Open or close accessibility profiles", blind: "Definitions for blind people", low_vision: "Definitions for low vision people" }, C5 = { reset: "Reset definitions", close: "Close", toggle_theme: "Toggle theme" }, y5 = { text_and_typography: "Text and Typography", reading_and_comprehension: "Reading and Comprehension", focus_and_visibility: "Focus and Visibility", colors_filters_and_contrast: "Colors, Filters and Contrast", distraction_reduction: "Distraction Reduction", accessibility_profiles: "Accessibility Profiles", profiles: "Profiles" }, b5 = {
+}, M2 = "Color Picker", P2 = "Expand", E2 = "Collapse", I2 = "Reduce Brightness", R2 = "Text Reader is actived", N2 = "Color Blind Filter", $2 = "Disable Sound", O2 = "Dyslexic Font", B2 = "Text Reader", F2 = "Increase Font", z2 = "Letter Spacing", H2 = "Line Spacing", T2 = "Highlight Links", D2 = "Highlight Titles", Z2 = "Reader Mode", V2 = "Pause Animations", q2 = "Hide images", j2 = "Reading Guide", U2 = "Reading Mask", G2 = "Large Cursor", W2 = "Text Color", X2 = "Dictionary", K2 = "Custom", Y2 = "Medium", Q2 = "Large", J2 = "Very Large", e5 = "Deactivated", t5 = "Upcoming", r5 = "Actived", n5 = "Full", o5 = "Normal", i5 = "Light", a5 = "Dark", s5 = "Settings", l5 = "Reset", c5 = "Change language", d5 = "No support", u5 = "Speech Synthesis is not supported in this browser", p5 = "Interact", h5 = "Access link", f5 = "Move up", g5 = "Move down", v5 = { blind: "Blind", low_vision: "Low Vision", cognitive: "Cognitive", dyslexic: "Dyslexic", color_blind: "Color Blind", mobility: "Mobility" }, C5 = { reduce_brightness: "Reduce brightness", color_blind_filter: "Activate color blind filter", disable_sound: "Disable the sound of the videos and audios", dyslexic_font: "Activate font for dyslexic", "dictionary.search": "Search in dictionary", dictionary: "Simplified Dictionary", text_reader: "Read text", font_increase: "Increase font", letter_spacing: "Modify letter spacing", line_spacing: "Modify line spacing", highlight_links: "Highlight links", highlight_titles: "Highlight titles", reset: "Reset definitions", close: "Close", change_language: "Change application language", reader_mode: "Activate reader mode", toggle_theme: "Toggle theme", pause_animations: "Pause animations", hide_images: "Hide all images", reading_guide: "Activate reading guide", reading_mask: "Activate reading mask", move_reading_mask: "Move reading mask", move_reading_guide: "Move reading guide", large_cursor: "Activate large cursor", text_color: "Change text color", open_accessibility_profiles: "Open or close accessibility profiles", blind: "Definitions for blind people", low_vision: "Definitions for low vision people" }, m5 = { reset: "Reset definitions", close: "Close", toggle_theme: "Toggle theme" }, y5 = { text_and_typography: "Text and Typography", reading_and_comprehension: "Reading and Comprehension", focus_and_visibility: "Focus and Visibility", colors_filters_and_contrast: "Colors, Filters and Contrast", distraction_reduction: "Distraction Reduction", accessibility_profiles: "Accessibility Profiles", profiles: "Profiles" }, b5 = {
   color_picker: M2,
   expand: P2,
   collapse: E2,
@@ -2022,8 +2022,8 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
   disable_sound: $2,
   dyslexic_font: O2,
   text_reader: B2,
-  font_increase: z2,
-  letter_spacing: F2,
+  font_increase: F2,
+  letter_spacing: z2,
   line_spacing: H2,
   highlight_links: T2,
   highlight_titles: D2,
@@ -2057,15 +2057,15 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
   move_top: f5,
   move_bottom: g5,
   profiles: v5,
-  al: m5,
-  titles: C5,
+  al: C5,
+  titles: m5,
   sections: y5,
   "dictionary.select_word": "Select a word to see its meaning or perform a custom search.",
   "dictionary.no_result": "No result",
   "dictionary.close": "Close dictionary",
   "status.loading": "Loading...",
   "status.searching": "Searching..."
-}, _5 = "Seleccionar color", w5 = "Expandir", x5 = "Colapsar", A5 = "Diminuir brillo", k5 = "Leitor de texto ativado", S5 = "Filtro de daltonismo", L5 = "Desactivar sonido", M5 = "Fonte para dyslexia", P5 = "Leer texto", E5 = "Aumentar fuente", I5 = "Espaciado entre letras", R5 = "Espaciado entre líneas", N5 = "Resaltar enlaces", $5 = "Resaltar títulos", O5 = "Modo lector", B5 = "Pausar animaciones", z5 = "Ocultar imágenes", F5 = "Guía de lectura", H5 = "Máscara de lectura", T5 = "Cursor grande", D5 = "Color del texto", Z5 = "Diccionario", V5 = "Personalizada", q5 = "Mediano", j5 = "Grande", U5 = "Muy grande", G5 = "Desactivado", W5 = "Proximamente", X5 = "Activado", K5 = "Pantalla completa", Y5 = "Normal", Q5 = "Claro", J5 = "Oscuro", es = "Configuraciones", ts = "Restablecer", rs = "Cambiar idioma", ns = "Sin soporte", os = "El sintetizador de voz no es compatible con su navegador", is = "Interactuar", as = "Acceder enlace", ss = "Mover hacia arriba", ls = "Mover hacia abajo", cs = { blind: "Ciego", low_vision: "Baja visión", cognitive: "Cognitivo", dyslexic: "Disléxico", color_blind: "Daltónico", mobility: "Movilidad" }, ds = { reduce_brightness: "Diminuir el brillo de la pantalla", color_blind_filter: "Activar filtro para daltonismo", disable_sound: "Desactivar sonido de vídeos y audios", dyslexic_font: "Activar fuente para dislexia", "dictionary.search": "Buscar en diccionario", dictionary: "Diccionario simplificado", text_reader: "Leer el texto", font_increase: "Aumentar el tamaño de la fuente", letter_spacing: "Modificar el espaciado entre letras", line_spacing: "Modificar el espaciado entre líneas", highlight_links: "Resaltar enlaces", highlight_titles: "Resaltar títulos", reset: "Restablecer configuraciones", close: "Cerrar", change_language: "Cambiar el idioma de la herramienta", reader_mode: "Activar modo lector", toggle_theme: "Cambiar el tema", pause_animations: "Pausar animaciones", hide_images: "Ocultar todas las imágenes", reading_guide: "Activar la guía de lectura", reading_mask: "Activar la máscara de lectura", move_reading_mask: "Mover la máscara de lectura", move_reading_guide: "Mover la guía de lectura", large_cursor: "Activar el cursor grande", text_color: "Cambiar el color del texto", open_accessibility_profiles: "Abrir o cerrar perfiles de accesibilidad", blind: "Configuraciones para personas ciegas", low_vision: "Configuraciones para personas con baja visión" }, us = { reset: "Restablecer configuraciones", close: "Cerrar", toggle_theme: "Cambiar el tema" }, ps = { text_and_typography: "Texto y tipografía", reading_and_comprehension: "Lectura y comprensión", focus_and_visibility: "Enfoque y accesibilidad visual", colors_filters_and_contrast: "Colores, filtros y contraste", distraction_reduction: "Reducción de distracciones", accessibility_profiles: "Perfiles de accesibilidad", profiles: "Perfiles" }, hs = {
+}, _5 = "Seleccionar color", w5 = "Expandir", x5 = "Colapsar", A5 = "Diminuir brillo", k5 = "Leitor de texto ativado", S5 = "Filtro de daltonismo", L5 = "Desactivar sonido", M5 = "Fonte para dyslexia", P5 = "Leer texto", E5 = "Aumentar fuente", I5 = "Espaciado entre letras", R5 = "Espaciado entre líneas", N5 = "Resaltar enlaces", $5 = "Resaltar títulos", O5 = "Modo lector", B5 = "Pausar animaciones", F5 = "Ocultar imágenes", z5 = "Guía de lectura", H5 = "Máscara de lectura", T5 = "Cursor grande", D5 = "Color del texto", Z5 = "Diccionario", V5 = "Personalizada", q5 = "Mediano", j5 = "Grande", U5 = "Muy grande", G5 = "Desactivado", W5 = "Proximamente", X5 = "Activado", K5 = "Pantalla completa", Y5 = "Normal", Q5 = "Claro", J5 = "Oscuro", es = "Configuraciones", ts = "Restablecer", rs = "Cambiar idioma", ns = "Sin soporte", os = "El sintetizador de voz no es compatible con su navegador", is = "Interactuar", as = "Acceder enlace", ss = "Mover hacia arriba", ls = "Mover hacia abajo", cs = { blind: "Ciego", low_vision: "Baja visión", cognitive: "Cognitivo", dyslexic: "Disléxico", color_blind: "Daltónico", mobility: "Movilidad" }, ds = { reduce_brightness: "Diminuir el brillo de la pantalla", color_blind_filter: "Activar filtro para daltonismo", disable_sound: "Desactivar sonido de vídeos y audios", dyslexic_font: "Activar fuente para dislexia", "dictionary.search": "Buscar en diccionario", dictionary: "Diccionario simplificado", text_reader: "Leer el texto", font_increase: "Aumentar el tamaño de la fuente", letter_spacing: "Modificar el espaciado entre letras", line_spacing: "Modificar el espaciado entre líneas", highlight_links: "Resaltar enlaces", highlight_titles: "Resaltar títulos", reset: "Restablecer configuraciones", close: "Cerrar", change_language: "Cambiar el idioma de la herramienta", reader_mode: "Activar modo lector", toggle_theme: "Cambiar el tema", pause_animations: "Pausar animaciones", hide_images: "Ocultar todas las imágenes", reading_guide: "Activar la guía de lectura", reading_mask: "Activar la máscara de lectura", move_reading_mask: "Mover la máscara de lectura", move_reading_guide: "Mover la guía de lectura", large_cursor: "Activar el cursor grande", text_color: "Cambiar el color del texto", open_accessibility_profiles: "Abrir o cerrar perfiles de accesibilidad", blind: "Configuraciones para personas ciegas", low_vision: "Configuraciones para personas con baja visión" }, us = { reset: "Restablecer configuraciones", close: "Cerrar", toggle_theme: "Cambiar el tema" }, ps = { text_and_typography: "Texto y tipografía", reading_and_comprehension: "Lectura y comprensión", focus_and_visibility: "Enfoque y accesibilidad visual", colors_filters_and_contrast: "Colores, filtros y contraste", distraction_reduction: "Reducción de distracciones", accessibility_profiles: "Perfiles de accesibilidad", profiles: "Perfiles" }, hs = {
   color_picker: _5,
   expand: w5,
   collapse: x5,
@@ -2082,8 +2082,8 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
   highlight_titles: $5,
   reader_mode: O5,
   pause_animations: B5,
-  hide_images: z5,
-  reading_guide: F5,
+  hide_images: F5,
+  reading_guide: z5,
   reading_mask: H5,
   large_cursor: T5,
   text_color: D5,
@@ -2118,7 +2118,7 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
   "dictionary.close": "Cerrar diccionario",
   "status.loading": "Cargando...",
   "status.searching": "Pesquisando..."
-}, Bn = { pt: L2, en: b5, es: hs }, $ = Fe()(
+}, Bn = { pt: L2, en: b5, es: hs }, $ = ze()(
   wo(
     (e, t) => ({
       locale: "pt",
@@ -2140,7 +2140,7 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
     };
     return r(), window.addEventListener("resize", r), () => window.removeEventListener("resize", r);
   }, []), e;
-}, zo = () => {
+}, Fo = () => {
   const [e, t] = N({ x: 0, y: 0 });
   return M(() => {
     const r = (n) => {
@@ -2148,7 +2148,7 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
     };
     return window.addEventListener("mousemove", r), () => window.removeEventListener("mousemove", r);
   }, []), e;
-}, Fo = () => {
+}, zo = () => {
   const [e, t] = N({
     width: window.innerWidth,
     height: window.innerHeight
@@ -2171,7 +2171,7 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
     const i = matchMedia(e);
     return i.addEventListener("change", n), r(i.matches), () => i.removeEventListener("change", n);
   }, [e]), t;
-}, _1 = "@vwp-theme", fs = (e) => ["light", "dark"].includes(e), To = Fe((e) => ({
+}, _1 = "@vwp-theme", fs = (e) => ["light", "dark"].includes(e), To = ze((e) => ({
   theme: (() => {
     const t = localStorage.getItem(_1) || "";
     return fs(t) ? t : "light";
@@ -2192,13 +2192,13 @@ const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = 
 }, gs = (e, t = []) => {
   const [r, n] = N(null), [i, a] = N(null), [s, l] = N(!0);
   return M(() => {
-    let c = !0;
-    return l(!0), a(null), n(null), e().then((d) => {
-      c && (n(d), l(!1));
-    }).catch((d) => {
-      c && (a(d), l(!1));
+    let d = !0;
+    return l(!0), a(null), n(null), e().then((c) => {
+      d && (n(c), l(!1));
+    }).catch((c) => {
+      d && (a(c), l(!1));
     }), () => {
-      c = !1;
+      d = !1;
     };
   }, [e, ...t]), { data: r, error: i, isLoading: s };
 };
@@ -2215,7 +2215,7 @@ function vs() {
   for (var e, t, r = 0, n = "", i = arguments.length; r < i; r++) (e = arguments[r]) && (t = Do(e)) && (n && (n += " "), n += t);
   return n;
 }
-const sr = "-", ms = (e) => {
+const sr = "-", Cs = (e) => {
   const t = ys(e), {
     conflictingClassGroups: r,
     conflictingClassGroupModifiers: n
@@ -2223,11 +2223,11 @@ const sr = "-", ms = (e) => {
   return {
     getClassGroupId: (s) => {
       const l = s.split(sr);
-      return l[0] === "" && l.length !== 1 && l.shift(), Zo(l, t) || Cs(s);
+      return l[0] === "" && l.length !== 1 && l.shift(), Zo(l, t) || ms(s);
     },
     getConflictingClassGroupIds: (s, l) => {
-      const c = r[s] || [];
-      return l && n[s] ? [...c, ...n[s]] : c;
+      const d = r[s] || [];
+      return l && n[s] ? [...d, ...n[s]] : d;
     }
   };
 }, Zo = (e, t) => {
@@ -2243,9 +2243,9 @@ const sr = "-", ms = (e) => {
   return (s = t.validators.find(({
     validator: l
   }) => l(a))) == null ? void 0 : s.classGroupId;
-}, zn = /^\[(.+)\]$/, Cs = (e) => {
-  if (zn.test(e)) {
-    const t = zn.exec(e)[1], r = t == null ? void 0 : t.substring(0, t.indexOf(":"));
+}, Fn = /^\[(.+)\]$/, ms = (e) => {
+  if (Fn.test(e)) {
+    const t = Fn.exec(e)[1], r = t == null ? void 0 : t.substring(0, t.indexOf(":"));
     if (r)
       return "arbitrary.." + r;
   }
@@ -2263,7 +2263,7 @@ const sr = "-", ms = (e) => {
 }, V1 = (e, t, r, n) => {
   e.forEach((i) => {
     if (typeof i == "string") {
-      const a = i === "" ? t : Fn(t, i);
+      const a = i === "" ? t : zn(t, i);
       a.classGroupId = r;
       return;
     }
@@ -2279,10 +2279,10 @@ const sr = "-", ms = (e) => {
       return;
     }
     Object.entries(i).forEach(([a, s]) => {
-      V1(s, Fn(t, a), r, n);
+      V1(s, zn(t, a), r, n);
     });
   });
-}, Fn = (e, t) => {
+}, zn = (e, t) => {
   let r = e;
   return t.split(sr).forEach((n) => {
     r.nextPart.has(n) || r.nextPart.set(n, {
@@ -2321,22 +2321,22 @@ const sr = "-", ms = (e) => {
   } = e;
   let n = (i) => {
     const a = [];
-    let s = 0, l = 0, c = 0, d;
+    let s = 0, l = 0, d = 0, c;
     for (let _ = 0; _ < i.length; _++) {
-      let C = i[_];
+      let m = i[_];
       if (s === 0 && l === 0) {
-        if (C === j1) {
-          a.push(i.slice(c, _)), c = _ + ws;
+        if (m === j1) {
+          a.push(i.slice(d, _)), d = _ + ws;
           continue;
         }
-        if (C === "/") {
-          d = _;
+        if (m === "/") {
+          c = _;
           continue;
         }
       }
-      C === "[" ? s++ : C === "]" ? s-- : C === "(" ? l++ : C === ")" && l--;
+      m === "[" ? s++ : m === "]" ? s-- : m === "(" ? l++ : m === ")" && l--;
     }
-    const p = a.length === 0 ? i : i.substring(c), u = As(p), h = u !== p, f = d && d > c ? d - c : void 0;
+    const p = a.length === 0 ? i : i.substring(d), u = As(p), h = u !== p, f = c && c > d ? c - d : void 0;
     return {
       modifiers: a,
       hasImportantModifier: h,
@@ -2377,7 +2377,7 @@ const sr = "-", ms = (e) => {
   cache: _s(e.cacheSize),
   parseClassName: xs(e),
   sortModifiers: ks(e),
-  ...ms(e)
+  ...Cs(e)
 }), Ls = /\s+/, Ms = (e, t) => {
   const {
     parseClassName: r,
@@ -2385,43 +2385,43 @@ const sr = "-", ms = (e) => {
     getConflictingClassGroupIds: i,
     sortModifiers: a
   } = t, s = [], l = e.trim().split(Ls);
-  let c = "";
-  for (let d = l.length - 1; d >= 0; d -= 1) {
-    const p = l[d], {
+  let d = "";
+  for (let c = l.length - 1; c >= 0; c -= 1) {
+    const p = l[c], {
       isExternal: u,
       modifiers: h,
       hasImportantModifier: f,
       baseClassName: _,
-      maybePostfixModifierPosition: C
+      maybePostfixModifierPosition: m
     } = r(p);
     if (u) {
-      c = p + (c.length > 0 ? " " + c : c);
+      d = p + (d.length > 0 ? " " + d : d);
       continue;
     }
-    let L = !!C, A = n(L ? _.substring(0, C) : _);
+    let L = !!m, A = n(L ? _.substring(0, m) : _);
     if (!A) {
       if (!L) {
-        c = p + (c.length > 0 ? " " + c : c);
+        d = p + (d.length > 0 ? " " + d : d);
         continue;
       }
       if (A = n(_), !A) {
-        c = p + (c.length > 0 ? " " + c : c);
+        d = p + (d.length > 0 ? " " + d : d);
         continue;
       }
       L = !1;
     }
-    const b = a(h).join(":"), g = f ? b + q1 : b, m = g + A;
-    if (s.includes(m))
+    const y = a(h).join(":"), g = f ? y + q1 : y, C = g + A;
+    if (s.includes(C))
       continue;
-    s.push(m);
-    const y = i(A, L);
-    for (let v = 0; v < y.length; ++v) {
-      const S = y[v];
+    s.push(C);
+    const b = i(A, L);
+    for (let v = 0; v < b.length; ++v) {
+      const S = b[v];
       s.push(g + S);
     }
-    c = p + (c.length > 0 ? " " + c : c);
+    d = p + (d.length > 0 ? " " + d : d);
   }
-  return c;
+  return d;
 };
 function Ps() {
   let e = 0, t, r, n = "";
@@ -2439,16 +2439,16 @@ const Vo = (e) => {
 };
 function Es(e, ...t) {
   let r, n, i, a = s;
-  function s(c) {
-    const d = t.reduce((p, u) => u(p), e());
-    return r = Ss(d), n = r.cache.get, i = r.cache.set, a = l, l(c);
+  function s(d) {
+    const c = t.reduce((p, u) => u(p), e());
+    return r = Ss(c), n = r.cache.get, i = r.cache.set, a = l, l(d);
   }
-  function l(c) {
-    const d = n(c);
-    if (d)
-      return d;
-    const p = Ms(c, r);
-    return i(c, p), p;
+  function l(d) {
+    const c = n(d);
+    if (c)
+      return c;
+    const p = Ms(d, r);
+    return i(d, p), p;
   }
   return function() {
     return a(Ps.apply(null, arguments));
@@ -2457,26 +2457,26 @@ function Es(e, ...t) {
 const U = (e) => {
   const t = (r) => r[e] || [];
   return t.isThemeGetter = !0, t;
-}, qo = /^\[(?:(\w[\w-]*):)?(.+)\]$/i, jo = /^\((?:(\w[\w-]*):)?(.+)\)$/i, Is = /^\d+\/\d+$/, Rs = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/, Ns = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/, $s = /^(rgba?|hsla?|hwb|(ok)?(lab|lch))\(.+\)$/, Os = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/, Bs = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/, Ie = (e) => Is.test(e), E = (e) => !!e && !Number.isNaN(Number(e)), Ce = (e) => !!e && Number.isInteger(Number(e)), Hn = (e) => e.endsWith("%") && E(e.slice(0, -1)), ye = (e) => Rs.test(e), zs = () => !0, Fs = (e) => (
+}, qo = /^\[(?:(\w[\w-]*):)?(.+)\]$/i, jo = /^\((?:(\w[\w-]*):)?(.+)\)$/i, Is = /^\d+\/\d+$/, Rs = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/, Ns = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/, $s = /^(rgba?|hsla?|hwb|(ok)?(lab|lch))\(.+\)$/, Os = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/, Bs = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/, Ie = (e) => Is.test(e), E = (e) => !!e && !Number.isNaN(Number(e)), me = (e) => !!e && Number.isInteger(Number(e)), Hn = (e) => e.endsWith("%") && E(e.slice(0, -1)), ye = (e) => Rs.test(e), Fs = () => !0, zs = (e) => (
   // `colorFunctionRegex` check is necessary because color functions can have percentages in them which which would be incorrectly classified as lengths.
   // For example, `hsl(0 0% 0%)` would be classified as a length without this check.
   // I could also use lookbehind assertion in `lengthUnitRegex` but that isn't supported widely enough.
   Ns.test(e) && !$s.test(e)
-), lr = () => !1, Hs = (e) => Os.test(e), Ts = (e) => Bs.test(e), Ds = (e) => !w(e) && !x(e), Zs = (e) => He(e, Wo, lr), w = (e) => qo.test(e), xe = (e) => He(e, Xo, Fs), w1 = (e) => He(e, Js, E), Vs = (e) => He(e, Uo, lr), qs = (e) => He(e, Go, Ts), js = (e) => He(e, lr, Hs), x = (e) => jo.test(e), je = (e) => Te(e, Xo), Us = (e) => Te(e, el), Gs = (e) => Te(e, Uo), Ws = (e) => Te(e, Wo), Xs = (e) => Te(e, Go), Ks = (e) => Te(e, tl, !0), He = (e, t, r) => {
+), lr = () => !1, Hs = (e) => Os.test(e), Ts = (e) => Bs.test(e), Ds = (e) => !w(e) && !x(e), Zs = (e) => He(e, Wo, lr), w = (e) => qo.test(e), xe = (e) => He(e, Xo, zs), w1 = (e) => He(e, Js, E), Vs = (e) => He(e, Uo, lr), qs = (e) => He(e, Go, Ts), js = (e) => He(e, lr, Hs), x = (e) => jo.test(e), je = (e) => Te(e, Xo), Us = (e) => Te(e, el), Gs = (e) => Te(e, Uo), Ws = (e) => Te(e, Wo), Xs = (e) => Te(e, Go), Ks = (e) => Te(e, tl, !0), He = (e, t, r) => {
   const n = qo.exec(e);
   return n ? n[1] ? t(n[1]) : r(n[2]) : !1;
 }, Te = (e, t, r = !1) => {
   const n = jo.exec(e);
   return n ? n[1] ? t(n[1]) : r : !1;
 }, Uo = (e) => e === "position", Ys = /* @__PURE__ */ new Set(["image", "url"]), Go = (e) => Ys.has(e), Qs = /* @__PURE__ */ new Set(["length", "size", "percentage"]), Wo = (e) => Qs.has(e), Xo = (e) => e === "length", Js = (e) => e === "number", el = (e) => e === "family-name", tl = (e) => e === "shadow", rl = () => {
-  const e = U("color"), t = U("font"), r = U("text"), n = U("font-weight"), i = U("tracking"), a = U("leading"), s = U("breakpoint"), l = U("container"), c = U("spacing"), d = U("radius"), p = U("shadow"), u = U("inset-shadow"), h = U("drop-shadow"), f = U("blur"), _ = U("perspective"), C = U("aspect"), L = U("ease"), A = U("animate"), b = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], g = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], m = () => ["auto", "hidden", "clip", "visible", "scroll"], y = () => ["auto", "contain", "none"], v = () => [x, w, c], S = () => [Ie, "full", "auto", ...v()], I = () => [Ce, "none", "subgrid", x, w], B = () => ["auto", {
-    span: ["full", Ce, x, w]
-  }, Ce, x, w], J = () => [Ce, "auto", x, w], H = () => ["auto", "min", "max", "fr", x, w], F = () => ["start", "end", "center", "between", "around", "evenly", "stretch", "baseline"], ne = () => ["start", "end", "center", "stretch"], q = () => ["auto", ...v()], ae = () => [Ie, "auto", "full", "dvw", "dvh", "lvw", "lvh", "svw", "svh", "min", "max", "fit", ...v()], O = () => [e, x, w], me = () => [Hn, je, xe], T = () => [
+  const e = U("color"), t = U("font"), r = U("text"), n = U("font-weight"), i = U("tracking"), a = U("leading"), s = U("breakpoint"), l = U("container"), d = U("spacing"), c = U("radius"), p = U("shadow"), u = U("inset-shadow"), h = U("drop-shadow"), f = U("blur"), _ = U("perspective"), m = U("aspect"), L = U("ease"), A = U("animate"), y = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], g = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], C = () => ["auto", "hidden", "clip", "visible", "scroll"], b = () => ["auto", "contain", "none"], v = () => [x, w, d], S = () => [Ie, "full", "auto", ...v()], I = () => [me, "none", "subgrid", x, w], B = () => ["auto", {
+    span: ["full", me, x, w]
+  }, me, x, w], J = () => [me, "auto", x, w], H = () => ["auto", "min", "max", "fr", x, w], z = () => ["start", "end", "center", "between", "around", "evenly", "stretch", "baseline"], ne = () => ["start", "end", "center", "stretch"], q = () => ["auto", ...v()], ae = () => [Ie, "auto", "full", "dvw", "dvh", "lvw", "lvh", "svw", "svh", "min", "max", "fit", ...v()], O = () => [e, x, w], Ce = () => [Hn, je, xe], T = () => [
     // Deprecated since Tailwind CSS v4.0.0
     "",
     "none",
     "full",
-    d,
+    c,
     x,
     w
   ], Z = () => ["", E, je, xe], Se = () => ["solid", "dashed", "dotted", "double"], it = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], Ze = () => [
@@ -2494,7 +2494,7 @@ const U = (e) => {
       aspect: ["video"],
       blur: [ye],
       breakpoint: [ye],
-      color: [zs],
+      color: [Fs],
       container: [ye],
       "drop-shadow": [ye],
       ease: ["in", "out", "in-out"],
@@ -2518,7 +2518,7 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/aspect-ratio
        */
       aspect: [{
-        aspect: ["auto", "square", Ie, w, x, C]
+        aspect: ["auto", "square", Ie, w, x, m]
       }],
       /**
        * Container
@@ -2538,14 +2538,14 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/break-after
        */
       "break-after": [{
-        "break-after": b()
+        "break-after": y()
       }],
       /**
        * Break Before
        * @see https://tailwindcss.com/docs/break-before
        */
       "break-before": [{
-        "break-before": b()
+        "break-before": y()
       }],
       /**
        * Break Inside
@@ -2616,42 +2616,42 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/overflow
        */
       overflow: [{
-        overflow: m()
+        overflow: C()
       }],
       /**
        * Overflow X
        * @see https://tailwindcss.com/docs/overflow
        */
       "overflow-x": [{
-        "overflow-x": m()
+        "overflow-x": C()
       }],
       /**
        * Overflow Y
        * @see https://tailwindcss.com/docs/overflow
        */
       "overflow-y": [{
-        "overflow-y": m()
+        "overflow-y": C()
       }],
       /**
        * Overscroll Behavior
        * @see https://tailwindcss.com/docs/overscroll-behavior
        */
       overscroll: [{
-        overscroll: y()
+        overscroll: b()
       }],
       /**
        * Overscroll Behavior X
        * @see https://tailwindcss.com/docs/overscroll-behavior
        */
       "overscroll-x": [{
-        "overscroll-x": y()
+        "overscroll-x": b()
       }],
       /**
        * Overscroll Behavior Y
        * @see https://tailwindcss.com/docs/overscroll-behavior
        */
       "overscroll-y": [{
-        "overscroll-y": y()
+        "overscroll-y": b()
       }],
       /**
        * Position
@@ -2731,7 +2731,7 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/z-index
        */
       z: [{
-        z: [Ce, "auto", x, w]
+        z: [me, "auto", x, w]
       }],
       // ------------------------
       // --- Flexbox and Grid ---
@@ -2783,7 +2783,7 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/order
        */
       order: [{
-        order: [Ce, "first", "last", "none", x, w]
+        order: [me, "first", "last", "none", x, w]
       }],
       /**
        * Grid Template Columns
@@ -2888,7 +2888,7 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/justify-content
        */
       "justify-content": [{
-        justify: [...F(), "normal"]
+        justify: [...z(), "normal"]
       }],
       /**
        * Justify Items
@@ -2909,7 +2909,7 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/align-content
        */
       "align-content": [{
-        content: ["normal", ...F()]
+        content: ["normal", ...z()]
       }],
       /**
        * Align Items
@@ -2930,7 +2930,7 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/place-content
        */
       "place-content": [{
-        "place-content": F()
+        "place-content": z()
       }],
       /**
        * Place Items
@@ -3452,9 +3452,9 @@ const U = (e) => {
         bg: ["none", {
           linear: [{
             to: ["t", "tr", "r", "br", "b", "bl", "l", "tl"]
-          }, Ce, x, w],
+          }, me, x, w],
           radial: ["", x, w],
-          conic: [Ce, x, w]
+          conic: [me, x, w]
         }, Xs, qs]
       }],
       /**
@@ -3469,21 +3469,21 @@ const U = (e) => {
        * @see https://tailwindcss.com/docs/gradient-color-stops
        */
       "gradient-from-pos": [{
-        from: me()
+        from: Ce()
       }],
       /**
        * Gradient Color Stops Via Position
        * @see https://tailwindcss.com/docs/gradient-color-stops
        */
       "gradient-via-pos": [{
-        via: me()
+        via: Ce()
       }],
       /**
        * Gradient Color Stops To Position
        * @see https://tailwindcss.com/docs/gradient-color-stops
        */
       "gradient-to-pos": [{
-        to: me()
+        to: Ce()
       }],
       /**
        * Gradient Color Stops From
@@ -4723,7 +4723,7 @@ const Yo = (e) => e.split(" ").map((t) => t.charAt(0).toUpperCase() + t.slice(1)
   brightness: void 0,
   colorBlindFilter: void 0,
   isActive: !1
-}, k = Fe()(
+}, k = ze()(
   wo(
     (e) => ({
       isOpenWidget: !1,
@@ -4960,7 +4960,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
       " "
     ]
   }
-), ml = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
+), Cl = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
   "svg",
   {
     width: e,
@@ -4975,7 +4975,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
       /* @__PURE__ */ o("path", { d: "M11.6875 22L9.7375 17.1667L6 20.5V2L19 14.5833L13.9625 15.25L15.9125 20.1667L11.6875 22ZM10.3875 14.5833L12.5813 19.9167L13.9625 19.25L11.6875 14L15.5063 13.5L7.4625 5.66667V17.1667L10.3875 14.5833Z" })
     ]
   }
-), Cl = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
+), ml = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
   "svg",
   {
     width: e,
@@ -5375,7 +5375,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
       " "
     ]
   }
-), zl = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
+), Fl = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
   "svg",
   {
     width: e,
@@ -5390,7 +5390,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
       " "
     ]
   }
-), Fl = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
+), zl = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
   "svg",
   {
     width: e,
@@ -5461,7 +5461,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
         target: "_blank",
         rel: "noreferrer noopener",
         className: R(
-          "bg-primary min-w-8 xs:min-w-9 size-8 xs:size-9 relative overflow-hidden",
+          "bg-primary min-w-9 size-9 relative overflow-hidden",
           "rounded-sm grid place-items-center hover:brightness-110"
         ),
         children: /* @__PURE__ */ o(
@@ -5469,13 +5469,13 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
           {
             "aria-hidden": !0,
             size: 22,
-            className: "text-white absolute min-w-8 size-6 xs:size-7 bottom-0",
+            className: "text-white absolute size-7 bottom-0",
             iconTitle: "VLibras Widget+ Logo"
           }
         )
       }
     ),
-    /* @__PURE__ */ o("div", { className: "flex max-xxs:hidden flex-col ml-1 leading-tight relative -top-0.5", children: [
+    /* @__PURE__ */ o("div", { className: "flex max-xxs:hidden flex-col ml-1 leading-tight relative -top-[1px]", children: [
       /* @__PURE__ */ o("p", { className: "text-sm xs:text-lg font-bold text-foreground truncate", children: [
         "VLibras ",
         /* @__PURE__ */ o("span", { className: "max-xxs:hidden", children: "Widget+" })
@@ -5543,7 +5543,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
 ), jl = [
   {
     nameKey: "profiles.blind",
-    icon: zl
+    icon: Fl
   },
   {
     nameKey: "profiles.dyslexic",
@@ -5563,7 +5563,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
   },
   {
     nameKey: "profiles.cognitive",
-    icon: Fl
+    icon: zl
   }
 ], Ul = () => {
   const { t: e } = $(), { profile: t, reset: r } = k(), [n, i] = N(!1), a = Ho("(max-width: 640px)");
@@ -5571,15 +5571,15 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
     const { profile: l } = k.getState();
     l && s(l, !0);
   }, []);
-  const s = (l, c) => {
-    if (!c && t === l) return r();
-    const d = { ...cr, isActive: !0, profile: l };
+  const s = (l, d) => {
+    if (!d && t === l) return r();
+    const c = { ...cr, isActive: !0, profile: l };
     switch (l) {
       case "profiles.blind":
         break;
       case "profiles.dyslexic": {
         k.setState({
-          ...d,
+          ...c,
           dyslexicFont: "open-dyslexic",
           fontSize: "large",
           lineSpacing: "large"
@@ -5588,7 +5588,7 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
       }
       case "profiles.low_vision":
         k.setState({
-          ...d,
+          ...c,
           fontSize: "very_large",
           letterSpacing: "large",
           highlightLinks: !0,
@@ -5597,19 +5597,19 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
         break;
       case "profiles.color_blind":
         k.setState({
-          ...d,
+          ...c,
           colorBlindFilter: "deuteranopia"
         });
         break;
       case "profiles.mobility":
         k.setState({
-          ...d,
+          ...c,
           largeCursor: !0
         });
         break;
       case "profiles.cognitive":
         k.setState({
-          ...d,
+          ...c,
           pauseAnimations: !0,
           disableSound: !0
         });
@@ -5626,13 +5626,13 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
         t && n && "border-primary"
       ),
       children: [
-        /* @__PURE__ */ o("div", { className: "flex items-center gap-x-2 p-2 pl-4 max-sm:pl-3 relative", children: [
+        /* @__PURE__ */ o("div", { className: "flex items-center gap-x-2 p-2.5 pl-4 relative", children: [
           /* @__PURE__ */ o("div", { className: "flex flex-col", children: [
             /* @__PURE__ */ o("span", { className: "text-xs sm:text-sm text-muted-foreground h-4.5 sm:h-[22px]", children: [
               t && /* @__PURE__ */ o(pr, { className: "inline relative -top-[3px] mr-1.5 size-4 fill-primary" }),
               e(t || "deactivated")
             ] }),
-            /* @__PURE__ */ o(Ne, { className: "line-clamp-1 break-all max-sm:text-sm col-auto", children: e("sections.accessibility_profiles") })
+            /* @__PURE__ */ o(Ne, { className: "line-clamp-1 break-all text-base max-sm:text-sm col-auto", children: e("sections.accessibility_profiles") })
           ] }),
           /* @__PURE__ */ o(
             re,
@@ -5649,11 +5649,11 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
           "div",
           {
             className: R(
-              "grid max-xxs:grid-cols-1 grid-cols-2 gap-2 transition-all overflow-hidden px-2 sm:px-4",
-              n ? "pb-2 sm:pb-4 sm:pt-2 max-h-[400px]" : "!max-h-0 [&>*]:!pointer-events-none"
+              "grid max-xxs:grid-cols-1 grid-cols-2 gap-2 transition-all overflow-hidden px-4",
+              n ? "pb-4 pt-2 max-h-[400px]" : "!max-h-0 [&>*]:!pointer-events-none"
             ),
-            children: jl.map(({ nameKey: l, icon: c }) => {
-              const d = l === t, p = ["profiles.blind"].includes(l);
+            children: jl.map(({ nameKey: l, icon: d }) => {
+              const c = l === t, p = ["profiles.blind"].includes(l);
               return /* @__PURE__ */ o(
                 ql,
                 {
@@ -5661,9 +5661,9 @@ const Re = "vwp-app-root", x1 = {}, Qo = () => {
                   "aria-label": `${e("sections.accessibility_profiles")}: ${e(l)}`,
                   onClick: () => s(l),
                   tabindex: n ? 0 : -1,
-                  "data-active": d,
+                  "data-active": c,
                   children: [
-                    /* @__PURE__ */ o(c, {}),
+                    /* @__PURE__ */ o(d, {}),
                     /* @__PURE__ */ o("span", { children: e(l) })
                   ]
                 },
@@ -5684,25 +5684,25 @@ function Gl() {
   const { fontSize: e } = k(), { current: t } = ie(/* @__PURE__ */ new Map()), [r, n] = N(-1), [i, a] = N();
   M(() => {
     t.size || s();
-    const d = Ge.find(({ key: p }) => p === e);
-    n(Ge.findIndex(({ key: p }) => p === e)), a(d), c(e);
+    const c = Ge.find(({ key: p }) => p === e);
+    n(Ge.findIndex(({ key: p }) => p === e)), a(c), d(e);
   }, [e]);
   const s = () => {
     document.querySelectorAll(
       "p, span, a, strong, h1, h2, h3, h4, h5, h6, b, em, i, code, mark, pre, blockquote, abbr, cite, q, time"
-    ).forEach((d) => {
-      if (!dr(d)) return;
-      const p = window.getComputedStyle(d);
-      t.set(d, {
+    ).forEach((c) => {
+      if (!dr(c)) return;
+      const p = window.getComputedStyle(c);
+      t.set(c, {
         fontSize: Number.parseFloat(p.fontSize),
-        inlineFontSize: d.style.fontSize || ""
+        inlineFontSize: c.style.fontSize || ""
       });
     });
   }, l = () => {
-    const d = r + 1 < Ge.length ? r + 1 : -1, p = Ge[d] || void 0;
-    n(d), a(p), k.setState({ fontSize: p == null ? void 0 : p.key });
-  }, c = (d) => {
-    const p = Ge.find(({ key: u }) => u === d);
+    const c = r + 1 < Ge.length ? r + 1 : -1, p = Ge[c] || void 0;
+    n(c), a(p), k.setState({ fontSize: p == null ? void 0 : p.key });
+  }, d = (c) => {
+    const p = Ge.find(({ key: u }) => u === c);
     t.forEach(({ inlineFontSize: u, fontSize: h }, f) => {
       f.style.fontSize = p ? `${h * p.value}px` : u || "";
     });
@@ -5783,25 +5783,25 @@ function Jl() {
   const { letterSpacing: e } = k(), { current: t } = ie(/* @__PURE__ */ new Map()), [r, n] = N(-1), [i, a] = N();
   M(() => {
     t.size || s();
-    const d = We.find(({ key: p }) => p === e);
-    n(We.findIndex(({ key: p }) => p === e)), a(d), c(e);
+    const c = We.find(({ key: p }) => p === e);
+    n(We.findIndex(({ key: p }) => p === e)), a(c), d(e);
   }, [e]);
   const s = () => {
     document.querySelectorAll(
       "p, span, a, strong, h1, h2, h3, h4, h5, h6, b, em, i, code, mark, pre, blockquote, abbr, cite, q, time"
-    ).forEach((d) => {
-      if (!dr(d)) return;
-      const p = window.getComputedStyle(d);
-      t.set(d, {
+    ).forEach((c) => {
+      if (!dr(c)) return;
+      const p = window.getComputedStyle(c);
+      t.set(c, {
         letterSpacing: Number.parseFloat(p.letterSpacing) || 1,
-        inlineLetterSpacing: d.style.letterSpacing || ""
+        inlineLetterSpacing: c.style.letterSpacing || ""
       });
     });
   }, l = () => {
-    const d = r + 1 < We.length ? r + 1 : -1, p = We[d] || void 0;
-    n(d), a(p), k.setState({ letterSpacing: p == null ? void 0 : p.key });
-  }, c = (d) => {
-    const p = We.find(({ key: u }) => u === d);
+    const c = r + 1 < We.length ? r + 1 : -1, p = We[c] || void 0;
+    n(c), a(p), k.setState({ letterSpacing: p == null ? void 0 : p.key });
+  }, d = (c) => {
+    const p = We.find(({ key: u }) => u === c);
     t.forEach(({ inlineLetterSpacing: u, letterSpacing: h }, f) => {
       f.style.letterSpacing = p ? `${h * p.value}px` : u ?? "";
     });
@@ -5848,7 +5848,7 @@ const e7 = () => {
       isActive: r,
       onClick: () => t(),
       children: [
-        /* @__PURE__ */ o(Q, { children: /* @__PURE__ */ o(Cl, { iconTitle: e("al.highlight_titles"), size: 36 }) }),
+        /* @__PURE__ */ o(Q, { children: /* @__PURE__ */ o(ml, { iconTitle: e("al.highlight_titles"), size: 36 }) }),
         /* @__PURE__ */ o(K, { children: e("highlight_titles") }),
         /* @__PURE__ */ o(Y, { children: e(r ? "actived" : "deactivated") })
       ]
@@ -6052,13 +6052,13 @@ const e7 = () => {
   }
 ), d7 = () => {
   const e = ie(null), { t } = $(), { apply: r, toggle: n, textColor: i, isActive: a } = l7(), s = () => {
-    var d;
-    a || (d = e.current) == null || d.click(), n();
+    var c;
+    a || (c = e.current) == null || c.click(), n();
   }, l = () => {
-    var d;
-    return (d = e.current) == null ? void 0 : d.click();
-  }, c = (d) => {
-    const p = d.target.value;
+    var c;
+    return (c = e.current) == null ? void 0 : c.click();
+  }, d = (c) => {
+    const p = c.target.value;
     r(p);
   };
   return /* @__PURE__ */ o(X, { "aria-label": t("al.text_color"), isActive: a, onClick: s, children: [
@@ -6082,7 +6082,7 @@ const e7 = () => {
       "input",
       {
         ref: e,
-        onChange: c,
+        onChange: d,
         type: "color",
         className: "pointer-events-none absolute top-2 right-2 size-6 sr-only"
       }
@@ -6100,7 +6100,7 @@ const e7 = () => {
 }, h7 = () => {
   const { t: e } = $(), { toggle: t, isActive: r } = p7();
   return ir() ? null : /* @__PURE__ */ o(X, { showActiveIndicator: !0, "aria-label": e("al.large_cursor"), isActive: r, onClick: () => t(), children: [
-    /* @__PURE__ */ o(Q, { children: /* @__PURE__ */ o(ml, { iconTitle: e("al.large_cursor"), size: 36 }) }),
+    /* @__PURE__ */ o(Q, { children: /* @__PURE__ */ o(Cl, { iconTitle: e("al.large_cursor"), size: 36 }) }),
     /* @__PURE__ */ o(K, { children: e("large_cursor") }),
     /* @__PURE__ */ o(Y, { children: e(r ? "actived" : "deactivated") })
   ] });
@@ -6113,29 +6113,29 @@ function f7() {
   const { lineSpacing: e } = k(), { current: t } = ie(/* @__PURE__ */ new Map()), [r, n] = N(-1), [i, a] = N();
   M(() => {
     t.size || s();
-    const d = Xe.find(({ key: p }) => p === e);
-    n(Xe.findIndex(({ key: p }) => p === e)), a(d), c(e);
+    const c = Xe.find(({ key: p }) => p === e);
+    n(Xe.findIndex(({ key: p }) => p === e)), a(c), d(e);
   }, [e]);
   const s = () => {
     document.querySelectorAll(
       "p, span, a, strong, h1, h2, h3, h4, h5, h6, b, em, i, code, mark, pre, blockquote, abbr, cite, q, time"
-    ).forEach((d) => {
-      if (!dr(d)) return;
-      const p = window.getComputedStyle(d), u = Number.parseFloat(p.fontSize), h = p.lineHeight === "normal" ? u * 1.2 : Number.parseFloat(p.lineHeight);
-      t.set(d, {
+    ).forEach((c) => {
+      if (!dr(c)) return;
+      const p = window.getComputedStyle(c), u = Number.parseFloat(p.fontSize), h = p.lineHeight === "normal" ? u * 1.2 : Number.parseFloat(p.lineHeight);
+      t.set(c, {
         lineHeight: h,
-        inlineLineHeight: d.style.lineHeight || ""
+        inlineLineHeight: c.style.lineHeight || ""
       });
     });
   }, l = () => {
-    const d = r + 1 < Xe.length ? r + 1 : -1, p = Xe[d] || void 0;
-    n(d), a(p), k.setState({ lineSpacing: p == null ? void 0 : p.key });
-  }, c = (d) => {
-    const p = Xe.find(({ key: u }) => u === d);
+    const c = r + 1 < Xe.length ? r + 1 : -1, p = Xe[c] || void 0;
+    n(c), a(p), k.setState({ lineSpacing: p == null ? void 0 : p.key });
+  }, d = (c) => {
+    const p = Xe.find(({ key: u }) => u === c);
     t.forEach(({ lineHeight: u, inlineLineHeight: h }, f) => {
       let _ = u;
-      const C = window.getComputedStyle(f), L = Number.parseFloat(C.fontSize);
-      C.lineHeight.endsWith("px") && (_ = Number.parseFloat(C.lineHeight) / L), f.style.lineHeight = p ? `${_ * p.value}` : h || "";
+      const m = window.getComputedStyle(f), L = Number.parseFloat(m.fontSize);
+      m.lineHeight.endsWith("px") && (_ = Number.parseFloat(m.lineHeight) / L), f.style.lineHeight = p ? `${_ * p.value}` : h || "";
     });
   };
   return { increaseLineSpacing: l, index: r, option: i };
@@ -6148,7 +6148,7 @@ const g7 = () => {
     /* @__PURE__ */ o(K, { children: e("line_spacing") }),
     /* @__PURE__ */ o(Y, { children: e((r == null ? void 0 : r.key) || "deactivated") })
   ] });
-}, v7 = "body.vwp-hide-images *:not(.vwp-ignore,[vw],[vw] *,vlibras-widget-plus) img,body.vwp-hide-images *:not(.vwp-ignore,[vw],[vw] *,vlibras-widget-plus) figure{display:none!important}", M1 = "vwp-hide-images", m7 = () => {
+}, v7 = "body.vwp-hide-images *:not(.vwp-ignore,[vw],[vw] *,vlibras-widget-plus) img,body.vwp-hide-images *:not(.vwp-ignore,[vw],[vw] *,vlibras-widget-plus) figure{display:none!important}", M1 = "vwp-hide-images", C7 = () => {
   const { hideImages: e } = k();
   return M(() => {
     const r = ue(v7);
@@ -6157,8 +6157,8 @@ const g7 = () => {
     const n = r !== void 0 ? r : !e;
     document.body.classList.toggle(M1, n), k.setState({ hideImages: n });
   }, isActive: !!e };
-}, C7 = () => {
-  const { t: e } = $(), { toggle: t, isActive: r } = m7();
+}, m7 = () => {
+  const { t: e } = $(), { toggle: t, isActive: r } = C7();
   return /* @__PURE__ */ o(X, { showActiveIndicator: !0, "aria-label": e("al.hide_images"), isActive: r, onClick: () => t(), children: [
     /* @__PURE__ */ o(Q, { children: /* @__PURE__ */ o(vl, { iconTitle: e("al.hide_images"), size: 36 }) }),
     /* @__PURE__ */ o(K, { children: e("hide_images") }),
@@ -6220,7 +6220,7 @@ const g7 = () => {
   element: null,
   listener: null,
   render: void 0
-}, ke = Fe()(() => ({
+}, ke = ze()(() => ({
   ...S7
 })), L7 = Array.from([document.body, ...document.body.children]), E1 = il(), I1 = Be(".vp-guide-container"), M7 = (e) => {
   var t;
@@ -6250,9 +6250,9 @@ const g7 = () => {
   if (!n || n.nodeType !== Node.TEXT_NODE) return null;
   const a = n.textContent ?? "";
   if (!a.trim()) return null;
-  const s = a.slice(0, i), l = a.slice(i), c = s.match(/[\wÀ-ú’-]+$/), d = l.match(/^[\wÀ-ú’-]+/), p = `${(c == null ? void 0 : c[0]) ?? ""}${(d == null ? void 0 : d[0]) ?? ""}`;
+  const s = a.slice(0, i), l = a.slice(i), d = s.match(/[\wÀ-ú’-]+$/), c = l.match(/^[\wÀ-ú’-]+/), p = `${(d == null ? void 0 : d[0]) ?? ""}${(c == null ? void 0 : c[0]) ?? ""}`;
   if (!p) return null;
-  const u = i - (((f = c == null ? void 0 : c[0]) == null ? void 0 : f.length) ?? 0);
+  const u = i - (((f = d == null ? void 0 : d[0]) == null ? void 0 : f.length) ?? 0);
   return { word: p, node: n, offset: u };
 }, B7 = (e) => {
   document.querySelectorAll(`span.${e}`).forEach((t) => {
@@ -6263,50 +6263,47 @@ const g7 = () => {
   });
 }, ni = ({ callback: e, isWordByWord: t, markWordClss: r, hoverClss: n }) => {
   if (t && !(r != null && r.trim())) throw new Error("markWordClss is required when isWordByWord is true");
-  const i = (c) => {
+  const i = (d) => {
     if (!n) return;
-    const d = c.target;
-    Zn(d) && d.classList.add(n);
-  }, a = (c) => {
-    r && B7(r), ke.setState({ isActive: !1 });
-    const d = window.getSelection(), p = d == null ? void 0 : d.toString().trim(), u = c.target;
-    if (!Zn(u)) return;
-    if (p && !t) return e(p);
-    if (c.preventDefault(), c.stopPropagation(), t && r) {
-      const { word: f, node: _, offset: C } = O7(c.clientX, c.clientY) || {};
-      if (f && _ && typeof C == "number") {
-        if (u.classList.contains(r)) {
-          l(u, c), e(f);
-          return;
+    const c = d.target;
+    Zn(c) && c.classList.add(n);
+  }, a = (d) => {
+    const c = d.target, p = window.getSelection(), u = p == null ? void 0 : p.toString().trim(), h = r && c.classList.contains(r);
+    if (r && !h && B7(r), ke.setState({ isActive: !1 }), !Zn(c)) return;
+    if (u && !t) return e(u);
+    if (d.preventDefault(), d.stopPropagation(), t && r) {
+      const { word: _, node: m, offset: L } = O7(d.clientX, d.clientY) || {};
+      if (_ && m && typeof L == "number") {
+        const A = document.createRange();
+        if (A.setStart(m, L), A.setEnd(m, L + _.length), !h) {
+          const y = document.createElement("span");
+          y.className = r, y.textContent = _, A.deleteContents(), A.insertNode(y);
         }
-        const L = document.createRange();
-        L.setStart(_, C), L.setEnd(_, C + f.length);
-        const A = document.createElement("span");
-        A.className = r, A.textContent = f, L.deleteContents(), L.insertNode(A), e(f);
+        e(_);
       }
     } else {
-      const f = M7(u);
-      f != null && f.trim() && e(f);
+      const _ = M7(c);
+      _ != null && _.trim() && e(_);
     }
-    const h = u.tagName === "A" ? u : ri(u);
-    h && l(h, c), ve(u, "LABEL") ? $7(u) : (ve(u, "BUTTON") || fr(u)) && l(u, c);
-  }, s = (c) => {
+    const f = c.tagName === "A" ? c : ri(c);
+    f && l(f, d), ve(c, "LABEL") ? $7(c) : (ve(c, "BUTTON") || fr(c)) && l(c, d);
+  }, s = (d) => {
     if (!n) return;
-    c.target.classList.remove(n);
-  }, l = (c, d) => {
+    d.target.classList.remove(n);
+  }, l = (d, c) => {
     ke.setState({
       isActive: !0,
-      event: d,
-      type: c.tagName.toLowerCase() === "a" ? "link" : "button",
+      event: c,
+      type: d.tagName.toLowerCase() === "a" ? "link" : "button",
       onClick: () => {
-        c.dispatchEvent(new MouseEvent("click", { bubbles: !0 })), ke.setState({ isActive: !1 });
+        d.dispatchEvent(new MouseEvent("click", { bubbles: !0 })), ke.setState({ isActive: !1 });
       }
     });
   };
   return document.body.addEventListener("mouseover", i), document.body.addEventListener("mouseout", s), document.body.addEventListener("click", a, !0), () => {
     document.body.removeEventListener("mouseover", i), document.body.removeEventListener("mouseout", s), document.body.removeEventListener("click", a, !0);
   };
-}, z7 = {
+}, F7 = {
   pt: "pt-BR",
   en: "en-US",
   es: "es-ES"
@@ -6316,7 +6313,7 @@ const U1 = (e, t) => {
   if (!("speechSynthesis" in window))
     return console.error(Bo("speech_is_not_supported", { locale: (t == null ? void 0 : t.locale) || "pt" })), null;
   const r = () => {
-    const n = z7[(t == null ? void 0 : t.locale) || "pt"] || "pt-BR", i = speechSynthesis.getVoices();
+    const n = F7[(t == null ? void 0 : t.locale) || "pt"] || "pt-BR", i = speechSynthesis.getVoices();
     he = new SpeechSynthesisUtterance(e);
     let a = i.find((s) => s.lang === n);
     a || (console.warn(`Voz para ${n} não encontrada. Usando fallback en-US.`), a = i.find((s) => s.lang === "en-US")), he.lang = n, he.rate = (t == null ? void 0 : t.velocity) || 1, he.pitch = 1, he.volume = 1, he.voice = a || null, speechSynthesis.cancel(), speechSynthesis.speak(he), he.onend = () => speechSynthesis.cancel();
@@ -6324,7 +6321,7 @@ const U1 = (e, t) => {
   return speechSynthesis.getVoices().length === 0 ? window.speechSynthesis.onvoiceschanged = () => r() : r(), he;
 }, oi = () => {
   "speechSynthesis" in window && speechSynthesis.cancel();
-}, F7 = () => {
+}, z7 = () => {
   const { textReader: e } = k();
   return M(() => {
     const r = ue(k7);
@@ -6342,7 +6339,7 @@ const U1 = (e, t) => {
     n ? U1(Bo("text_reader_is_actived")) : oi(), k.setState({ textReader: { isActive: n }, largeCursor: void 0, dictionary: void 0 });
   }, isActive: !!(e != null && e.isActive) };
 }, H7 = () => {
-  const { t: e } = $(), { toggle: t, isActive: r } = F7(), n = "speechSynthesis" in window;
+  const { t: e } = $(), { toggle: t, isActive: r } = z7(), n = "speechSynthesis" in window;
   return /* @__PURE__ */ o(
     X,
     {
@@ -6394,12 +6391,12 @@ const U1 = (e, t) => {
     const p = ue(Z7);
     return document.head.appendChild(p), () => document.head.removeChild(p);
   }, []), M(() => {
-    n && (a(R1.findIndex((p) => p === r)), l(r), d(r));
+    n && (a(R1.findIndex((p) => p === r)), l(r), c(r));
   }, [n, r]);
-  const c = () => {
+  const d = () => {
     const p = i + 1 < R1.length ? i + 1 : -1, u = R1[p] || void 0;
     a(p), l(u), k.setState({ dyslexicFont: u });
-  }, d = async (p) => {
+  }, c = async (p) => {
     switch (p) {
       case "open-dyslexic":
         e.includes("open-dyslexic") || await sl(n), t((u) => [...u, "open-dyslexic"]);
@@ -6410,7 +6407,7 @@ const U1 = (e, t) => {
     if (!p) return document.body.removeAttribute("data-vwp-font");
     document.body.dataset.vwpFont = p;
   };
-  return { toggleFont: c, index: i, option: s };
+  return { toggleFont: d, index: i, option: s };
 }, q7 = () => {
   const { t: e } = $(), { toggleFont: t, option: r, index: n } = V7();
   return /* @__PURE__ */ o(X, { "aria-label": e("al.dyslexic_font"), isActive: !!r, onClick: t, children: [
@@ -6486,7 +6483,7 @@ W(
 const G7 = () => {
   const { content: e } = bt();
   return e;
-}, bt = Fe((e) => ({
+}, bt = ze((e) => ({
   isOpen: !1,
   setContent: (t) => e({ content: t }),
   setIsOpen: (t) => e((r) => ({ isOpen: typeof t == "function" ? t(r.isOpen) : t }))
@@ -6554,14 +6551,14 @@ const G7 = () => {
   M(() => {
     const l = ue(W7);
     document.head.appendChild(l);
-    const c = document.createElement("div");
-    return c.id = "vwp-color-blind-overlay", document.body.appendChild(c), be(/* @__PURE__ */ o(X7, {}), c), () => document.head.removeChild(l);
+    const d = document.createElement("div");
+    return d.id = "vwp-color-blind-overlay", document.body.appendChild(d), be(/* @__PURE__ */ o(X7, {}), d), () => document.head.removeChild(l);
   }, []), M(() => {
     r(N1.findIndex((l) => l === e)), i(e), s(e);
   }, [e]);
   const a = () => {
-    const l = t + 1 < N1.length ? t + 1 : -1, c = N1[l] || void 0;
-    r(l), i(c), k.setState({ colorBlindFilter: c });
+    const l = t + 1 < N1.length ? t + 1 : -1, d = N1[l] || void 0;
+    r(l), i(d), k.setState({ colorBlindFilter: d });
   }, s = async (l) => {
     if (!l) return document.body.removeAttribute("data-vwp-color-blind");
     document.body.dataset.vwpColorBlind = l;
@@ -6581,8 +6578,8 @@ const G7 = () => {
     r($1.findIndex((l) => l === e)), i(e), s(e);
   }, [e]);
   const a = () => {
-    const l = t + 1 < $1.length ? t + 1 : -1, c = $1[l] || void 0;
-    r(l), i(c), k.setState({ brightness: c });
+    const l = t + 1 < $1.length ? t + 1 : -1, d = $1[l] || void 0;
+    r(l), i(d), k.setState({ brightness: d });
   }, s = async (l) => {
     k.setState({ brightness: l });
   };
@@ -6603,7 +6600,7 @@ const G7 = () => {
       className: R(
         "spacing flex flex-col gap-0 transition-[bottom] duration-500 overflow-hidden rounded-xl pt-0 border-1 tracking-normal",
         "leading-normal fixed z-[2147483647] -bottom-[100dvh] right-2 bg-background",
-        "xs:w-md max-xs:left-2 h-[60dvh] xs:h-[90dvh] data-[active='true']:bottom-2"
+        "xs:w-md max-xs:left-2 h-[50dvh] xs:h-[90dvh] data-[active='true']:bottom-2"
       ),
       style: { boxShadow: "0 0 30px -5px rgba(0, 0, 0, 0.2)" },
       "data-active": t && r,
@@ -6641,7 +6638,7 @@ const G7 = () => {
           /* @__PURE__ */ o(Ue, { children: [
             /* @__PURE__ */ o(Ne, { children: e("sections.distraction_reduction") }),
             /* @__PURE__ */ o(_7, {}),
-            /* @__PURE__ */ o(C7, {}),
+            /* @__PURE__ */ o(m7, {}),
             /* @__PURE__ */ o(U7, {})
           ] })
         ] }),
@@ -6656,25 +6653,25 @@ const G7 = () => {
     (n instanceof ShadowRoot ? n.host : n).classList.toggle("dark", r === "dark");
   }, [r, t]), e;
 }, rc = () => {
-  const e = ie(null), t = ie(null), r = ie(null), n = ir(), { t: i } = $(), { height: a } = Fo(), { y: s } = zo();
+  const e = ie(null), t = ie(null), r = ie(null), n = ir(), { t: i } = $(), { height: a } = zo(), { y: s } = Fo();
   M(() => {
     l(s || a / 2);
   }, [s, a]), M(() => {
     n && l(a / 2);
   }, [n, a]);
-  function l(c) {
+  function l(d) {
     if (!t.current || !r.current) return;
-    t.current.style.height = `${(c > a - 54 ? a - 54 : c) - (c < 4 ? 0 : 48)}px`, r.current.style.height = `${a - (c < 58 ? 56 : c) - 48}px`;
-    let d = c - 24;
-    d < 32 ? d = 32 : d > a - 78 && (d = a - 78), e.current && (e.current.style.top = `${d}px`);
+    t.current.style.height = `${(d > a - 54 ? a - 54 : d) - (d < 4 ? 0 : 48)}px`, r.current.style.height = `${a - (d < 58 ? 56 : d) - 48}px`;
+    let c = d - 24;
+    c < 32 ? c = 32 : c > a - 78 && (c = a - 78), e.current && (e.current.style.top = `${c}px`);
   }
   return /* @__PURE__ */ o("div", { className: "z-[9999999] relative", children: [
     n && /* @__PURE__ */ o(
       re,
       {
         ref: e,
-        onTouchMove: (c) => {
-          c.preventDefault(), l(c.touches[0].clientY);
+        onTouchMove: (d) => {
+          d.preventDefault(), l(d.touches[0].clientY);
         },
         className: R(
           "w-8 h-12 top-[calc(45dvh+20px)] rounded-l-none rounded-r-[8px] items-center fixed left-0 bg-primary"
@@ -6699,13 +6696,13 @@ const G7 = () => {
     )
   ] });
 }, nc = () => {
-  const e = ie(null), t = ie(null), r = ie(null), n = ir(), { t: i } = $(), { width: a, height: s } = Fo(), { x: l, y: c } = zo();
+  const e = ie(null), t = ie(null), r = ie(null), n = ir(), { t: i } = $(), { width: a, height: s } = zo(), { x: l, y: d } = Fo();
   M(() => {
-    l && c && d(l, c);
-  }, [c, l]), M(() => {
-    n && d(a / 2, 24);
+    l && d && c(l, d);
+  }, [d, l]), M(() => {
+    n && c(a / 2, 24);
   }, [n, a]);
-  function d(p, u) {
+  function c(p, u) {
     if (!t.current) return;
     const h = t.current.offsetWidth;
     if (n || (t.current.style.left = `${p - h / 2}px`, t.current.style.top = `${u < 30 ? 16 : u - 16}px`), e.current && r.current && n) {
@@ -6719,7 +6716,7 @@ const G7 = () => {
       {
         ref: e,
         onTouchMove: (p) => {
-          p.preventDefault(), d(p.touches[0].clientX, p.touches[0].clientY);
+          p.preventDefault(), c(p.touches[0].clientX, p.touches[0].clientY);
         },
         className: R(
           "w-12 h-8 z-[9999999] left-1/2 fixed bg-primary border-2 border-white border-t-primary top-0 rounded-b-md rounded-t-none"
@@ -6750,18 +6747,18 @@ const G7 = () => {
   let i = e, a = t - 36, s = "bottom";
   return i < 34 && (i = 34, s = "left"), i + n.width > window.innerWidth && (i = window.innerWidth - n.width + 12, s = "right"), a < 46 ? (a = 54, s = s === "right" ? "top-right" : "top-left") : s = s === "right" ? "bottom-right" : "bottom-left", { x: i, y: a, arrow: s };
 }, ic = () => {
-  const e = ie(null), { t } = $(), { type: r, event: n, onClick: i, isActive: a, render: s } = ke(), [l, c] = N({ x: 0, y: 0, arrow: "bottom" });
+  const e = ie(null), { t } = $(), { type: r, event: n, onClick: i, isActive: a, render: s } = ke(), [l, d] = N({ x: 0, y: 0, arrow: "bottom" });
   return M(() => {
-    const d = (p) => {
+    const c = (p) => {
       e.current && !e.current.contains(p.target) && ke.setState({ isActive: !1 });
     };
-    return a ? document.addEventListener("click", d) : document.removeEventListener("click", d), () => {
-      document.removeEventListener("click", d);
+    return a ? document.addEventListener("click", c) : document.removeEventListener("click", c), () => {
+      document.removeEventListener("click", c);
     };
   }, [a]), M(() => {
     if (n) {
-      const { pageX: d, pageY: p } = n;
-      c(oc({ x: d, y: p, tooltip: e.current }));
+      const { pageX: c, pageY: p } = n;
+      d(oc({ x: c, y: p, tooltip: e.current }));
       const u = e.current;
       u && (u.classList.remove("animate-scale"), u.offsetWidth, u.classList.add("animate-scale"));
     }
@@ -6798,49 +6795,49 @@ const G7 = () => {
     }
   );
 }, ac = ["masculino", "feminino", "neutro"], G1 = async (e) => {
-  var c, d, p, u, h, f;
+  var d, c, p, u, h, f;
   const t = e.trim().replace(".", "");
   if (!t) return null;
   const i = await (await fetch(((_) => `https://pt.wiktionary.org/w/api.php?action=parse&redirects=1&format=json&origin=*&utf8=1&page=${encodeURIComponent(
     _.toLowerCase().replace(".", "")
-  )}&prop=text&formatversion=2`)(t))).json(), a = (c = i == null ? void 0 : i.parse) == null ? void 0 : c.text;
+  )}&prop=text&formatversion=2`)(t))).json(), a = (d = i == null ? void 0 : i.parse) == null ? void 0 : d.text;
   if (!a) return null;
   const s = sc(a, t);
-  if ((((d = s.plural) == null ? void 0 : d.toLowerCase()) !== t.toLowerCase() || ((p = s.definitions) == null ? void 0 : p.some((_) => _.toLowerCase().includes("plural de")))) && !(s.definitions && s.definitions.length > 3)) {
+  if ((((c = s.plural) == null ? void 0 : c.toLowerCase()) !== t.toLowerCase() || ((p = s.definitions) == null ? void 0 : p.some((_) => _.toLowerCase().includes("plural de")))) && !(s.definitions && s.definitions.length > 3)) {
     if (s.plural) return await G1(s.plural);
     let _;
-    const C = (h = (u = s.definitions) == null ? void 0 : u.find((L) => L.toLowerCase().includes("plural de"))) == null ? void 0 : h.match(/plural de (.+)/i);
-    if (_ = (f = C == null ? void 0 : C[1]) == null ? void 0 : f.trim(), _)
+    const m = (h = (u = s.definitions) == null ? void 0 : u.find((L) => L.toLowerCase().includes("plural de"))) == null ? void 0 : h.match(/plural de (.+)/i);
+    if (_ = (f = m == null ? void 0 : m[1]) == null ? void 0 : f.trim(), _)
       return await G1(_);
   }
   return { ...s, title: t };
 };
 function sc(e, t) {
-  var _, C, L, A, b, g, m;
-  const n = new DOMParser().parseFromString(e, "text/html"), i = (L = (C = (_ = n.querySelector("tbody")) == null ? void 0 : _.innerHTML.match(new RegExp(`title="(?<gender>${ac.join("|")})"`))) == null ? void 0 : C.groups) == null ? void 0 : L.gender, a = Array.from(n.querySelectorAll("ol > li")).map((y) => {
+  var _, m, L, A, y, g, C;
+  const n = new DOMParser().parseFromString(e, "text/html"), i = (L = (m = (_ = n.querySelector("tbody")) == null ? void 0 : _.innerHTML.match(new RegExp(`title="(?<gender>${ac.join("|")})"`))) == null ? void 0 : m.groups) == null ? void 0 : L.gender, a = Array.from(n.querySelectorAll("ol > li")).map((b) => {
     var S;
-    const v = y == null ? void 0 : y.querySelectorAll("span.mw-cite-backlink");
-    return v == null || v.forEach((I) => I.remove()), (S = y == null ? void 0 : y.textContent) == null ? void 0 : S.trim();
-  }).filter((y) => y !== t).filter((y, v, S) => S.indexOf(y) === v).filter(Boolean), s = (b = (A = n.querySelector("h2")) == null ? void 0 : A.textContent) == null ? void 0 : b.trim(), l = Array.from(n.querySelectorAll("b")).find(
-    (y) => y.innerHTML.includes("<u>") || y.innerHTML.includes(".")
-  ), c = (g = l == null ? void 0 : l.textContent) == null ? void 0 : g.trim(), d = lc(n), p = {}, u = n.querySelector("table.traduções");
+    const v = b == null ? void 0 : b.querySelectorAll("span.mw-cite-backlink");
+    return v == null || v.forEach((I) => I.remove()), (S = b == null ? void 0 : b.textContent) == null ? void 0 : S.trim();
+  }).filter((b) => b !== t).filter((b, v, S) => S.indexOf(b) === v).filter(Boolean), s = (y = (A = n.querySelector("h2")) == null ? void 0 : A.textContent) == null ? void 0 : y.trim(), l = Array.from(n.querySelectorAll("b")).find(
+    (b) => b.innerHTML.includes("<u>") || b.innerHTML.includes(".")
+  ), d = (g = l == null ? void 0 : l.textContent) == null ? void 0 : g.trim(), c = lc(n), p = {}, u = n.querySelector("table.traduções");
   u && u.querySelectorAll("tr").forEach((v) => {
     var B;
     const S = v.querySelector("td"), I = v.querySelectorAll("td ~ td a");
     if (S && I.length > 0) {
-      const J = (B = S.textContent) == null ? void 0 : B.trim().toLowerCase(), H = Array.from(I).map((F) => {
+      const J = (B = S.textContent) == null ? void 0 : B.trim().toLowerCase(), H = Array.from(I).map((z) => {
         var ne;
-        return (ne = F.textContent) == null ? void 0 : ne.trim();
+        return (ne = z.textContent) == null ? void 0 : ne.trim();
       }).filter(Boolean);
       J && (p[J] = H);
     }
   });
-  const h = ((m = n.querySelector("img")) == null ? void 0 : m.getAttribute("src")) || void 0, f = Object.keys(p).length > 0 ? p : void 0;
+  const h = ((C = n.querySelector("img")) == null ? void 0 : C.getAttribute("src")) || void 0, f = Object.keys(p).length > 0 ? p : void 0;
   return {
     wordClass: s,
-    pronunciation: c,
+    pronunciation: d,
     definitions: a,
-    etymology: d,
+    etymology: c,
     gender: i,
     imgUrl: h,
     translations: f
@@ -6898,7 +6895,7 @@ const cc = W(({ className: e, size: t = 24, ...r }, n) => /* @__PURE__ */ o(G, {
   data: null,
   isSearchOpen: !1,
   isFetching: !1
-}, Je = Fe()(() => ({
+}, Je = ze()(() => ({
   ...uc
 })), pc = () => {
   var r, n;
@@ -6987,18 +6984,18 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
     )
   ] });
 }, fc = W(({ children: e, content: t, offset: r = 12, align: n = "center", placement: i = "top", className: a, ...s }, l) => {
-  const [c, d] = N(!1), p = `vwp-tooltip-${Math.random().toString(36).slice(2, 9)}`;
+  const [d, c] = N(!1), p = `vwp-tooltip-${Math.random().toString(36).slice(2, 9)}`;
   return t ? /* @__PURE__ */ o(
     "div",
     {
       className: "relative inline-block",
-      onMouseEnter: () => d(!0),
-      onMouseLeave: () => d(!1),
-      onFocus: () => d(!0),
-      onBlur: () => d(!1),
+      onMouseEnter: () => c(!0),
+      onMouseLeave: () => c(!1),
+      onFocus: () => c(!0),
+      onBlur: () => c(!1),
       children: [
         /* @__PURE__ */ o("span", { "aria-describedby": p, children: e }),
-        c && /* @__PURE__ */ o(
+        d && /* @__PURE__ */ o(
           "div",
           {
             ref: l,
@@ -7043,9 +7040,9 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
     const u = Be("[vw-access-button]");
     l(!!u);
   }, []);
-  const c = () => {
+  const d = () => {
     Je.setState({ isSearchOpen: !0 });
-  }, d = (u) => {
+  }, c = (u) => {
     ke.setState({
       isActive: !0,
       event: u,
@@ -7056,8 +7053,8 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
       render: /* @__PURE__ */ o(G, { children: "Abrir VLibras Widget" })
     });
   }, p = vt(() => {
-    var f, _, C;
-    const h = `${(((f = r == null ? void 0 : r.definitions) == null ? void 0 : f.length) || 0) > 1 ? "Definições" : "Definição"} de ${r == null ? void 0 : r.title}: ${(C = (_ = r == null ? void 0 : r.definitions) == null ? void 0 : _.slice(0, 5)) == null ? void 0 : C.join(". ")}`;
+    var f, _, m;
+    const h = `${(((f = r == null ? void 0 : r.definitions) == null ? void 0 : f.length) || 0) > 1 ? "Definições" : "Definição"} de ${r == null ? void 0 : r.title}: ${(m = (_ = r == null ? void 0 : r.definitions) == null ? void 0 : _.slice(0, 5)) == null ? void 0 : m.join(". ")}`;
     U1(r ? h : e(t != null && t.word ? "dictionary.no_result" : "dictionary.select_word"));
   }, [r, e, t == null ? void 0 : t.word]);
   return /* @__PURE__ */ o("div", { className: R(n && "pointer-events-none opacity-50", "flex items-center gap-4 p-4 border-t-1"), children: [
@@ -7067,7 +7064,7 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
         {
           disabled: !s,
           "aria-label": e("al.definition_to_libras"),
-          onClick: d,
+          onClick: c,
           className: "bg-primary text-primary-foreground px-4 h-10 rounded-md hover:brightness-90 hidden",
           children: [
             /* @__PURE__ */ o(Pl, { "aria-hidden": !0, size: 20 }),
@@ -7104,7 +7101,7 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
       /* @__PURE__ */ o(
         re,
         {
-          onClick: c,
+          onClick: d,
           title: e("al.dictionary.search"),
           "aria-label": e("al.dictionary.search"),
           className: "h-10 px-4 border-1 group hover:bg-muted ml-auto rounded-full",
@@ -7132,9 +7129,9 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
   M(() => {
     Je.setState({ data: a, isFetching: s });
   }, [a, s]);
-  const c = () => {
+  const d = () => {
     t(e === "top" ? "bottom" : "top");
-  }, d = !!a && (n == null ? void 0 : n.word) !== (a == null ? void 0 : a.title);
+  }, c = !!a && (n == null ? void 0 : n.word) !== (a == null ? void 0 : a.title);
   return l && console.error(l), /* @__PURE__ */ o(
     "div",
     {
@@ -7149,7 +7146,7 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
             /* @__PURE__ */ o(ei, { size: 24, iconTitle: i("dictionary"), className: "inline mr-2 relative -top-1", "aria-hidden": !0 }),
             Yo(n.word),
             " ",
-            d && /* @__PURE__ */ o("span", { className: "text-muted-foreground font-medium text-sm", children: [
+            c && /* @__PURE__ */ o("span", { className: "text-muted-foreground font-medium text-sm", children: [
               "(",
               a == null ? void 0 : a.title,
               ")"
@@ -7161,7 +7158,7 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
             {
               title: i(e === "top" ? "move_bottom" : "move_top"),
               "aria-label": i(e === "top" ? "move_bottom" : "move_top"),
-              onClick: c,
+              onClick: d,
               className: "size-9 [&>svg]:not-hover:!fill-muted-foreground ml-auto hover:bg-muted rounded-md aspect-square",
               children: e === "top" ? /* @__PURE__ */ o(Il, { pointerEvents: "none", size: 22 }) : /* @__PURE__ */ o(El, { pointerEvents: "none", size: 22 })
             }
@@ -7188,7 +7185,7 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
       ]
     }
   );
-}, mc = () => {
+}, Cc = () => {
   const { brightness: e } = k();
   return e ? /* @__PURE__ */ o(
     "div",
@@ -7206,18 +7203,18 @@ const ai = ({ size: e = 24, iconTitle: t, ...r }) => /* @__PURE__ */ o(
       }
     }
   ) : null;
-}, Cc = () => {
+}, mc = () => {
   const { readingMask: e, readingGuide: t, dictionary: r, brightness: n } = k(), { isActive: i } = ke();
   return /* @__PURE__ */ o(G, { children: [
     e && /* @__PURE__ */ o(rc, {}),
     t && /* @__PURE__ */ o(nc, {}),
     i && /* @__PURE__ */ o(ic, {}),
     (r == null ? void 0 : r.isActive) && /* @__PURE__ */ o(vc, {}),
-    n && /* @__PURE__ */ o(mc, {})
+    n && /* @__PURE__ */ o(Cc, {})
   ] });
-}, yc = `/*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */@layer theme{:root,:host{--font-sans:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--color-black:#000;--color-white:#fff;--spacing:.25rem;--text-xs--line-height:calc(1/.75);--text-sm--line-height:calc(1.25/.875);--text-base--line-height: 1.5 ;--text-lg--line-height:calc(1.75/1.125);--text-xl--line-height:calc(1.75/1.25);--font-weight-normal:400;--font-weight-medium:500;--font-weight-semibold:600;--font-weight-bold:700;--tracking-normal:0em;--leading-tight:1.25;--leading-snug:1.375;--leading-normal:1.5;--animate-spin:spin 1s linear infinite;--animate-pulse:pulse 2s cubic-bezier(.4,0,.6,1)infinite;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4,0,.2,1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono);--tw-translate-y:0;--tw-translate-x:0}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:color-mix(in oklab,currentColor 50%,transparent)}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){-webkit-appearance:button;-moz-appearance:button;appearance:button}::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}*{--tw-border-style:solid;border-style:solid;border-color:var(--border);outline-color:color-mix(in oklab,var(--ring)50%,transparent)}:host{border-color:var(--border);fill:var(--foreground);color:var(--foreground)}}@layer components;@layer utilities{.\\!pointer-events-none{pointer-events:none!important}.pointer-events-none{pointer-events:none}.collapse{visibility:collapse}.sr-only{clip:rect(0,0,0,0);white-space:nowrap;border-width:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.absolute{position:absolute}.fixed{position:fixed}.relative{position:relative}.inset-0{inset:calc(var(--spacing)*0)}.-top-0\\.5{top:calc(var(--spacing)*-.5)}.-top-1{top:calc(var(--spacing)*-1)}.-top-\\[3px\\]{top:-3px}.top-0{top:calc(var(--spacing)*0)}.top-0\\.5{top:calc(var(--spacing)*.5)}.top-1\\/2{top:50%}.top-2{top:calc(var(--spacing)*2)}.top-3{top:calc(var(--spacing)*3)}.top-4{top:calc(var(--spacing)*4)}.top-\\[calc\\(45dvh\\+20px\\)\\]{top:calc(45dvh + 20px)}.\\!right-0{right:calc(var(--spacing)*0)!important}.right-2{right:calc(var(--spacing)*2)}.right-auto{right:auto}.-bottom-5{bottom:calc(var(--spacing)*-5)}.-bottom-\\[100dvh\\]{bottom:-100dvh}.bottom-0{bottom:calc(var(--spacing)*0)}.bottom-0\\.5{bottom:calc(var(--spacing)*.5)}.bottom-2{bottom:calc(var(--spacing)*2)}.bottom-\\[3\\.7px\\]{bottom:3.7px}.\\!left-0{left:calc(var(--spacing)*0)!important}.left-0{left:calc(var(--spacing)*0)}.left-1\\/2{left:50%}.left-2{left:calc(var(--spacing)*2)}.left-5{left:calc(var(--spacing)*5)}.left-\\[calc\\(50dvw-36rem\\/2\\)\\]{left:calc(50dvw - 18rem)}.left-auto{left:auto}.-z-\\[1\\]{z-index:-1}.-z-\\[2\\]{z-index:-2}.z-10{z-index:10}.z-\\[9999999\\]{z-index:9999999}.z-\\[99999999\\]{z-index:99999999}.z-\\[999999999\\]{z-index:999999999}.z-\\[2147483647\\]{z-index:2147483647}.col-\\[1\\/-1\\]{grid-column:1/-1}.col-auto{grid-column:auto}.mr-1\\.5{margin-right:calc(var(--spacing)*1.5)}.mr-2{margin-right:calc(var(--spacing)*2)}.ml-1{margin-left:calc(var(--spacing)*1)}.ml-auto{margin-left:auto}.line-clamp-1{-webkit-line-clamp:1;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.line-clamp-2{-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.flex{display:flex}.grid{display:grid}.hidden{display:none}.inline{display:inline}.inline-block{display:inline-block}.aspect-square{aspect-ratio:1}.size-4{width:calc(var(--spacing)*4);height:calc(var(--spacing)*4)}.size-5{width:calc(var(--spacing)*5);height:calc(var(--spacing)*5)}.size-6{width:calc(var(--spacing)*6);height:calc(var(--spacing)*6)}.size-7{width:calc(var(--spacing)*7);height:calc(var(--spacing)*7)}.size-8{width:calc(var(--spacing)*8);height:calc(var(--spacing)*8)}.size-9{width:calc(var(--spacing)*9);height:calc(var(--spacing)*9)}.h-2{height:calc(var(--spacing)*2)}.h-2\\.5{height:calc(var(--spacing)*2.5)}.h-4{height:calc(var(--spacing)*4)}.h-4\\.5{height:calc(var(--spacing)*4.5)}.h-8{height:calc(var(--spacing)*8)}.h-9{height:calc(var(--spacing)*9)}.h-10{height:calc(var(--spacing)*10)}.h-12{height:calc(var(--spacing)*12)}.h-28{height:calc(var(--spacing)*28)}.h-\\[45dvh\\]{height:45dvh}.h-\\[60dvh\\]{height:60dvh}.h-full{height:100%}.\\!max-h-0{max-height:calc(var(--spacing)*0)!important}.max-h-\\[400px\\]{max-height:400px}.max-h-\\[calc\\(32dvh\\)\\]{max-height:32dvh}.\\!w-auto{width:auto!important}.w-2\\.5{width:calc(var(--spacing)*2.5)}.w-8{width:calc(var(--spacing)*8)}.w-12{width:calc(var(--spacing)*12)}.w-72{width:calc(var(--spacing)*72)}.w-full{width:100%}.w-xl{width:576px}.min-w-8{min-width:calc(var(--spacing)*8)}.-translate-1\\/2{--tw-translate-x: -50% ;--tw-translate-y: -50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-x-1\\/2{--tw-translate-x: -50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-x-6{--tw-translate-x:calc(var(--spacing)*-6);translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-x-0{--tw-translate-x:calc(var(--spacing)*0);translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-x-1\\/2{--tw-translate-x: 50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-y-1\\/2{--tw-translate-y: -50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-y-full{--tw-translate-y:-100%;translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-y-1\\/2{--tw-translate-y: 50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-none{translate:none}.rotate-0{rotate:none}.rotate-45{rotate:45deg}.rotate-180{rotate:180deg}.animate-move-up{animation:.2s ease-in-out move-up}.animate-pulse{animation:var(--animate-pulse)}.animate-scale{animation:.2s ease-in-out scale}.animate-spin{animation:var(--animate-spin)}.\\!cursor-not-allowed{cursor:not-allowed!important}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.auto-rows-min{grid-auto-rows:min-content}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-content-center{place-content:center}.place-items-center{place-items:center}.items-center{align-items:center}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.justify-start{justify-content:flex-start}.gap-0{gap:calc(var(--spacing)*0)}.gap-0\\.5{gap:calc(var(--spacing)*.5)}.gap-2{gap:calc(var(--spacing)*2)}.gap-4{gap:calc(var(--spacing)*4)}:where(.space-y-1>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing)*1)*var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing)*1)*calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing)*4)*var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing)*4)*calc(1 - var(--tw-space-y-reverse)))}.gap-x-2{column-gap:calc(var(--spacing)*2)}.truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:.25rem}.rounded-full{border-radius:3.40282e38px}.rounded-lg{border-radius:var(--radius)}.rounded-md{border-radius:calc(var(--radius) - 2px)}.rounded-none{border-radius:0}.rounded-sm{border-radius:calc(var(--radius) - 4px)}.rounded-xl{border-radius:calc(var(--radius) + 4px)}.rounded-t-none{border-top-left-radius:0;border-top-right-radius:0}.rounded-l-none{border-top-left-radius:0;border-bottom-left-radius:0}.rounded-r-\\[8px\\]{border-top-right-radius:8px;border-bottom-right-radius:8px}.rounded-b-md{border-bottom-right-radius:calc(var(--radius) - 2px);border-bottom-left-radius:calc(var(--radius) - 2px)}.border,.border-1{border-style:var(--tw-border-style);border-width:1px}.border-2{border-style:var(--tw-border-style);border-width:2px}.border-t-1{border-top-style:var(--tw-border-style);border-top-width:1px}.border-t-8{border-top-style:var(--tw-border-style);border-top-width:8px}.border-b-1{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}.border-b-8{border-bottom-style:var(--tw-border-style);border-bottom-width:8px}.\\!border-border{border-color:var(--border)!important}.border-border{border-color:var(--border)}.border-primary{border-color:var(--primary)}.border-primary\\/50{border-color:color-mix(in oklab,var(--primary)50%,transparent)}.border-white{border-color:var(--color-white)}.border-t-primary{border-top-color:var(--primary)}.\\!bg-muted\\/30{background-color:color-mix(in oklab,var(--muted)30%,transparent)!important}.\\!bg-primary\\/10{background-color:color-mix(in oklab,var(--primary)10%,transparent)!important}.\\!bg-transparent{background-color:#0000!important}.bg-background{background-color:var(--background)}.bg-black\\/20{background-color:color-mix(in oklab,var(--color-black)20%,transparent)}.bg-black\\/40{background-color:color-mix(in oklab,var(--color-black)40%,transparent)}.bg-destructive{background-color:var(--destructive)}.bg-muted{background-color:var(--muted)}.bg-popover{background-color:var(--popover)}.bg-primary{background-color:var(--primary)}.bg-primary\\/30{background-color:color-mix(in oklab,var(--primary)30%,transparent)}.bg-white{background-color:var(--color-white)}.fill-\\[\\#2c9e2c\\]{fill:#2c9e2c}.fill-destructive-foreground{fill:var(--destructive-foreground)}.fill-foreground\\/80{fill:color-mix(in oklab,var(--foreground)80%,transparent)}.fill-muted-foreground{fill:var(--muted-foreground)}.fill-primary{fill:var(--primary)}.fill-primary-foreground{fill:var(--primary-foreground)}.fill-white{fill:var(--color-white)}.p-1\\.5{padding:calc(var(--spacing)*1.5)}.p-2{padding:calc(var(--spacing)*2)}.p-4{padding:calc(var(--spacing)*4)}.px-2{padding-inline:calc(var(--spacing)*2)}.px-3{padding-inline:calc(var(--spacing)*3)}.px-4{padding-inline:calc(var(--spacing)*4)}.py-1\\.5{padding-block:calc(var(--spacing)*1.5)}.py-8{padding-block:calc(var(--spacing)*8)}.ps-2{padding-inline-start:calc(var(--spacing)*2)}.pt-0{padding-top:calc(var(--spacing)*0)}.pt-1{padding-top:calc(var(--spacing)*1)}.pt-2{padding-top:calc(var(--spacing)*2)}.pr-2{padding-right:calc(var(--spacing)*2)}.pb-2{padding-bottom:calc(var(--spacing)*2)}.pl-4{padding-left:calc(var(--spacing)*4)}.text-center{text-align:center}.text-base{font-size:calc(var(--font-size)*1);line-height:var(--tw-leading,var(--text-base--line-height))}.text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-xl{font-size:calc(var(--font-size)*1.25);line-height:var(--tw-leading,var(--text-xl--line-height))}.text-xs{font-size:calc(var(--font-size)*.75);line-height:var(--tw-leading,var(--text-xs--line-height))}.text-\\[13\\.5px\\]{font-size:13.5px}.text-\\[13px\\]{font-size:13px}.leading-none{--tw-leading:1;line-height:1}.leading-normal{--tw-leading:var(--leading-normal);line-height:var(--leading-normal)}.leading-snug{--tw-leading:var(--leading-snug);line-height:var(--leading-snug)}.leading-tight{--tw-leading:var(--leading-tight);line-height:var(--leading-tight)}.font-bold{--tw-font-weight:var(--font-weight-bold);font-weight:var(--font-weight-bold)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-normal{--tw-font-weight:var(--font-weight-normal);font-weight:var(--font-weight-normal)}.font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}.tracking-normal{--tw-tracking:var(--tracking-normal);letter-spacing:var(--tracking-normal)}.break-all{word-break:break-all}.\\!text-muted-foreground{color:var(--muted-foreground)!important}.text-foreground{color:var(--foreground)}.text-foreground\\/80{color:color-mix(in oklab,var(--foreground)80%,transparent)}.text-muted-foreground{color:var(--muted-foreground)}.text-popover-foreground{color:var(--popover-foreground)}.text-primary{color:var(--primary)}.text-primary-foreground{color:var(--primary-foreground)}.text-white{color:var(--color-white)}.capitalize{text-transform:capitalize}.italic{font-style:italic}.opacity-50{opacity:.5}.opacity-80{opacity:.8}.shadow{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a),0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px var(--tw-shadow-color,#0000001a),0 4px 6px -4px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.outline,.outline-1{outline-style:var(--tw-outline-style);outline-width:1px}.outline-primary{outline-color:var(--primary)}.brightness-85{--tw-brightness:brightness(85%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.filter{filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-\\[bottom\\]{transition-property:bottom;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-all{transition-property:all;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-opacity{transition-property:opacity;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.duration-200{--tw-duration:.2s;transition-duration:.2s}.duration-500{--tw-duration:.5s;transition-duration:.5s}:is(.\\*\\:\\!pointer-events-none>*){pointer-events:none!important}:is(.\\*\\:pointer-events-none>*){pointer-events:none}@media (hover:hover){.group-hover\\:fill-foreground:is(:where(.group):hover *){fill:var(--foreground)}.group-hover\\:brightness-85:is(:where(.group):hover *){--tw-brightness:brightness(85%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}}.placeholder\\:text-sm::placeholder{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}@media (hover:hover){.hover\\:border-destructive\\/20:hover{border-color:color-mix(in oklab,var(--destructive)20%,transparent)}.hover\\:border-primary:hover{border-color:var(--primary)}.hover\\:bg-destructive\\/10:hover{background-color:color-mix(in oklab,var(--destructive)10%,transparent)}.hover\\:bg-muted:hover{background-color:var(--muted)}.hover\\:fill-foreground:hover{fill:var(--foreground)}.hover\\:text-foreground:hover{color:var(--foreground)}.hover\\:brightness-90:hover{--tw-brightness:brightness(90%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.hover\\:brightness-110:hover{--tw-brightness:brightness(110%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}}.focus\\:border-primary:focus{border-color:var(--primary)}.focus\\:outline-solid:focus{--tw-outline-style:solid;outline-style:solid}.data-\\[active\\=\\'true\\'\\]\\:bottom-2[data-active=true]{bottom:calc(var(--spacing)*2)}.data-\\[active\\=true\\]\\:\\!border-primary[data-active=true]{border-color:var(--primary)!important}.data-\\[active\\=true\\]\\:\\!bg-primary\\/10[data-active=true]{background-color:color-mix(in oklab,var(--primary)10%,transparent)!important}@media (width<40rem){.max-sm\\:right-2{right:calc(var(--spacing)*2)}.max-sm\\:pl-3{padding-left:calc(var(--spacing)*3)}.max-sm\\:text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}}@media (width<30rem){.max-xs\\:left-2{left:calc(var(--spacing)*2)}}@media (width<20rem){.max-xxs\\:hidden{display:none}.max-xxs\\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}}@media (width>=30rem){.xs\\:size-7{width:calc(var(--spacing)*7);height:calc(var(--spacing)*7)}.xs\\:size-9{width:calc(var(--spacing)*9);height:calc(var(--spacing)*9)}.xs\\:h-32{height:calc(var(--spacing)*32)}.xs\\:h-\\[90dvh\\]{height:90dvh}.xs\\:w-md{width:448px}.xs\\:min-w-9{min-width:calc(var(--spacing)*9)}.xs\\:gap-x-1{column-gap:calc(var(--spacing)*1)}.xs\\:text-lg{font-size:calc(var(--font-size)*1.125);line-height:var(--tw-leading,var(--text-lg--line-height))}.xs\\:text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}.xs\\:text-\\[13\\.5px\\]{font-size:13.5px}.xs\\:text-\\[15px\\]{font-size:15px}}@media (width>=40rem){.sm\\:size-6{width:calc(var(--spacing)*6);height:calc(var(--spacing)*6)}.sm\\:size-10{width:calc(var(--spacing)*10);height:calc(var(--spacing)*10)}.sm\\:h-\\[22px\\]{height:22px}.sm\\:w-lg{width:512px}.sm\\:px-4{padding-inline:calc(var(--spacing)*4)}.sm\\:pt-2{padding-top:calc(var(--spacing)*2)}.sm\\:pb-4{padding-bottom:calc(var(--spacing)*4)}.sm\\:text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}}.dark\\:\\!bg-primary\\/5:is(:host(.dark) *){background-color:color-mix(in oklab,var(--primary)5%,transparent)!important}.dark\\:bg-background:is(:host(.dark) *){background-color:var(--background)}.dark\\:bg-muted:is(:host(.dark) *){background-color:var(--muted)}.dark\\:\\!shadow-none:is(:host(.dark) *){--tw-shadow:0 0 #0000!important;box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)!important}.\\[\\&\\>\\*\\]\\:\\!pointer-events-none>*{pointer-events:none!important}.\\[\\&\\>\\*\\]\\:fill-primary>*{fill:var(--primary)}.\\[\\&\\>\\*\\]\\:text-primary>*{color:var(--primary)}.\\[\\&\\>svg\\]\\:pointer-events-none>svg{pointer-events:none}.\\[\\&\\>svg\\]\\:size-7>svg{width:calc(var(--spacing)*7);height:calc(var(--spacing)*7)}.\\[\\&\\>svg\\]\\:rounded-full>svg{border-radius:3.40282e38px}.\\[\\&\\>svg\\]\\:bg-accent>svg{background-color:var(--accent)}.\\[\\&\\>svg\\]\\:fill-foreground>svg{fill:var(--foreground)}.\\[\\&\\>svg\\]\\:fill-foreground\\/80>svg{fill:color-mix(in oklab,var(--foreground)80%,transparent)}.\\[\\&\\>svg\\]\\:p-1>svg{padding:calc(var(--spacing)*1)}.\\[\\&\\>svg\\]\\:not-hover\\:\\!fill-muted-foreground>svg:not(:hover){fill:var(--muted-foreground)!important}@media not (hover:hover){.\\[\\&\\>svg\\]\\:not-hover\\:\\!fill-muted-foreground>svg{fill:var(--muted-foreground)!important}}@media (hover:hover){.hover\\:\\[\\&\\>svg\\]\\:fill-destructive:hover>svg{fill:var(--destructive)}.hover\\:\\[\\&\\>svg\\]\\:fill-foreground:hover>svg{fill:var(--foreground)}}.data-\\[active\\=true\\]\\:\\[\\&\\>svg\\]\\:bg-primary[data-active=true]>svg{background-color:var(--primary)}.data-\\[active\\=true\\]\\:\\[\\&\\>svg\\]\\:fill-primary-foreground[data-active=true]>svg{fill:var(--primary-foreground)}@media (width>=30rem){.xs\\:\\[\\&\\>svg\\]\\:size-8>svg{width:calc(var(--spacing)*8);height:calc(var(--spacing)*8)}.xs\\:\\[\\&\\>svg\\]\\:p-1\\.5>svg{padding:calc(var(--spacing)*1.5)}}}:host{--background:oklch(1 0 0);--foreground:oklch(25% 0 0);--popover:oklch(1 0 0);--popover-foreground:oklch(.145 0 0);--primary:oklch(56.99% .1959 259.98);--primary-foreground:oklch(1 0 0);--secondary:oklch(.97 0 0);--secondary-foreground:oklch(.205 0 0);--muted:oklch(.97 0 0);--muted-foreground:oklch(.556 0 0);--accent:oklch(.97 0 0);--accent-foreground:oklch(.205 0 0);--destructive:oklch(.577 .245 27.325);--destructive-foreground:oklch(.985 0 0);--border:oklch(.922 0 0);--input:oklch(.922 0 0);--ring:oklch(.708 0 0);--radius:10px;--spacing:4px;--font-sans:"VLibrasWidget_Font",sans-serif;--font-size:16px}:host(.dark){--background:oklch(.16 0 0);--foreground:oklch(.985 0 0);--popover:oklch(.2 0 0);--popover-foreground:oklch(.985 0 0);--primary:oklch(56.99% .1959 259.98);--primary-foreground:oklch(1 0 0);--secondary:oklch(.269 0 0);--secondary-foreground:oklch(.985 0 0);--muted:oklch(.2 0 0);--muted-foreground:oklch(.708 0 0);--accent:oklch(.269 0 0);--accent-foreground:oklch(.985 0 0);--destructive:oklch(.637 .237 25.331);--destructive-foreground:oklch(.985 0 0);--border:oklch(.269 0 0);--input:oklch(.269 0 0);--ring:oklch(.439 0 0)}:host{font-family:var(--font-sans)!important}:host ::-webkit-scrollbar{height:calc(var(--spacing)*2.5);width:calc(var(--spacing)*2.5)}:host ::-webkit-scrollbar-track{background-color:#0000}:host ::-webkit-scrollbar-thumb{border-style:var(--tw-border-style);--tw-border-style:solid;background-color:var(--border);background-clip:padding-box;border:1px solid #0000;border-radius:3.40282e38px}@property --tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-tracking{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-blur{syntax:"*";inherits:false}@property --tw-brightness{syntax:"*";inherits:false}@property --tw-contrast{syntax:"*";inherits:false}@property --tw-grayscale{syntax:"*";inherits:false}@property --tw-hue-rotate{syntax:"*";inherits:false}@property --tw-invert{syntax:"*";inherits:false}@property --tw-opacity{syntax:"*";inherits:false}@property --tw-saturate{syntax:"*";inherits:false}@property --tw-sepia{syntax:"*";inherits:false}@property --tw-drop-shadow{syntax:"*";inherits:false}@property --tw-duration{syntax:"*";inherits:false}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.5}}@keyframes scale{0%{transform:scale(0)}to{transform:scale(1)}}@keyframes move-up{0%{opacity:0;transform:translateY(100%)}to{opacity:1;transform:translateY(0)}}`, bc = ({ children: e, root: t }) => /* @__PURE__ */ o(tc, { root: t, children: [
+}, yc = `/*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */@layer theme{:root,:host{--font-sans:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--color-black:#000;--color-white:#fff;--spacing:.25rem;--text-xs--line-height:calc(1/.75);--text-sm--line-height:calc(1.25/.875);--text-base--line-height: 1.5 ;--text-lg--line-height:calc(1.75/1.125);--text-xl--line-height:calc(1.75/1.25);--font-weight-normal:400;--font-weight-medium:500;--font-weight-semibold:600;--font-weight-bold:700;--tracking-normal:0em;--leading-tight:1.25;--leading-snug:1.375;--leading-normal:1.5;--animate-spin:spin 1s linear infinite;--animate-pulse:pulse 2s cubic-bezier(.4,0,.6,1)infinite;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4,0,.2,1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono);--tw-translate-y:0;--tw-translate-x:0}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:color-mix(in oklab,currentColor 50%,transparent)}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){-webkit-appearance:button;-moz-appearance:button;appearance:button}::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}*{--tw-border-style:solid;border-style:solid;border-color:var(--border);outline-color:color-mix(in oklab,var(--ring)50%,transparent)}:host{border-color:var(--border);fill:var(--foreground);color:var(--foreground)}}@layer components;@layer utilities{.\\!pointer-events-none{pointer-events:none!important}.pointer-events-none{pointer-events:none}.collapse{visibility:collapse}.sr-only{clip:rect(0,0,0,0);white-space:nowrap;border-width:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.absolute{position:absolute}.fixed{position:fixed}.relative{position:relative}.inset-0{inset:calc(var(--spacing)*0)}.-top-1{top:calc(var(--spacing)*-1)}.-top-\\[1px\\]{top:-1px}.-top-\\[3px\\]{top:-3px}.top-0{top:calc(var(--spacing)*0)}.top-0\\.5{top:calc(var(--spacing)*.5)}.top-1\\/2{top:50%}.top-2{top:calc(var(--spacing)*2)}.top-3{top:calc(var(--spacing)*3)}.top-4{top:calc(var(--spacing)*4)}.top-\\[calc\\(45dvh\\+20px\\)\\]{top:calc(45dvh + 20px)}.\\!right-0{right:calc(var(--spacing)*0)!important}.right-2{right:calc(var(--spacing)*2)}.right-auto{right:auto}.-bottom-5{bottom:calc(var(--spacing)*-5)}.-bottom-\\[100dvh\\]{bottom:-100dvh}.bottom-0{bottom:calc(var(--spacing)*0)}.bottom-0\\.5{bottom:calc(var(--spacing)*.5)}.bottom-2{bottom:calc(var(--spacing)*2)}.bottom-\\[3\\.7px\\]{bottom:3.7px}.\\!left-0{left:calc(var(--spacing)*0)!important}.left-0{left:calc(var(--spacing)*0)}.left-1\\/2{left:50%}.left-2{left:calc(var(--spacing)*2)}.left-5{left:calc(var(--spacing)*5)}.left-\\[calc\\(50dvw-36rem\\/2\\)\\]{left:calc(50dvw - 18rem)}.left-auto{left:auto}.-z-\\[1\\]{z-index:-1}.-z-\\[2\\]{z-index:-2}.z-10{z-index:10}.z-\\[9999999\\]{z-index:9999999}.z-\\[99999999\\]{z-index:99999999}.z-\\[999999999\\]{z-index:999999999}.z-\\[2147483647\\]{z-index:2147483647}.col-\\[1\\/-1\\]{grid-column:1/-1}.col-auto{grid-column:auto}.mr-1\\.5{margin-right:calc(var(--spacing)*1.5)}.mr-2{margin-right:calc(var(--spacing)*2)}.ml-1{margin-left:calc(var(--spacing)*1)}.ml-auto{margin-left:auto}.line-clamp-1{-webkit-line-clamp:1;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.line-clamp-2{-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.flex{display:flex}.grid{display:grid}.hidden{display:none}.inline{display:inline}.inline-block{display:inline-block}.aspect-square{aspect-ratio:1}.size-4{width:calc(var(--spacing)*4);height:calc(var(--spacing)*4)}.size-5{width:calc(var(--spacing)*5);height:calc(var(--spacing)*5)}.size-6{width:calc(var(--spacing)*6);height:calc(var(--spacing)*6)}.size-7{width:calc(var(--spacing)*7);height:calc(var(--spacing)*7)}.size-9{width:calc(var(--spacing)*9);height:calc(var(--spacing)*9)}.h-2{height:calc(var(--spacing)*2)}.h-2\\.5{height:calc(var(--spacing)*2.5)}.h-4{height:calc(var(--spacing)*4)}.h-4\\.5{height:calc(var(--spacing)*4.5)}.h-8{height:calc(var(--spacing)*8)}.h-9{height:calc(var(--spacing)*9)}.h-10{height:calc(var(--spacing)*10)}.h-12{height:calc(var(--spacing)*12)}.h-28{height:calc(var(--spacing)*28)}.h-\\[45dvh\\]{height:45dvh}.h-\\[50dvh\\]{height:50dvh}.h-full{height:100%}.\\!max-h-0{max-height:calc(var(--spacing)*0)!important}.max-h-\\[400px\\]{max-height:400px}.max-h-\\[calc\\(32dvh\\)\\]{max-height:32dvh}.\\!w-auto{width:auto!important}.w-2\\.5{width:calc(var(--spacing)*2.5)}.w-8{width:calc(var(--spacing)*8)}.w-12{width:calc(var(--spacing)*12)}.w-72{width:calc(var(--spacing)*72)}.w-full{width:100%}.w-xl{width:576px}.min-w-9{min-width:calc(var(--spacing)*9)}.-translate-1\\/2{--tw-translate-x: -50% ;--tw-translate-y: -50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-x-1\\/2{--tw-translate-x: -50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-x-6{--tw-translate-x:calc(var(--spacing)*-6);translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-x-0{--tw-translate-x:calc(var(--spacing)*0);translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-x-1\\/2{--tw-translate-x: 50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-y-1\\/2{--tw-translate-y: -50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.-translate-y-full{--tw-translate-y:-100%;translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-y-1\\/2{--tw-translate-y: 50% ;translate:var(--tw-translate-x)var(--tw-translate-y)}.translate-none{translate:none}.rotate-0{rotate:none}.rotate-45{rotate:45deg}.rotate-180{rotate:180deg}.animate-move-up{animation:.2s ease-in-out move-up}.animate-pulse{animation:var(--animate-pulse)}.animate-scale{animation:.2s ease-in-out scale}.animate-spin{animation:var(--animate-spin)}.\\!cursor-not-allowed{cursor:not-allowed!important}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.auto-rows-min{grid-auto-rows:min-content}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-content-center{place-content:center}.place-items-center{place-items:center}.items-center{align-items:center}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.justify-start{justify-content:flex-start}.gap-0{gap:calc(var(--spacing)*0)}.gap-0\\.5{gap:calc(var(--spacing)*.5)}.gap-2{gap:calc(var(--spacing)*2)}.gap-4{gap:calc(var(--spacing)*4)}:where(.space-y-1>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing)*1)*var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing)*1)*calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing)*4)*var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing)*4)*calc(1 - var(--tw-space-y-reverse)))}.gap-x-2{column-gap:calc(var(--spacing)*2)}.truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:.25rem}.rounded-full{border-radius:3.40282e38px}.rounded-lg{border-radius:var(--radius)}.rounded-md{border-radius:calc(var(--radius) - 2px)}.rounded-none{border-radius:0}.rounded-sm{border-radius:calc(var(--radius) - 4px)}.rounded-xl{border-radius:calc(var(--radius) + 4px)}.rounded-t-none{border-top-left-radius:0;border-top-right-radius:0}.rounded-l-none{border-top-left-radius:0;border-bottom-left-radius:0}.rounded-r-\\[8px\\]{border-top-right-radius:8px;border-bottom-right-radius:8px}.rounded-b-md{border-bottom-right-radius:calc(var(--radius) - 2px);border-bottom-left-radius:calc(var(--radius) - 2px)}.border,.border-1{border-style:var(--tw-border-style);border-width:1px}.border-2{border-style:var(--tw-border-style);border-width:2px}.border-t-1{border-top-style:var(--tw-border-style);border-top-width:1px}.border-t-8{border-top-style:var(--tw-border-style);border-top-width:8px}.border-b-1{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}.border-b-8{border-bottom-style:var(--tw-border-style);border-bottom-width:8px}.\\!border-border{border-color:var(--border)!important}.border-border{border-color:var(--border)}.border-primary{border-color:var(--primary)}.border-primary\\/50{border-color:color-mix(in oklab,var(--primary)50%,transparent)}.border-white{border-color:var(--color-white)}.border-t-primary{border-top-color:var(--primary)}.\\!bg-muted\\/30{background-color:color-mix(in oklab,var(--muted)30%,transparent)!important}.\\!bg-primary\\/10{background-color:color-mix(in oklab,var(--primary)10%,transparent)!important}.\\!bg-transparent{background-color:#0000!important}.bg-background{background-color:var(--background)}.bg-black\\/20{background-color:color-mix(in oklab,var(--color-black)20%,transparent)}.bg-black\\/40{background-color:color-mix(in oklab,var(--color-black)40%,transparent)}.bg-destructive{background-color:var(--destructive)}.bg-muted{background-color:var(--muted)}.bg-popover{background-color:var(--popover)}.bg-primary{background-color:var(--primary)}.bg-primary\\/30{background-color:color-mix(in oklab,var(--primary)30%,transparent)}.bg-white{background-color:var(--color-white)}.fill-\\[\\#2c9e2c\\]{fill:#2c9e2c}.fill-destructive-foreground{fill:var(--destructive-foreground)}.fill-foreground\\/80{fill:color-mix(in oklab,var(--foreground)80%,transparent)}.fill-muted-foreground{fill:var(--muted-foreground)}.fill-primary{fill:var(--primary)}.fill-primary-foreground{fill:var(--primary-foreground)}.fill-white{fill:var(--color-white)}.p-1\\.5{padding:calc(var(--spacing)*1.5)}.p-2\\.5{padding:calc(var(--spacing)*2.5)}.p-4{padding:calc(var(--spacing)*4)}.px-3{padding-inline:calc(var(--spacing)*3)}.px-4{padding-inline:calc(var(--spacing)*4)}.py-1\\.5{padding-block:calc(var(--spacing)*1.5)}.py-8{padding-block:calc(var(--spacing)*8)}.ps-2{padding-inline-start:calc(var(--spacing)*2)}.pt-0{padding-top:calc(var(--spacing)*0)}.pt-1{padding-top:calc(var(--spacing)*1)}.pt-2{padding-top:calc(var(--spacing)*2)}.pr-2{padding-right:calc(var(--spacing)*2)}.pb-4{padding-bottom:calc(var(--spacing)*4)}.pl-4{padding-left:calc(var(--spacing)*4)}.text-center{text-align:center}.text-base{font-size:calc(var(--font-size)*1);line-height:var(--tw-leading,var(--text-base--line-height))}.text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-xl{font-size:calc(var(--font-size)*1.25);line-height:var(--tw-leading,var(--text-xl--line-height))}.text-xs{font-size:calc(var(--font-size)*.75);line-height:var(--tw-leading,var(--text-xs--line-height))}.text-\\[13\\.5px\\]{font-size:13.5px}.text-\\[13px\\]{font-size:13px}.leading-none{--tw-leading:1;line-height:1}.leading-normal{--tw-leading:var(--leading-normal);line-height:var(--leading-normal)}.leading-snug{--tw-leading:var(--leading-snug);line-height:var(--leading-snug)}.leading-tight{--tw-leading:var(--leading-tight);line-height:var(--leading-tight)}.font-bold{--tw-font-weight:var(--font-weight-bold);font-weight:var(--font-weight-bold)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-normal{--tw-font-weight:var(--font-weight-normal);font-weight:var(--font-weight-normal)}.font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}.tracking-normal{--tw-tracking:var(--tracking-normal);letter-spacing:var(--tracking-normal)}.break-all{word-break:break-all}.\\!text-muted-foreground{color:var(--muted-foreground)!important}.text-foreground{color:var(--foreground)}.text-foreground\\/80{color:color-mix(in oklab,var(--foreground)80%,transparent)}.text-muted-foreground{color:var(--muted-foreground)}.text-popover-foreground{color:var(--popover-foreground)}.text-primary{color:var(--primary)}.text-primary-foreground{color:var(--primary-foreground)}.text-white{color:var(--color-white)}.capitalize{text-transform:capitalize}.italic{font-style:italic}.opacity-50{opacity:.5}.opacity-80{opacity:.8}.shadow{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a),0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px var(--tw-shadow-color,#0000001a),0 4px 6px -4px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.outline,.outline-1{outline-style:var(--tw-outline-style);outline-width:1px}.outline-primary{outline-color:var(--primary)}.brightness-85{--tw-brightness:brightness(85%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.filter{filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-\\[bottom\\]{transition-property:bottom;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-all{transition-property:all;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-opacity{transition-property:opacity;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.duration-200{--tw-duration:.2s;transition-duration:.2s}.duration-500{--tw-duration:.5s;transition-duration:.5s}:is(.\\*\\:\\!pointer-events-none>*){pointer-events:none!important}:is(.\\*\\:pointer-events-none>*){pointer-events:none}@media (hover:hover){.group-hover\\:fill-foreground:is(:where(.group):hover *){fill:var(--foreground)}.group-hover\\:brightness-85:is(:where(.group):hover *){--tw-brightness:brightness(85%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}}.placeholder\\:text-sm::placeholder{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}@media (hover:hover){.hover\\:border-destructive\\/20:hover{border-color:color-mix(in oklab,var(--destructive)20%,transparent)}.hover\\:border-primary:hover{border-color:var(--primary)}.hover\\:bg-destructive\\/10:hover{background-color:color-mix(in oklab,var(--destructive)10%,transparent)}.hover\\:bg-muted:hover{background-color:var(--muted)}.hover\\:fill-foreground:hover{fill:var(--foreground)}.hover\\:text-foreground:hover{color:var(--foreground)}.hover\\:brightness-90:hover{--tw-brightness:brightness(90%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.hover\\:brightness-110:hover{--tw-brightness:brightness(110%);filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}}.focus\\:border-primary:focus{border-color:var(--primary)}.focus\\:outline-solid:focus{--tw-outline-style:solid;outline-style:solid}.data-\\[active\\=\\'true\\'\\]\\:bottom-2[data-active=true]{bottom:calc(var(--spacing)*2)}.data-\\[active\\=true\\]\\:\\!border-primary[data-active=true]{border-color:var(--primary)!important}.data-\\[active\\=true\\]\\:\\!bg-primary\\/10[data-active=true]{background-color:color-mix(in oklab,var(--primary)10%,transparent)!important}@media (width<40rem){.max-sm\\:right-2{right:calc(var(--spacing)*2)}.max-sm\\:text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}}@media (width<30rem){.max-xs\\:left-2{left:calc(var(--spacing)*2)}}@media (width<20rem){.max-xxs\\:hidden{display:none}.max-xxs\\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}}@media (width>=30rem){.xs\\:h-32{height:calc(var(--spacing)*32)}.xs\\:h-\\[90dvh\\]{height:90dvh}.xs\\:w-md{width:448px}.xs\\:gap-x-1{column-gap:calc(var(--spacing)*1)}.xs\\:text-lg{font-size:calc(var(--font-size)*1.125);line-height:var(--tw-leading,var(--text-lg--line-height))}.xs\\:text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}.xs\\:text-\\[13\\.5px\\]{font-size:13.5px}.xs\\:text-\\[15px\\]{font-size:15px}}@media (width>=40rem){.sm\\:size-6{width:calc(var(--spacing)*6);height:calc(var(--spacing)*6)}.sm\\:size-10{width:calc(var(--spacing)*10);height:calc(var(--spacing)*10)}.sm\\:h-\\[22px\\]{height:22px}.sm\\:w-lg{width:512px}.sm\\:text-sm{font-size:calc(var(--font-size)*.875);line-height:var(--tw-leading,var(--text-sm--line-height))}}.dark\\:\\!bg-primary\\/5:is(:host(.dark) *){background-color:color-mix(in oklab,var(--primary)5%,transparent)!important}.dark\\:bg-background:is(:host(.dark) *){background-color:var(--background)}.dark\\:bg-muted:is(:host(.dark) *){background-color:var(--muted)}.dark\\:\\!shadow-none:is(:host(.dark) *){--tw-shadow:0 0 #0000!important;box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)!important}.\\[\\&\\>\\*\\]\\:\\!pointer-events-none>*{pointer-events:none!important}.\\[\\&\\>\\*\\]\\:fill-primary>*{fill:var(--primary)}.\\[\\&\\>\\*\\]\\:text-primary>*{color:var(--primary)}.\\[\\&\\>svg\\]\\:pointer-events-none>svg{pointer-events:none}.\\[\\&\\>svg\\]\\:size-7>svg{width:calc(var(--spacing)*7);height:calc(var(--spacing)*7)}.\\[\\&\\>svg\\]\\:rounded-full>svg{border-radius:3.40282e38px}.\\[\\&\\>svg\\]\\:bg-accent>svg{background-color:var(--accent)}.\\[\\&\\>svg\\]\\:fill-foreground>svg{fill:var(--foreground)}.\\[\\&\\>svg\\]\\:fill-foreground\\/80>svg{fill:color-mix(in oklab,var(--foreground)80%,transparent)}.\\[\\&\\>svg\\]\\:p-1>svg{padding:calc(var(--spacing)*1)}.\\[\\&\\>svg\\]\\:not-hover\\:\\!fill-muted-foreground>svg:not(:hover){fill:var(--muted-foreground)!important}@media not (hover:hover){.\\[\\&\\>svg\\]\\:not-hover\\:\\!fill-muted-foreground>svg{fill:var(--muted-foreground)!important}}@media (hover:hover){.hover\\:\\[\\&\\>svg\\]\\:fill-destructive:hover>svg{fill:var(--destructive)}.hover\\:\\[\\&\\>svg\\]\\:fill-foreground:hover>svg{fill:var(--foreground)}}.data-\\[active\\=true\\]\\:\\[\\&\\>svg\\]\\:bg-primary[data-active=true]>svg{background-color:var(--primary)}.data-\\[active\\=true\\]\\:\\[\\&\\>svg\\]\\:fill-primary-foreground[data-active=true]>svg{fill:var(--primary-foreground)}@media (width>=30rem){.xs\\:\\[\\&\\>svg\\]\\:size-8>svg{width:calc(var(--spacing)*8);height:calc(var(--spacing)*8)}.xs\\:\\[\\&\\>svg\\]\\:p-1\\.5>svg{padding:calc(var(--spacing)*1.5)}}}:host{--background:oklch(1 0 0);--foreground:oklch(25% 0 0);--popover:oklch(1 0 0);--popover-foreground:oklch(.145 0 0);--primary:oklch(56.99% .1959 259.98);--primary-foreground:oklch(1 0 0);--secondary:oklch(.97 0 0);--secondary-foreground:oklch(.205 0 0);--muted:oklch(.97 0 0);--muted-foreground:oklch(.556 0 0);--accent:oklch(.97 0 0);--accent-foreground:oklch(.205 0 0);--destructive:oklch(.577 .245 27.325);--destructive-foreground:oklch(.985 0 0);--border:oklch(.922 0 0);--input:oklch(.922 0 0);--ring:oklch(.708 0 0);--radius:10px;--spacing:4px;--font-sans:"VLibrasWidget_Font",sans-serif;--font-size:16px}:host(.dark){--background:oklch(.16 0 0);--foreground:oklch(.985 0 0);--popover:oklch(.2 0 0);--popover-foreground:oklch(.985 0 0);--primary:oklch(56.99% .1959 259.98);--primary-foreground:oklch(1 0 0);--secondary:oklch(.269 0 0);--secondary-foreground:oklch(.985 0 0);--muted:oklch(.2 0 0);--muted-foreground:oklch(.708 0 0);--accent:oklch(.269 0 0);--accent-foreground:oklch(.985 0 0);--destructive:oklch(.637 .237 25.331);--destructive-foreground:oklch(.985 0 0);--border:oklch(.269 0 0);--input:oklch(.269 0 0);--ring:oklch(.439 0 0)}:host{font-family:var(--font-sans)!important}:host ::-webkit-scrollbar{height:calc(var(--spacing)*2.5);width:calc(var(--spacing)*2.5)}:host ::-webkit-scrollbar-track{background-color:#0000}:host ::-webkit-scrollbar-thumb{border-style:var(--tw-border-style);--tw-border-style:solid;background-color:var(--border);background-clip:padding-box;border:1px solid #0000;border-radius:3.40282e38px}@property --tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-tracking{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-blur{syntax:"*";inherits:false}@property --tw-brightness{syntax:"*";inherits:false}@property --tw-contrast{syntax:"*";inherits:false}@property --tw-grayscale{syntax:"*";inherits:false}@property --tw-hue-rotate{syntax:"*";inherits:false}@property --tw-invert{syntax:"*";inherits:false}@property --tw-opacity{syntax:"*";inherits:false}@property --tw-saturate{syntax:"*";inherits:false}@property --tw-sepia{syntax:"*";inherits:false}@property --tw-drop-shadow{syntax:"*";inherits:false}@property --tw-duration{syntax:"*";inherits:false}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.5}}@keyframes scale{0%{transform:scale(0)}to{transform:scale(1)}}@keyframes move-up{0%{opacity:0;transform:translateY(100%)}to{opacity:1;transform:translateY(0)}}`, bc = ({ children: e, root: t }) => /* @__PURE__ */ o(tc, { root: t, children: [
   /* @__PURE__ */ o("style", { children: yc }),
-  /* @__PURE__ */ o(Cc, {}),
+  /* @__PURE__ */ o(mc, {}),
   e
 ] }), { shadowRoot: Vn } = Qo(), qn = {}, _c = ({ children: e, css: t, ...r }) => {
   if (!t) return /* @__PURE__ */ o(G, { children: e });
