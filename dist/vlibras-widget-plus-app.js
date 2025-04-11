@@ -1957,7 +1957,7 @@ function Ia() {
   }, b1 = b, b1;
 }
 var Ra = Ia();
-const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = "Colapsar", Ba = "Diminuir brilho", za = "Leitor de Texto ativado", Fa = "Filtro de daltonismo", Ha = "Desativar Som", Ta = "Fonte para Dislexia", Da = "Leitor de Texto", Za = "Aumentar Fonte", Va = "Espaço entre letras", qa = "Espaço entre linhas", ja = "Destacar links", Ua = "Destacar títulos", Ga = "Modo Leitor", Wa = "Pausar animações", Xa = "Ocultar imagens", Ka = "Guia de leitura", Ya = "Máscara de leitura", Qa = "Cursor grande", Ja = "Cor do texto", e2 = "Dicionário", t2 = "Personalizada", r2 = "Médio", n2 = "Grande", o2 = "Muito grande", i2 = "Desativado", a2 = "Em breve", s2 = "Ativado", l2 = "Tela inteira", c2 = "Normal", d2 = "Claro", u2 = "Escuro", p2 = "Configurações", h2 = "Resetar", f2 = "Alterar idioma", g2 = "Sem suporte", v2 = "O sintetizador de voz não é suportado pelo seu navegador", m2 = "Interagir", C2 = "Accesar link", y2 = "Mover para cima", b2 = "Mover para baixo", _2 = { blind: "Cego", low_vision: "Baixa visão", cognitive: "Cognitivo", dyslexic: "Dislexia", color_blind: "Daltônico", mobility: "Mobilidade" }, w2 = { reduce_brightness: "Diminuir o brilho da tela", color_blind_filter: "Ativar filtro para daltonismo", disable_sound: "Desativar o som de vídeos e audios", dyslexic_font: "Ativar font para dyslexia", "dictionary.search": "Pesquisar no dicionário", definition_to_libras: "Ler definição em Libras", read_definition: "Ler definição", dictionary: "Dicionário simplificado", text_reader: "Ouvir o texto", font_increase: "Aumentar o tamanho da fonte", letter_spacing: "Modificar espaço entre as letras", line_spacing: "Modificar espaço entre linhas", highlight_links: "Destacar links", highlight_titles: "Destacar títulos", reset: "Resetar definições", close: "Fechar", change_language: "Alterar o idioma da ferramenta", reader_mode: "Ativar modo leitor", toggle_theme: "Alterar o tema", pause_animations: "Pausar animações", hide_images: "Esconder todas as imagens", reading_guide: "Ativar o Guia de leitura", reading_mask: "Ativar a Máscara de leitura", move_reading_mask: "Mover a Máscara de leitura", move_reading_guide: "Mover o Guia de leitura", large_cursor: "Ativar o cursor grande", text_color: "Alterar a cor do texto", open_accessibility_profiles: "Abrir ou fechar perfis de acessibilidade", blind: "Definições para pessoas cegas", low_vision: "Definições para pessoas com baixa visão" }, x2 = { reset: "Resetar definições", close: "Fechar", toggle_theme: "Alterar o tema" }, A2 = { text_and_typography: "Texto e Tipografia", reading_and_comprehension: "Leitura e Compreensão", focus_and_visibility: "Foco e Acessibilidade Visual", colors_filters_and_contrast: "Cores, Filtros e Contraste", distraction_reduction: "Redução de Distrações", accessibility_profiles: "Perfis de Acessibilidade", profiles: "Perfis" }, k2 = "Definição em Libras", S2 = "Ler definição", L2 = {
+const On = /* @__PURE__ */ ea(Ra), Na = "Selecionar cor", $a = "Expandir", Oa = "Colapsar", Ba = "Diminuir brilho", za = "Leitor de Texto ativado", Fa = "Filtro de daltonismo", Ha = "Desativar Som", Ta = "Fonte para Dislexia", Da = "Leitor de Texto", Za = "Aumentar Fonte", Va = "Espaço entre letras", qa = "Espaço entre linhas", ja = "Destacar links", Ua = "Destacar títulos", Ga = "Modo Leitor", Wa = "Pausar animações", Xa = "Ocultar imagens", Ka = "Guia de leitura", Ya = "Máscara de leitura", Qa = "Cursor grande", Ja = "Cor do texto", e2 = "Dicionário", t2 = "Personalizada", r2 = "Médio", n2 = "Grande", o2 = "Muito grande", i2 = "Desativado", a2 = "Em breve", s2 = "Ativado", l2 = "Tela inteira", c2 = "Normal", d2 = "Claro", u2 = "Escuro", p2 = "Configurações", h2 = "Resetar", f2 = "Alterar idioma", g2 = "Sem suporte", v2 = "O sintetizador de voz não é suportado pelo seu navegador", m2 = "Interagir", C2 = "Acessar link", y2 = "Mover para cima", b2 = "Mover para baixo", _2 = { blind: "Cego", low_vision: "Baixa visão", cognitive: "Cognitivo", dyslexic: "Dislexia", color_blind: "Daltônico", mobility: "Mobilidade" }, w2 = { reduce_brightness: "Diminuir o brilho da tela", color_blind_filter: "Ativar filtro para daltonismo", disable_sound: "Desativar o som de vídeos e audios", dyslexic_font: "Ativar font para dyslexia", "dictionary.search": "Pesquisar no dicionário", definition_to_libras: "Ler definição em Libras", read_definition: "Ler definição", dictionary: "Dicionário simplificado", text_reader: "Ouvir o texto", font_increase: "Aumentar o tamanho da fonte", letter_spacing: "Modificar espaço entre as letras", line_spacing: "Modificar espaço entre linhas", highlight_links: "Destacar links", highlight_titles: "Destacar títulos", reset: "Resetar definições", close: "Fechar", change_language: "Alterar o idioma da ferramenta", reader_mode: "Ativar modo leitor", toggle_theme: "Alterar o tema", pause_animations: "Pausar animações", hide_images: "Esconder todas as imagens", reading_guide: "Ativar o Guia de leitura", reading_mask: "Ativar a Máscara de leitura", move_reading_mask: "Mover a Máscara de leitura", move_reading_guide: "Mover o Guia de leitura", large_cursor: "Ativar o cursor grande", text_color: "Alterar a cor do texto", open_accessibility_profiles: "Abrir ou fechar perfis de acessibilidade", blind: "Definições para pessoas cegas", low_vision: "Definições para pessoas com baixa visão" }, x2 = { reset: "Resetar definições", close: "Fechar", toggle_theme: "Alterar o tema" }, A2 = { text_and_typography: "Texto e Tipografia", reading_and_comprehension: "Leitura e Compreensão", focus_and_visibility: "Foco e Acessibilidade Visual", colors_filters_and_contrast: "Cores, Filtros e Contraste", distraction_reduction: "Redução de Distrações", accessibility_profiles: "Perfis de Acessibilidade", profiles: "Perfis" }, k2 = "Definição em Libras", S2 = "Ler definição", L2 = {
   color_picker: Na,
   expand: $a,
   collapse: Oa,
@@ -6275,6 +6275,10 @@ const g7 = () => {
     if (c.preventDefault(), c.stopPropagation(), t && r) {
       const { word: f, node: _, offset: C } = O7(c.clientX, c.clientY) || {};
       if (f && _ && typeof C == "number") {
+        if (u.classList.contains(r)) {
+          l(u, c), e(f);
+          return;
+        }
         const L = document.createRange();
         L.setStart(_, C), L.setEnd(_, C + f.length);
         const A = document.createElement("span");
@@ -6744,7 +6748,7 @@ const G7 = () => {
 }) => {
   const n = (r == null ? void 0 : r.getBoundingClientRect()) || { width: 0 };
   let i = e, a = t - 36, s = "bottom";
-  return i < 34 && (i = 34, s = "left"), i + n.width > window.innerWidth && (i = window.innerWidth - n.width + 12, s = "right"), a < 46 ? (a = 54, s = s === "left" ? "top-left" : "top-right") : s = s === "left" ? "bottom-left" : "bottom-right", { x: i, y: a, arrow: s };
+  return i < 34 && (i = 34, s = "left"), i + n.width > window.innerWidth && (i = window.innerWidth - n.width + 12, s = "right"), a < 46 ? (a = 54, s = s === "right" ? "top-right" : "top-left") : s = s === "right" ? "bottom-right" : "bottom-left", { x: i, y: a, arrow: s };
 }, ic = () => {
   const e = ie(null), { t } = $(), { type: r, event: n, onClick: i, isActive: a, render: s } = ke(), [l, c] = N({ x: 0, y: 0, arrow: "bottom" });
   return M(() => {
@@ -6757,9 +6761,7 @@ const G7 = () => {
   }, [a]), M(() => {
     if (n) {
       const { pageX: d, pageY: p } = n;
-      c(
-        oc({ x: d, y: p, tooltip: e.current })
-      );
+      c(oc({ x: d, y: p, tooltip: e.current }));
       const u = e.current;
       u && (u.classList.remove("animate-scale"), u.offsetWidth, u.classList.add("animate-scale"));
     }
