@@ -6243,17 +6243,24 @@ const g7 = () => {
   const t = Be("input", e.parentElement);
   t && ["radio", "checkbox"].includes(t.type) && (t.checked = !t.checked);
 }, O7 = (e, t) => {
-  var h, f;
-  const r = (h = document.caretPositionFromPoint) == null ? void 0 : h.call(document, e, t);
-  if (!r) return null;
-  const n = r.offsetNode, i = r.offset;
-  if (!n || n.nodeType !== Node.TEXT_NODE) return null;
-  const a = n.textContent ?? "";
-  if (!a.trim()) return null;
-  const s = a.slice(0, i), l = a.slice(i), d = s.match(/[\wÀ-ú’-]+$/), c = l.match(/^[\wÀ-ú’-]+/), p = `${(d == null ? void 0 : d[0]) ?? ""}${(c == null ? void 0 : c[0]) ?? ""}`;
-  if (!p) return null;
-  const u = i - (((f = d == null ? void 0 : d[0]) == null ? void 0 : f.length) ?? 0);
-  return { word: p, node: n, offset: u };
+  var u;
+  let r = null, n = 0;
+  if (document.caretPositionFromPoint) {
+    const h = document.caretPositionFromPoint(e, t);
+    if (!h || !h.offsetNode) return null;
+    r = h.offsetNode, n = h.offset;
+  } else if (document.caretRangeFromPoint) {
+    const h = document.caretRangeFromPoint(e, t);
+    if (!h || !h.startContainer) return null;
+    r = h.startContainer, n = h.startOffset;
+  }
+  if (!r || r.nodeType !== Node.TEXT_NODE) return null;
+  const i = r.textContent ?? "";
+  if (!i.trim()) return null;
+  const a = i.slice(0, n), s = i.slice(n), l = a.match(/[\wÀ-ú’-]+$/), d = s.match(/^[\wÀ-ú’-]+/), c = `${(l == null ? void 0 : l[0]) ?? ""}${(d == null ? void 0 : d[0]) ?? ""}`;
+  if (!c) return null;
+  const p = n - (((u = l == null ? void 0 : l[0]) == null ? void 0 : u.length) ?? 0);
+  return { word: c, node: r, offset: p };
 }, B7 = (e) => {
   document.querySelectorAll(`span.${e}`).forEach((t) => {
     const r = t.parentNode;
