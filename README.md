@@ -20,13 +20,13 @@ Promovendo uma navegação mais acessível.
 - [Versionamento](#versionamento)
 - [Contribuidores](#contribuidores)
 
-## 📝 Sobre o projeto
+<h2 id="sobre-o-projeto">📝 Sobre o projeto</h2>
 
 O **VLibras Widget+** é uma ferramenta desenvolvida para melhorar a acessibilidade em sites, oferecendo uma experiência mais inclusiva para usuários com diferentes necessidades. Com um conjunto de funcionalidades voltadas para personalização de texto, leitura, foco, contraste e redução de distrações, o **VLibras Widget+** possibilita que cada usuário adapte o conteúdo conforme suas preferências e dificuldades.
 
 Seja ajustando o tamanho da fonte, ouvindo o texto em áudio, aumentando o contraste ou reduzindo elementos visuais que possam causar distração, a ferramenta promove maior autonomia e conforto na navegação.
 
-## 💻 Tecnologias
+<h2 id="tecnologias">💻 Tecnologias</h2>
 
 - **Vite** - Ferramenta moderna e rápida para construção de aplicações frontend;
 - **Preact** - Biblioteca JavaScript leve e eficiente para criação de interfaces reativas;
@@ -37,7 +37,7 @@ Seja ajustando o tamanho da fonte, ouvindo o texto em áudio, aumentando o contr
 - **Commitlint** - Linter para garantir que as mensagens de commit sigam um formato convencional;
 - **release-it** - Automação do processo de versionamento, incluindo geração de tags, commits e changelogs.
 
-## 🚀 Iniciando
+<h2 id="iniciando">🚀 Iniciando</h2>
 
 ### Pré-requisitos
 
@@ -68,7 +68,7 @@ pnpm dev
 
 A aplicação estará acessível em: `http://localhost:3003`.
 
-## 📦 Build
+<h2 id="build">📦 Build</h2>
 
 > Antes de tudo, certifique-se que o link para a build de produção no arquivo `/src/scripts/vlibras-widget-plus.js` está correto.
 
@@ -82,7 +82,7 @@ pnpm build
 
 Isso criará a pasta `/dist` na raiz do projeto.
 
-## 🏷️ Versionamento
+<h2 id="versionamento">🏷️ Versionamento</h2>
 
 Antes de tudo, faça o _fetch_ das _tags_ de versões do projeto:
 
@@ -100,6 +100,6 @@ O comando atualiza automaticamente o arquivo `CHANGELOG.md`, incrementa a versã
 
 > Este comando também pergunta se você desejar criar a _tag_ da nova versão. Caso aceite, ao ser criada, deve ser feito o _push_ dela (a criação da _tag_ também pode ser feita pelo GitLab).
 
-## 🤝 Contribuidores
+<h2 id="contribuidores">🤝 Contribuidores</h2>
 
 - **Diêgo Ferreira** - [diego.raian@lavid.ufpb.br](mailto:diego.raian@lavid.ufpb.br)
