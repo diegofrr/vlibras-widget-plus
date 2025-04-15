@@ -50,8 +50,8 @@ const template = `
 	}
 
 	img {
-		width: 100%;
-		height: 100%;
+		width: 40px;
+		height: 40px;
 	}
 }
 </style>`;
@@ -67,19 +67,19 @@ let widget;
 const initBtn = shadow.querySelector("#vwp-access-button");
 
 const open = () => {
-	if (widget) return (widget.dataset.active = true);
+  if (widget) return (widget.dataset.active = true);
 
-  	const script = document.createElement("script");
-  	script.src = `${dist}/vlibras-widget-plus-app.umd.cjs`;
-  	script.async = true;
-  	script.onload = () => {
-    	widget = document.getElementById("vwp-app-root");
-    	widget.dataset.active = true;
-  	};
-  	document.body.appendChild(script);
-}
+  const script = document.createElement("script");
+  script.src = `${dist}/vlibras-widget-plus-app.umd.cjs`;
+  script.async = true;
+  script.onload = () => {
+    widget = document.getElementById("vwp-app-root");
+    widget.dataset.active = true;
+  };
+  document.body.appendChild(script);
+};
 
 initBtn.onclick = open;
 
 window.VLibrasWidgetPlus = {};
-window.VLibrasWidgetPlus = { path: dist, initBtn, open }
+window.VLibrasWidgetPlus = { path: dist, initBtn, open };
