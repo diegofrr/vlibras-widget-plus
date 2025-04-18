@@ -2271,7 +2271,7 @@ const N1 = /* @__PURE__ */ ts(_c), Cc = "Selecionar cor", bc = "Expandir", wc = 
   const [e, r] = V(""), [t, n] = V("");
   return B(() => {
     var i;
-    e || r("0.2.0-alpha.6"), t || n(((i = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : i.path) ?? "./");
+    e || r("0.2.0-alpha.7"), t || n(((i = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : i.path) ?? "./");
   }, [e, t]), { version: e, path: t };
 }, du = (e, r = []) => {
   const [t, n] = V(null), [i, o] = V(null), [c, a] = V(!0);
