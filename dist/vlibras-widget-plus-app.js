@@ -10701,7 +10701,7 @@ const xn = (e, r) => {
     /* @__PURE__ */ a(ce, { children: e("page_colors") }),
     /* @__PURE__ */ a(ue, { children: e(t ? "actived" : "deactivated") })
   ] });
-}, z0 = ({ className: e, ...r }) => /* @__PURE__ */ a("div", { className: G("h-4", e), ...r }), U0 = "body.vwp-keyboard-navigation *:not(.vwp-ignore,.sr-only,.sr-only *,[vw],[vw] *,#vwp-app-root,#vwp-app-root *,vlibras-widget-plus):focus{outline:2px solid transparent;animation:pulse 1s linear infinite alternate;background-color:#000!important;color:#fff!important;fill:#fff!important}@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 #ff0}50%{transform:scale(1.03);outline-color:#ff0;box-shadow:0 0 20px 5px #ff0}}", cn = "vwp-keyboard-navigation", V0 = "vwp-keyboard-navigation-style", G0 = `
+}, z0 = ({ className: e, ...r }) => /* @__PURE__ */ a("div", { className: G("h-4", e), ...r }), U0 = "body.vwp-keyboard-navigation *:not(.vwp-ignore,.sr-only,.sr-only *,[vw],[vw] *,#vwp-app-wrapper,#vwp-app-wrapper *,#vwp-app-root,#vwp-app-root *,vlibras-widget-plus):focus{outline:2px solid transparent;animation:pulse 1s linear infinite alternate;background-color:#000!important;color:#fff!important;fill:#fff!important}@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 #ff0}50%{transform:scale(1.03);outline-color:#ff0;box-shadow:0 0 20px 5px #ff0}}", cn = "vwp-keyboard-navigation", V0 = "vwp-keyboard-navigation-style", G0 = `
   a,
   area[href],
   input:not([disabled]),
