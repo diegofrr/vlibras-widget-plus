@@ -11579,7 +11579,7 @@ const cl = ({ size: e = 24, iconTitle: r, ...t }) => /* @__PURE__ */ a(
     r.length > 0 && r.map((n, i) => /* @__PURE__ */ a(
       "a",
       {
-        href: `#${n.href}`,
+        href: n.href,
         target: "_blank",
         rel: "noopener noreferrer",
         className: V(
