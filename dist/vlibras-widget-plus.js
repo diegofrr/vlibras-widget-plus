@@ -78,3 +78,6 @@ initBtn.onclick = open;
 
 window.VLibrasWidgetPlus = {};
 window.VLibrasWidgetPlus = { path: dist, initBtn, open };
+
+if (localStorage.getItem("@vlibras-widget-plus").includes('"isActive":true'))
+  open();
