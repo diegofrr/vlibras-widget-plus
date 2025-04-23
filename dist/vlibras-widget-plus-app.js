@@ -11918,7 +11918,9 @@ const hl = ({ size: e = 24, iconTitle: r, ...t }) => /* @__PURE__ */ a(
 }, { root: U8, shadowRoot: Nn, isRootActive: Aa } = $u();
 function G8() {
   const { setIsOpenWidget: e, isLoaded: r, setIsLoaded: t } = N(), { path: n } = Rr();
-  return I(() => z8, []), I(() => {
+  return I(() => {
+    z8();
+  }, []), I(() => {
     if ((async () => (await zu(n, Nn), t(!0)))(), !r) return;
     e(Aa());
     const i = new MutationObserver(() => e(Aa()));
