@@ -11901,7 +11901,7 @@ const hl = ({ size: e = 24, iconTitle: r, ...t }) => /* @__PURE__ */ a(
   path: window.location.href,
   host: window.location.hostname,
   datetime: (/* @__PURE__ */ new Date()).toISOString()
-}, B8 = "https://api.logflare.app/logs/json", F8 = "f062bd7e-222f-448c-b635-ecee197c368a", $8 = "OXAfLVK5XWVW", z8 = async () => {
+}, B8 = "https://api.logflare.app/logs/json", F8 = "f062bd7e-222f-448c-b635-ecee197c368a", $8 = "0199f8cc58def7c6309926ebbfbf2df9eaa54064420cd285ba8f844451e05854", z8 = async () => {
   fetch(`${B8}?source=${F8}`, {
     method: "POST",
     headers: {

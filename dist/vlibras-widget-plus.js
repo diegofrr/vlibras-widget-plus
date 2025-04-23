@@ -1,4 +1,4 @@
-const dist = "https://diegofrr.github.io/vlibras-widget-plus/dist";
+const dist = "http://localhost:5500/dist";
 
 const template = `
   <div id="vwp-access-wrapper">
@@ -24,7 +24,7 @@ const template = `
 	display: flex;
 	align-items: center;
 	position: fixed;
-	z-index: 2147483647;
+	z-index: 2147483639;
 	right: 10px;
 	top: calc(50vh - 20px);
 	transition: all .5s ease;
