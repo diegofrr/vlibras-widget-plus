@@ -2337,7 +2337,7 @@ const Bo = /* @__PURE__ */ hs(O2), D2 = "Apenas Português", H2 = "Selecionar co
   const [e, r] = $(""), [t, n] = $("");
   return P(() => {
     var i;
-    e || r("0.2.0-alpha.8"), t || n(((i = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : i.path) ?? "./");
+    e || r("0.2.0-alpha.9"), t || n(((i = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : i.path) ?? "./");
   }, [e, t]), { version: e, path: t };
 }, J7 = (e, r = []) => {
   const [t, n] = $(null), [i, a] = $(null), [s, l] = $(!0);
