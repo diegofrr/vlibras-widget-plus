@@ -24,7 +24,7 @@ const template = `
 	display: flex;
 	align-items: center;
 	position: fixed;
-	z-index: 2147483647;
+	z-index: 2147483639;
 	right: 10px;
 	top: calc(50vh - 20px);
 	transition: all .5s ease;
