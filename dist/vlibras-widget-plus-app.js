@@ -11866,7 +11866,7 @@ const Cn = pe(
           }
         )
       ] }),
-      /* @__PURE__ */ n("video", { ref: e, className: "h-64", autoplay: !0, loop: !0, src: `${r}/assets/videos/project_description.mp4` })
+      /* @__PURE__ */ n("video", { ref: e, className: "h-64", autoplay: !0, src: `${r}/assets/videos/project_description.mp4` })
     ] })
   ] });
 }, Ep = [
