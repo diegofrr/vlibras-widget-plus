@@ -11251,12 +11251,13 @@ const fr = (e, r) => {
     const o = Array.from(
       document.querySelectorAll(
         `p, span, h1, h2, h3, h4, h5, h6, a, button, em, strong,
-				i, b, code, mark, pre, blockquote, abbr, cite, q, time`
+				i, li, b, code, mark, pre, address, blockquote, abbr, cite, q, time`
       )
     ), n = (s) => {
+      var d, p;
       const l = s.currentTarget;
-      l.classList.add(rl), e.current = l, N.setState({
-        contentZoom: { isActive: !!(r != null && r.isActive), content: l.textContent || "" }
+      ((d = l.textContent) == null ? void 0 : d.trim()) && (l.classList.add(rl), e.current = l), N.setState({
+        contentZoom: { isActive: !!(r != null && r.isActive), content: ((p = l.textContent) == null ? void 0 : p.trim()) || "" }
       });
     }, a = () => {
       var s;
