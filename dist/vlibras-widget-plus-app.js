@@ -5190,7 +5190,7 @@ const fs = /* @__PURE__ */ Ec(Sd), Td = "Tema da página", Nd = "Clique Fácil",
   const [e, r] = U(""), [t, o] = U("");
   return O(() => {
     var n;
-    e || r("0.4.0"), t || o(((n = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : n.path) ?? "./");
+    e || r("0.5.0"), t || o(((n = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : n.path) ?? "./");
   }, [e, t]), { version: e, path: t };
 }, y3 = (e, r = []) => {
   const [t, o] = U(null), [n, a] = U(null), [s, l] = U(!0);
