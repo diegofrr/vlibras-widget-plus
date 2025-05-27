@@ -5235,7 +5235,7 @@ const fs = /* @__PURE__ */ Lc(Td), Rd = "Tema da página", Md = "Clique Fácil",
   const [e, t] = $(""), [r, o] = $("");
   return P(() => {
     var n;
-    e || t("0.6.0"), r || o(((n = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : n.path) ?? "./");
+    e || t("0.7.0"), r || o(((n = window == null ? void 0 : window.VLibrasWidgetPlus) == null ? void 0 : n.path) ?? "./");
   }, [e, r]), { version: e, path: r };
 }, L3 = (e, t = []) => {
   const [r, o] = $(null), [n, a] = $(null), [s, l] = $(!0);
