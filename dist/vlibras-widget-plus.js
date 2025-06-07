@@ -1,14 +1,14 @@
 const dist = "https://diegofrr.github.io/vlibras-widget-plus/dist";
 
 const template = `
-  <div id="vwp-access-wrapper">
-    <img id="vwp-access-popup" src="${dist}/assets/images/vwp-popup.webp" />
-    <button type="button" aria-label="Recursos assistivos com VLibras Widget+" id="vwp-access-button">
+<div id="vwp-access-wrapper">
+	<img id="vwp-access-popup" src="${dist}/assets/images/vwp-popup.webp" />
+	<button type="button" aria-label="Recursos assistivos com VLibras Widget+" id="vwp-access-button">
       <img src="${dist}/assets/images/vwp-access.svg" />
     </button>
-  </div>
-  <style>
-    #vwp-access-wrapper {
+</div>
+<style>
+#vwp-access-wrapper {
 	height: 40px;
 	width: 40px;
 }
