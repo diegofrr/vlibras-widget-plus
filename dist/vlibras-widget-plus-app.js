@@ -7052,13 +7052,7 @@ const pr = "vwp-app-root", yo = "vwp-root-overlay", St = {}, xs = {}, tp = () =>
     optionsKey: ["keyboard_navigation"],
     options: ["keyboardNavigation"],
     state: { keyboardNavigation: "speech" },
-    undo: [
-      "profiles.cognitive",
-      "profiles.color_blind",
-      "profiles.dyslexic",
-      "profiles.low_vision",
-      "profiles.mobility"
-    ]
+    undo: ["profiles.color_blind", "profiles.dyslexic", "profiles.low_vision"]
   },
   {
     icon: Kc,
@@ -7095,16 +7089,14 @@ const pr = "vwp-app-root", yo = "vwp-root-overlay", St = {}, xs = {}, tp = () =>
     key: "profiles.mobility",
     optionsKey: ["large_cursor", "easy_click"],
     options: ["largeCursor", "easyClick"],
-    state: { largeCursor: !0, easyClick: !0 },
-    undo: ["profiles.blind"]
+    state: { largeCursor: !0, easyClick: !0 }
   },
   {
     icon: Dp,
     key: "profiles.cognitive",
     optionsKey: ["disable_autoplay", "pause_animations", "disable_sounds"],
     options: ["disableAutoplay", "pauseAnimations", "disableSound"],
-    state: { disableAutoplay: !0, pauseAnimations: !0, disableSound: !0 },
-    undo: ["profiles.blind"]
+    state: { disableAutoplay: !0, pauseAnimations: !0, disableSound: !0 }
   }
 ], _8 = qt.reduce((e, t) => e.concat(t.options), []), x8 = ({ profiles: e }) => {
   const { t } = B();
