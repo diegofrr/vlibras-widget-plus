@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blend type tester</title>
+  </head>
+  <body>
+    <input type="file" id="blend-file" accept=".blend" />
+    <script>
+      const fileType = ".blend";
+      const checkFile = (file) => {
+        if (fileType !== ".blend") return file;
+        if (file.type === "application/x-blend") return file;
+        else if (!file.type && file.name.endsWith(fileType)) {
+          return new File([file], file.name, { type: "application/x-blend" });
+        }
+        return file;
+      };
+
+      document
+        .getElementById("blend-file")
+        .addEventListener("change", function (e) {
+          const file = checkFile(e.target.files[0]);
+          console.log(file);
+        });
+    </script>
+  </body>
+</html>
