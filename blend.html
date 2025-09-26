@@ -10,9 +10,10 @@
     <script>
       const fileType = ".blend";
       const checkFile = (file) => {
+        console.log(file);
         if (fileType !== ".blend") return file;
         if (file.type === "application/x-blend") return file;
-        else if (!file.type && file.name.endsWith(fileType)) {
+        else if (file.name.endsWith(fileType)) {
           return new File([file], file.name, { type: "application/x-blend" });
         }
         return file;
@@ -21,6 +22,7 @@
       document
         .getElementById("blend-file")
         .addEventListener("change", function (e) {
+          console.log(e.target.files[0]);
           const file = checkFile(e.target.files[0]);
           console.log(file);
         });
