@@ -1,0 +1,15 @@
+Opacidade do Widget
+===================
+
+Em conjunto com a funcionalidade de troca de posição da janela, o *widget* também permite 
+ajustar o nível de opacidade do plano de fundo da região que comporta o avatar.
+Para isso, deve-se acessar as **Configurações** clicando no ícone de engrenagem
+(:material-regular:`settings;1.2rem`) localizado no cantor superior esquerdo da janela do *widget*, 
+e selecionar o nível de opacidade desejado na opção **Opacidade**.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_opacity.webm" type="video/webm" />
+   </video>
+   <br></br>

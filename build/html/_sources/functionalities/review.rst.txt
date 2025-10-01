@@ -1,0 +1,50 @@
+Avaliação e Revisão de Tradução
+===============================
+
+O VLibras Widget possui uma funcionalidade que permite o usuário avaliar 
+uma tradução como "Gostei" ou "Não gostei". Esse recurso é habilitado
+ao fim de cada tradução e pode ser usado abrindo a janela de **Feedback**,
+clicando no ícone de seta para cima (:octicon:`chevron-up;1.2rem`), que surge logo
+acima dos controles na janela do *widget*, e respondendo a pergunta
+**"Gostou da tradução?"**, clicando em **Sim** ou **Não**.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_feedback.webm" type="video/webm" />
+   </video>
+   <br></br>
+
+Além da avaliação, a ferramenta também permite a revisão da tradução.
+Após uma análise negativa, é mostrada uma janela de sugestão de texto
+preenchida com a glosa da tradução.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_send.webm" type="video/webm" />
+   </video>
+   <br></br>
+
+Durante a revisão da glosa, é possível que o editor de texto sugira palavras que estão
+no dicionário do VLibras para facilitar a visualização dos sinais disponíveis na ferramenta
+de tradução. Em caso da palavra sugerida for a desejada pelo usuário, basta selecioná-la na
+lista de palavras que o editor preencherá automaticamente.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_auto.webm" type="video/webm" />
+   </video>
+   <br></br>
+
+
+Após a correção da glosa, a animação da sugestão de tradução pode ser pré-visualizada
+clicando no botão **Reproduzir** e enviada clicando no botão **Enviar Sugestão**.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_reproduzir.webm" type="video/webm" />
+   </video>
+   <br></br>

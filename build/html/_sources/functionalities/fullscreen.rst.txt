@@ -1,0 +1,14 @@
+Tela Cheia
+==========
+
+A fim de possibilitar ao usuário uma visão ampla e mais detalhada das animações 
+realizadas pelos avatares, o *widget* conta com a  funcionalidade de **Tela Cheia**,
+ativada clicando no ícone de maximizar (:material-regular:`fullscreen;1.2rem`), localizado no canto
+inferior direito. Clicando novamente, o *widget* volta para seu tamanho original.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_full_screen.webm" type="video/webm" />
+   </video>
+   <br></br>
