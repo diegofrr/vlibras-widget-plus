@@ -1,0 +1,14 @@
+Posição do Widget
+=================
+
+Por padrão, a janela do *widget* é carregada no lado direito da página web, no entanto, essa
+posição pode ser alterada acessando as **Configurações**, clicando no ícone de engrenagem 
+(:material-regular:`settings;1.2rem`) no superior esquerdo da janela do *widget*, e selecionando a posição desejada
+na opção de **Posição na tela**.
+
+.. raw:: html
+
+   <video class="align-center" width="640" height="360" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_position.webm" type="video/webm" />
+   </video>
+   <br></br>

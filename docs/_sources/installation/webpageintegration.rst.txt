@@ -1,0 +1,109 @@
+Integrando a uma Página Web
+===========================
+
+A integração do VLibras Widget com um website é feita com a inserção de alguns 
+trechos de código antes do fechamento da tag **<body>** de uma página HTML. 
+Veja o exemplo:
+
+
+.. tabs:: 
+
+  .. tab:: Básico
+
+    .. code-block:: HTML
+      
+      <body> <!-- Inicio do corpo da página -->
+      
+      ... <!-- Conteúdo da página -->
+      
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div> 
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget();
+      </script>
+
+      </body> <!-- Fim do corpo da página -->
+
+  .. tab:: Avançado
+
+    .. code-block:: HTML
+      
+      <body> <!-- Inicio do corpo da página -->
+      
+      ... <!-- Conteúdo da página -->
+      
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div> 
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget({
+            rootPah: '/app',
+            personalization: 'https://vlibras.gov.br/config/default_logo.json',
+            opacity: 0.5,
+            position: 'L',
+            avatar: 'random',
+        });
+      </script>
+
+      </body> <!-- Fim do corpo da página -->
+
+Parâmetros
+-----------
+
+Como mostrado na aba **"Avançado"** do bloco acima, o VLibras Widget possibilita definir alguns 
+valores padrão que nos permitem personalizar a ferramenta de acordo com nossas preferências.
+Para isso, deve-se passar um objeto dentro do contrutor do Widget (``new window.VLibras.Widget();``)
+com estes valores. Confira cada uma deles a seguir.
+
+• **rootPath**
+
+  Define o caminho da *build* local da aplicação. A fim de otimizar o processo de 
+  carregamento da ferramenta, você pode alocar a versão compilada do widget em seu próprio 
+  servidor e definir o link de acesso na implementação.
+
+  .. important::
+    Esse método de implementação impede o widget no seu site receber atualizações automáticas 
+    e correções de possíveis problemas.
+
+• **personalization**
+
+  Define o link com as customizações personalizadas dos avatares.
+
+  .. important::
+    A personaliação dos avatares é um rescurso exclusivo de instituições parceiras
+    do projeto. Saiba mais em :doc:`../functionalities/customizeavatar`.
+
+• **opacity**
+
+  Define o nível de opacidade do plano de fundo da ferramenta. Deve-se fornecer valores entre 0 e 1,
+  por exemplo: "**0.25**" equivalem a **25%** de opacidade.
+
+• **position:** 
+
+  Define a posição inicial do Widget. Segue a tabela com os valores disponíveis:
+
+  ===========================  =====================
+  **Valor**                    **Posição**
+  ---------------------------  ---------------------
+  **R** *(right)*              Á direita (padrão)
+  **L** *(left)*               Á esquerda
+  **T** *(top)*                Superior
+  **B** *(bottom)*             Inferior
+  **TR** *(top-right)*         Superior direito
+  **TL** *(top-left)*          Superior esquerdo
+  **BR** *(bottom-right)*      Inferior direito
+  **BL** *(bottom-left)*       Inferior esquerdo
+  ===========================  =====================
+
+• **avatar:**
+
+  Define o avatar padrão. No momento, o VLibras conta com **"icaro"** (padrão), **"hosana"** e **"guga"**.

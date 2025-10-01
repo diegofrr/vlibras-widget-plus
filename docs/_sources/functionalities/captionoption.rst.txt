@@ -1,0 +1,14 @@
+Opção de Legendas
+=================
+
+A opção de legendas é uma funcionalidade que auxilia na identificação
+das palavras que estão sendo traduzidas pelo avatar, elas podem ser habilitadas ou 
+desabilitadas clicando no **Ícone de legenda** (:material-regular:`subtitles;1.2rem`)
+que se encontra ao lado direito do botão de velocidade.
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_subtitled.webm" type="video/webm" />
+   </video>
+   <br></br>

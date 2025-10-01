@@ -1,0 +1,13 @@
+Seleção de Velocidade
+=====================
+
+A seleção de velocidade é uma funcionalidade que possibilita o usuário aumentar ou reduzir 
+a velocidade da animação de tradução. O botão **Seletor de velocidade** está localizado no canto
+inferior direito da janela do *widget* e usa a opção 1x por padrão, as demais opções são 1.5x, 2x e 3x. 
+
+.. raw:: html
+
+   <video class="align-center" width="384" height="288" position="absolute" autoplay loop>
+    <source src="../_static/widget_gov_speed.webm" type="video/webm" />
+   </video>
+   <br></br>
