@@ -315,7 +315,7 @@ function br(t, e) {
   var r = mr(Nt++, 4);
   !se.__s && o2(r.__H, e) && (r.__ = t, r.u = e, te.__h.push(r));
 }
-function Ae(t) {
+function Re(t) {
   return cr = 5, Ve(function() {
     return { current: t };
   }, []);
@@ -668,7 +668,7 @@ Z.diffed = function(t) {
 };
 var $l = { ReactCurrentDispatcher: { current: { readContext: function(t) {
   return c2.__n[t.__c].props.value;
-}, useCallback: dr, useContext: $e, useDebugValue: a0, useDeferredValue: h0, useEffect: F, useId: l0, useImperativeHandle: s0, useInsertionEffect: g0, useLayoutEffect: br, useMemo: Ve, useReducer: n2, useRef: Ae, useState: le, useSyncExternalStore: u0, useTransition: p0 } } };
+}, useCallback: dr, useContext: $e, useDebugValue: a0, useDeferredValue: h0, useEffect: F, useId: l0, useImperativeHandle: s0, useInsertionEffect: g0, useLayoutEffect: br, useMemo: Ve, useReducer: n2, useRef: Re, useState: le, useSyncExternalStore: u0, useTransition: p0 } } };
 function ec(t) {
   return wt.bind(null, t);
 }
@@ -696,7 +696,7 @@ var sc = function(t, e) {
 function ac(t, e) {
   return t(e);
 }
-var lc = ge, cc = rn, Fr = { useState: le, useId: l0, useReducer: n2, useEffect: F, useLayoutEffect: br, useInsertionEffect: g0, useTransition: p0, useDeferredValue: h0, useSyncExternalStore: u0, startTransition: s2, useRef: Ae, useImperativeHandle: s0, useMemo: Ve, useCallback: dr, useContext: $e, useDebugValue: a0, version: "18.3.1", Children: Vl, render: Gl, hydrate: Yl, unmountComponentAtNode: nc, createPortal: l2, createElement: wt, createContext: Wt, createFactory: ec, cloneElement: ic, createRef: xl, Fragment: ge, isValidElement: rn, isElement: cc, isFragment: tc, isMemo: rc, findDOMNode: oc, Component: Ct, PureComponent: co, memo: Hl, forwardRef: Fl, flushSync: sc, unstable_batchedUpdates: ac, StrictMode: lc, Suspense: xi, lazy: Dl, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: $l };
+var lc = ge, cc = rn, Fr = { useState: le, useId: l0, useReducer: n2, useEffect: F, useLayoutEffect: br, useInsertionEffect: g0, useTransition: p0, useDeferredValue: h0, useSyncExternalStore: u0, startTransition: s2, useRef: Re, useImperativeHandle: s0, useMemo: Ve, useCallback: dr, useContext: $e, useDebugValue: a0, version: "18.3.1", Children: Vl, render: Gl, hydrate: Yl, unmountComponentAtNode: nc, createPortal: l2, createElement: wt, createContext: Wt, createFactory: ec, cloneElement: ic, createRef: xl, Fragment: ge, isValidElement: rn, isElement: cc, isFragment: tc, isMemo: rc, findDOMNode: oc, Component: Ct, PureComponent: co, memo: Hl, forwardRef: Fl, flushSync: sc, unstable_batchedUpdates: ac, StrictMode: lc, Suspense: xi, lazy: Dl, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: $l };
 const dc = (t) => t;
 function b0(t, e = dc) {
   const r = Fr.useSyncExternalStore(
@@ -717,7 +717,7 @@ const os = (t) => {
   });
 }, []), ki());
 function C0(t, e) {
-  const r = Ae(null);
+  const r = Re(null);
   return (i) => {
     r.current && clearTimeout(r.current), r.current = setTimeout(() => t(i), e);
   };
@@ -909,7 +909,7 @@ const pc = (t) => t.replace(new RegExp("(?<!:)\\/+", "g"), "/"), gc = () => Math
   get: ce.getState,
   set: ce.setState,
   subscribe: ce.subscribe
-}, Ee = () => {
+}, Ae = () => {
   const t = ce((e) => e.isExpanded);
   return uc("(max-width: 640px)") && !t;
 }, as = (t) => Symbol.iterator in t, ls = (t) => (
@@ -1343,7 +1343,7 @@ const xc = (t, e) => {
     u,
     O,
     N
-  ], ee = () => ["", j, Ar, Ot], Se = () => ["solid", "dashed", "dotted", "double"], lt = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], oe = () => [j, An, gs, ps], He = () => [
+  ], ee = () => ["", j, Ar, Ot], Ee = () => ["solid", "dashed", "dotted", "double"], lt = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], oe = () => [j, An, gs, ps], He = () => [
     // Deprecated since Tailwind CSS v4.0.0
     "",
     "none",
@@ -2184,7 +2184,7 @@ const xc = (t, e) => {
        * @see https://tailwindcss.com/docs/text-decoration-style
        */
       "text-decoration-style": [{
-        decoration: [...Se(), "wavy"]
+        decoration: [...Ee(), "wavy"]
       }],
       /**
        * Text Decoration Thickness
@@ -2580,14 +2580,14 @@ const xc = (t, e) => {
        * @see https://tailwindcss.com/docs/border-style
        */
       "border-style": [{
-        border: [...Se(), "hidden", "none"]
+        border: [...Ee(), "hidden", "none"]
       }],
       /**
        * Divide Style
        * @see https://tailwindcss.com/docs/border-style#setting-the-divider-style
        */
       "divide-style": [{
-        divide: [...Se(), "hidden", "none"]
+        divide: [...Ee(), "hidden", "none"]
       }],
       /**
        * Border Color
@@ -2664,7 +2664,7 @@ const xc = (t, e) => {
        * @see https://tailwindcss.com/docs/outline-style
        */
       "outline-style": [{
-        outline: [...Se(), "none", "hidden"]
+        outline: [...Ee(), "none", "hidden"]
       }],
       /**
        * Outline Offset
@@ -4701,7 +4701,7 @@ const u3 = () => /* @__PURE__ */ c("div", { className: "absolute bottom-15 left-
   return t;
 };
 function md({ children: t }) {
-  const e = Ae(null), r = Ae({ x: 0, y: 0 }), i = ce((f) => f.isExpanded), [n, o] = le({ x: 0, y: 0 }), [s, a] = le(!1), [l, u] = le(!1), d = () => {
+  const e = Re(null), r = Re({ x: 0, y: 0 }), i = ce((f) => f.isExpanded), [n, o] = le({ x: 0, y: 0 }), [s, a] = le(!1), [l, u] = le(!1), d = () => {
     o({ x: 0, y: 0 }), a(!1);
   };
   F(() => {
@@ -4789,7 +4789,7 @@ const nt = et()((t) => ({
     )
   ] });
 }, bd = ({ className: t, ...e }) => {
-  const r = nt((n) => n.closeAll), i = Ee();
+  const r = nt((n) => n.closeAll), i = Ae();
   return /* @__PURE__ */ c(Y, { onClick: r, variant: "outline", size: i ? "icon-sm" : "icon", className: t, ...e, children: /* @__PURE__ */ c(H0, {}) });
 }, Z0 = ({ children: t, className: e, ...r }) => /* @__PURE__ */ c("h3", { className: B("font-semibold text-sm sm:text-base", e), ...r, children: t }), B0 = ({ children: t, className: e, ...r }) => /* @__PURE__ */ c("div", { className: B("flex h-full flex-col gap-4 overflow-y-auto p-4", e), ...r, children: t }), bs = ({ label: t, description: e, children: r, className: i }) => /* @__PURE__ */ c("div", { className: `flex flex-col gap-2 ${i}`, children: [
   /* @__PURE__ */ c("div", { children: [
@@ -4848,7 +4848,7 @@ const nt = et()((t) => ({
 ] });
 function q0(t) {
   const e = Wt(null), r = ({ children: o, data: s }) => {
-    const a = Ae(null);
+    const a = Re(null);
     return a.current || (a.current = d0(() => ({ data: s }))), F(() => {
       a?.current?.setState({ data: s });
     }, [s]), /* @__PURE__ */ c(e.Provider, { value: a.current, children: o });
@@ -7030,7 +7030,7 @@ const su = { BASE_URL: "/", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE
   set: ir.setState,
   subscribe: ir.subscribe
 }, Rn = 50, hu = () => {
-  const t = Ae(null), e = Ae(null), r = Ae(null), i = Ai(), [n, o] = le("all"), { data: s, isLoading: a, refetch: l } = uu(), { signs: u } = ir(), d = async () => {
+  const t = Re(null), e = Re(null), r = Re(null), i = Ai(), [n, o] = le("all"), { data: s, isLoading: a, refetch: l } = uu(), { signs: u } = ir(), d = async () => {
     await l();
     const A = i.retriesCount + 1;
     Ns.set({ retriesCount: A }), A >= 5 && Ns.set({ isMaxRetries: !0 });
@@ -8446,8 +8446,8 @@ var b5 = Qr(Zt, 9), C5 = Qr(Xi, 5), K1 = function(t) {
   for (b = 0; a > b; ++b) if (i[b] > 255) {
     var ee;
     Ir(e, d, U[257 + (ee = i[b] >>> 18 & 31)]), d += z[ee + 257], ee > 7 && (ut(e, d, i[b] >>> 23 & 31), d += R2[ee]);
-    var Se = 31 & i[b];
-    Ir(e, d, G[Se]), d += J[Se], Se > 3 && (Ir(e, d, i[b] >>> 5 & 8191), d += P2[Se]);
+    var Ee = 31 & i[b];
+    Ir(e, d, G[Ee]), d += J[Ee], Ee > 3 && (Ir(e, d, i[b] >>> 5 & 8191), d += P2[Ee]);
   } else Ir(e, d, U[i[b]]), d += z[i[b]];
   return Ir(e, d, U[256]), d + z[256];
 }, w5 = new vr([65540, 131080, 131088, 131104, 262176, 1048704, 1048832, 2114560, 2117632]), _5 = (function() {
@@ -8481,16 +8481,16 @@ function y5(t, e) {
       for (var E = w5[h - 1], b = E >>> 13, S = 8191 & E, D = (1 << f) - 1, V = new Fe(32768), H = new Fe(D + 1), U = Math.ceil(f / 3), z = 2 * U, G = function(Cn) {
         return (p[Cn] ^ p[Cn + 1] << U ^ p[Cn + 2] << z) & D;
       }, J = new vr(25e3), ue = new Fe(288), L = new Fe(32), _e = 0, Me = 0, Ie = (k = 0, 0), De = 0, K = 0; w > k; ++k) {
-        var ee = G(k), Se = 32767 & k, lt = H[ee];
-        if (V[Se] = lt, H[ee] = Se, k >= De) {
+        var ee = G(k), Ee = 32767 & k, lt = H[ee];
+        if (V[Ee] = lt, H[ee] = Ee, k >= De) {
           var oe = w - k;
           if ((_e > 7e3 || Ie > 24576) && oe > 423) {
             _ = aa(p, x, 0, J, ue, L, Me, Ie, K, k - K, _), Ie = _e = Me = 0, K = k;
             for (var He = 0; 286 > He; ++He) ue[He] = 0;
             for (He = 0; 30 > He; ++He) L[He] = 0;
           }
-          var Be = 2, ct = 0, xr = S, Ue = Se - lt & 32767;
-          if (oe > 2 && ee == G(k - Ue)) for (var bl = Math.min(b, oe) - 1, Cl = Math.min(32767, k), wl = Math.min(258, oe); Cl >= Ue && --xr && Se != lt; ) {
+          var Be = 2, ct = 0, xr = S, Ue = Ee - lt & 32767;
+          if (oe > 2 && ee == G(k - Ue)) for (var bl = Math.min(b, oe) - 1, Cl = Math.min(32767, k), wl = Math.min(258, oe); Cl >= Ue && --xr && Ee != lt; ) {
             if (p[k + Be] == p[k + Be - Ue]) {
               for (var xt = 0; wl > xt && p[k + xt] == p[k + xt - Ue]; ++xt) ;
               if (xt > Be) {
@@ -8502,7 +8502,7 @@ function y5(t, e) {
                 }
               }
             }
-            Ue += (Se = lt) - (lt = V[Se]) + 32768 & 32767;
+            Ue += (Ee = lt) - (lt = V[Ee]) + 32768 & 32767;
           }
           if (ct) {
             J[Ie++] = 268435456 | Zo[Be] << 18 | oa[ct];
@@ -10123,7 +10123,7 @@ var Gn = "SDK is not enabled or survey functionality is not yet loaded", Oa = "D
   for (var [r, i] of Ei(t || {})) i && (e[r] = i);
   return e;
 }, Kn = de("[Error tracking]"), Ua = "Refusing to render web experiment since the viewer is a likely bot", $5 = { icontains: (t, e) => !!C && e.href.toLowerCase().indexOf(t.toLowerCase()) > -1, not_icontains: (t, e) => !!C && e.href.toLowerCase().indexOf(t.toLowerCase()) === -1, regex: (t, e) => !!C && $i(e.href, t), not_regex: (t, e) => !!C && !$i(e.href, t), exact: (t, e) => e.href === t, is_not: (t, e) => e.href !== t };
-class Re {
+class Se {
   get N() {
     return this._instance.config;
   }
@@ -10131,15 +10131,15 @@ class Re {
     var r = this;
     this.getWebExperimentsAndEvaluateDisplayLogic = function(i) {
       i === void 0 && (i = !1), r.getWebExperiments(((n) => {
-        Re.we("retrieved web experiments from the server"), r.Ee = /* @__PURE__ */ new Map(), n.forEach(((o) => {
+        Se.we("retrieved web experiments from the server"), r.Ee = /* @__PURE__ */ new Map(), n.forEach(((o) => {
           if (o.feature_flag_key) {
             var s;
-            r.Ee && (Re.we("setting flag key ", o.feature_flag_key, " to web experiment ", o), (s = r.Ee) == null || s.set(o.feature_flag_key, o));
+            r.Ee && (Se.we("setting flag key ", o.feature_flag_key, " to web experiment ", o), (s = r.Ee) == null || s.set(o.feature_flag_key, o));
             var a = r._instance.getFeatureFlag(o.feature_flag_key);
             ve(a) && o.variants[a] && r.Se(o.name, a, o.variants[a].transforms);
           } else if (o.variants) for (var l in o.variants) {
             var u = o.variants[l];
-            Re.xe(u) && r.Se(o.name, l, u.transforms);
+            Se.xe(u) && r.Se(o.name, l, u.transforms);
           }
         }));
       }), i);
@@ -10150,10 +10150,10 @@ class Re {
   initialize() {
   }
   onFeatureFlags(e) {
-    if (this._is_bot()) Re.we(Ua);
+    if (this._is_bot()) Se.we(Ua);
     else if (!this.N.disable_web_experiments) {
       if (W(this.Ee)) return this.Ee = /* @__PURE__ */ new Map(), this.loadIfEnabled(), void this.previewWebExperiment();
-      Re.we("applying feature flags", e), e.forEach(((r) => {
+      Se.we("applying feature flags", e), e.forEach(((r) => {
         var i;
         if (this.Ee && (i = this.Ee) != null && i.has(r)) {
           var n, o = this._instance.getFeatureFlag(r), s = (n = this.Ee) == null ? void 0 : n.get(r);
@@ -10163,10 +10163,10 @@ class Re {
     }
   }
   previewWebExperiment() {
-    var e = Re.getWindowLocation();
+    var e = Se.getWindowLocation();
     if (e != null && e.search) {
       var r = Yi(e?.search, "__experiment_id"), i = Yi(e?.search, "__experiment_variant");
-      r && i && (Re.we("previewing web experiments " + r + " && " + i), this.getWebExperiments(((n) => {
+      r && i && (Se.we("previewing web experiments " + r + " && " + i), this.getWebExperiments(((n) => {
         this.Te(parseInt(r), i, n);
       }), !1, !0));
     }
@@ -10182,15 +10182,15 @@ class Re {
   }
   Te(e, r, i) {
     var n = i.filter(((o) => o.id === e));
-    n && n.length > 0 && (Re.we("Previewing web experiment [" + n[0].name + "] with variant [" + r + "]"), this.Se(n[0].name, r, n[0].variants[r].transforms));
+    n && n.length > 0 && (Se.we("Previewing web experiment [" + n[0].name + "] with variant [" + r + "]"), this.Se(n[0].name, r, n[0].variants[r].transforms));
   }
   static xe(e) {
-    return !W(e.conditions) && Re.$e(e) && Re.ke(e);
+    return !W(e.conditions) && Se.$e(e) && Se.ke(e);
   }
   static $e(e) {
     var r;
     if (W(e.conditions) || W((r = e.conditions) == null ? void 0 : r.url)) return !0;
-    var i, n, o, s = Re.getWindowLocation();
+    var i, n, o, s = Se.getWindowLocation();
     return !!s && ((i = e.conditions) == null || !i.url || $5[(n = (o = e.conditions) == null ? void 0 : o.urlMatchType) !== null && n !== void 0 ? n : "icontains"](e.conditions.url, s));
   }
   static getWindowLocation() {
@@ -10211,17 +10211,17 @@ class Re {
     M.info("[WebExperiments] " + e, i);
   }
   Se(e, r, i) {
-    this._is_bot() ? Re.we(Ua) : r !== "control" ? i.forEach(((n) => {
+    this._is_bot() ? Se.we(Ua) : r !== "control" ? i.forEach(((n) => {
       if (n.selector) {
         var o;
-        Re.we("applying transform of variant " + r + " for experiment " + e + " ", n);
+        Se.we("applying transform of variant " + r + " for experiment " + e + " ", n);
         var s = (o = document) == null ? void 0 : o.querySelectorAll(n.selector);
         s?.forEach(((a) => {
           var l = a;
           n.html && (l.innerHTML = n.html), n.css && l.setAttribute("style", n.css);
         }));
       }
-    })) : Re.we("Control variants leave the page unmodified.");
+    })) : Se.we("Control variants leave the page unmodified.");
   }
   _is_bot() {
     return je && this._instance ? J1(je, this.N.custom_blocked_useragents) : void 0;
@@ -11535,7 +11535,7 @@ var We = de("[Conversations]"), Ft = "Conversations not available yet.", hn = { 
   maybeLoadEditor(t, e, r) {
     return t === void 0 && (t = void 0), e === void 0 && (e = void 0), r === void 0 && (r = void 0), this.maybeLoadToolbar(t, e, r);
   }
-} }, l4 = R({ experiments: Re }, hn), c4 = { conversations: class {
+} }, l4 = R({ experiments: Se }, hn), c4 = { conversations: class {
   constructor(t) {
     this.$s = void 0, this._conversationsManager = null, this.ks = !1, this.Rs = null, this._instance = t;
   }
@@ -11756,7 +11756,7 @@ const N2 = {
 }, O2 = et()(() => ({
   ...hl
 })), pl = () => O2.setState(hl), gl = O2.setState, h4 = "data:image/webp;base64,UklGRoIFAABXRUJQVlA4WAoAAAAQAAAAOwAAOwAAQUxQSMoBAAABkITtnyE5/+Hato2TvRvbttc+JnfjaNtOTrZ9su1kvdtP16mqq37hMSImgP4xTTZHZ2dHmwnOHl5atmjz4RNnzpw4vHlRWWm4HcaeXnfwSRsTbntysC7NjuDUd/t7JvX9tr5Oqiy5u5uZ9ObduRYlXvPeM6Xv53opiN2vMcXavhhpaRcZ4MU0SQmXGeTlBCkBxxno8QAJ9uUMdrnd2KhmnOaRhoKuMuArQUaadCS90UDwXQZ9J1hsuoalTRNyPMTADzmKpL5De5ciMkNH06eLrGLwKwXcLuBdcONFvcB7HsnL/oH3I5s3qAuvayBvko6nT+TNYb/gbF7lr1DBK/sVynhTfoUpvKHdeN1DefnNeM15vNjXeK9jeZ7X8K558syb8TaZeVSNV02CmV/QvmSIuJ5CO+UqQg1o9SQc9xTrSayYaQHWfJMYJTxEehBPRmu6cbqqyLD7HpxdbsYo8TbKzQSSWfQE43Ehye3zBOFRL5Kdf13d1TySH72hTU3bukhS6TThuiZPuzrOiRQHVl1ul9N+qTKAAL0HrbzfbKT53opBXgRq9i8oX37g4v1Hjx49un9h//KyAn8zQZusrn7BwcHBfq5WE/03BFZQOCCSAwAAVBIAnQEqPAA8AAAAJgALUbgDc3vXmqVZ+0bl+Zvsu5gPe96kfuA9wD9L+l35gP2g/Z33hfQt6AH88/znWOegB5a/7M/Bv+4HpYPAMq+bcUXZYbo/UVw0TiC5i/2ACXQYIj+rWMuz+tL82e/ZuEYpv/tCzISz9kISMd5WT2ZSg7Bp7UhrTOwiTlFyg4JIVvg4cevfw/uAs2A9kAAA/v86Qf8QFd+4SMJe9tMhrGbEzYWoXeMgHrHm8Wx+ZOYgsfBMPly38bS4/3mzg/KZrqctzdFjpsgdZvsCXNFuZ8YwMh9lfh7uF6TwaL5l8tOU+B9W2YHPKFu9K/dgJquyT3lW8u/EaN9FeMBPS9ui28g/Jq7EySqLCrqTjr9CD3NqHYMJ7xMJO8RvHP/0i+UqRL9ubMJHf9FKqN+YWiPNosChq229ORiCZwOX320/W/zHhj7Ic5vKXZz/X/8hsPY0PCoBE8RnD+R2t//qWF42Svu//ha+na1b9vC5uRZIcf4Fue9KK4ZPHjmahpAuGxVhhU1v/b/IDZ1hTDzC8dbTg+FwzsWA6n7M05e2cnrbbJtnMafj+J5H7K+4+5KPvNBCU4+T1wuNaoghIYgPYQDBPWF8wL3GB9HdPgyd2fEKleda9WHTnuCQ6OP/cv7aGYQyLQnNwibxgxBbSLRChhf+ZeCR/28iCDsaRMC+Iws2Ia3wG26LEsuT5VoVAeiJa7pwfdbvCCsV9YGDjgbj9OocdOOQF4wThrDOZRvxi1spvlA7NnmefkE1X2sxwzz3qoKHgwiiNZMrFtepReX/meSaqyUrjqER/vlcQkhrHNw00A61WmVLfbchXHfnLOmLhtGINyyWZh2hyxTV4zvwcOdZbmRp1r99VbEiD+fJQwk/t5VQ/nxFl4QudxVbNoNmEabaHlvQ6QcZZelNwWX0d2CxAmo/ja/yEm3WzPU8+vwCCm8SY/NbFnMRzIdZ2XIgNl0uURZoAvGFM2AvIs8ViuAdF3bCjvDZmwtTFWpqeDM1yH8VeBrwDsJrksjK8VzCDQZujJxnaXIIeGAIVya9pVp/nJauUfDyoUXccqcHv3EwzjQ9rjmHr/rPPhC2cjAtdFIq8G5rYERmylqAXAwSX/6Tn1QKuaFDWFEsLHZpAlYMx1l0HDnh6T5XCaDRo2WCPc7ksJUv9jkoSPyHTyVeIPWRL558+rWIM706PtSxoai2luOVlh9gAAA=", p4 = ({ onRetry: t, isMaxRetries: e }) => {
-  const r = Ee();
+  const r = Ae();
   return /* @__PURE__ */ c("div", { className: "flex h-full flex-col items-center justify-center gap-2 px-4", children: [
     /* @__PURE__ */ c("img", { src: h4, alt: "Emoji de rosto triste", className: "size-7 sm:size-8" }),
     /* @__PURE__ */ c("p", { className: "mb-3 px-4 text-center font-semibold text-sm sm:text-base", children: "Não foi possível carregar o dicionário de sinais." }),
@@ -11767,7 +11767,7 @@ const N2 = {
   { label: "Todos", value: "all" },
   { label: "Recentes", value: "recents" }
 ], f4 = () => {
-  const { setFilter: t, filter: e, filteredSigns: r, handleHistoryClear: i } = w2(), { signs: n } = ir(), o = Ee(), s = !n.length;
+  const { setFilter: t, filter: e, filteredSigns: r, handleHistoryClear: i } = w2(), { signs: n } = ir(), o = Ae(), s = !n.length;
   return /* @__PURE__ */ c("div", { className: "flex items-center gap-2 px-4 [&_button]:rounded-full", children: [
     g4.map((a) => {
       const l = e === a.value;
@@ -12013,7 +12013,7 @@ const S4 = () => {
     guideClx: "top-auto! bottom-0!"
   }
 ], R4 = () => {
-  const t = Ae(null), e = Ae(null), { index: r, setIndex: i, onClose: n } = vl(), o = Ve(() => r === 0, [r]), s = Ve(() => r === $o.length - 1, [r]);
+  const t = Re(null), e = Re(null), { index: r, setIndex: i, onClose: n } = vl(), o = Ve(() => r === 0, [r]), s = Ve(() => r === $o.length - 1, [r]);
   return F(() => t.current?.focus(), [o]), F(() => e.current?.focus(), [s]), /* @__PURE__ */ c("div", { className: "flex items-center justify-between gap-2", children: [
     /* @__PURE__ */ c(
       Y,
@@ -12110,7 +12110,7 @@ const S4 = () => {
     isTop: !1
   }
 }), { Provider: M4, useCtx: vl } = q0(), I4 = () => {
-  const { pos: t } = ln(), { innerWidth: e, innerHeight: r } = window, { play: i, stop: n } = Pe(), [o, s] = le(0), a = at(), l = ce((w) => w.isExpanded), u = ce((w) => w.isTranslating), d = sr((w) => w.appRoot), p = Ee(), h = Ve(() => t.x < (e - (d?.clientWidth || 0)) / 2, [t.x, e]), f = Ve(() => t.y < (r - (d?.clientHeight || 0)) / 2, [t.y, r]), v = Ve(() => $o[o], [o]), g = () => {
+  const { pos: t } = ln(), { innerWidth: e, innerHeight: r } = window, { play: i, stop: n } = Pe(), [o, s] = le(0), a = at(), l = ce((w) => w.isExpanded), u = ce((w) => w.isTranslating), d = sr((w) => w.appRoot), p = Ae(), h = Ve(() => t.x < (e - (d?.clientWidth || 0)) / 2, [t.x, e]), f = Ve(() => t.y < (r - (d?.clientHeight || 0)) / 2, [t.y, r]), v = Ve(() => $o[o], [o]), g = () => {
     ze.set({ text: void 0 }), X.set({ gloss: void 0 }), Za.get().reset(), m(), n();
   };
   if (F(() => {
@@ -12237,7 +12237,7 @@ const S4 = () => {
   };
   return window.addEventListener("message", e), () => window.removeEventListener("message", e);
 }, [t]), null), F4 = (t) => {
-  const { path: e } = d2(), { isLoaded: r } = ne(), i = Ae(null), n = pc(`${e}/unity/index.html`), o = (s, a, l) => {
+  const { path: e } = d2(), { isLoaded: r } = ne(), i = Re(null), n = pc(`${e}/unity/index.html`), o = (s, a, l) => {
     i.current?.contentWindow?.postMessage({ type: "unity", object: s, method: a, params: l }, "*");
   };
   if (F(() => {
@@ -12378,7 +12378,7 @@ const S4 = () => {
     }
   );
 }, V4 = () => {
-  const t = Ee(), e = ne((o) => o.emotion), { setEmotion: r } = Pe(), i = (o) => {
+  const t = Ae(), e = ne((o) => o.emotion), { setEmotion: r } = Pe(), i = (o) => {
     r(o), N2.trackEvent("change_emotion", { emotion: o.name });
   }, n = e === go.default;
   return /* @__PURE__ */ c("div", { className: "dropdown dropdown-center dropdown-top focus-within:**:data-[slot=tooltip-content]:hidden", children: [
@@ -12431,7 +12431,7 @@ const S4 = () => {
   playing: { label: "Pausar", icon: nd },
   stopped: { label: "Em espera", icon: dd }
 }, D4 = () => {
-  const t = Ee(), { play: e, repeat: r, pause: i } = Pe(), { gloss: n, status: o } = ne(Je("gloss", "status")), s = () => {
+  const t = Ae(), { play: e, repeat: r, pause: i } = Pe(), { gloss: n, status: o } = ne(Je("gloss", "status")), s = () => {
     const { status: l } = X.get();
     l === "idle" ? r() : l === "paused" ? e() : l === "playing" && (i(), ze.set({ isPausedByUser: !0 }));
   }, a = z4[o];
@@ -12514,7 +12514,7 @@ const S4 = () => {
   if (!r) throw new Error("DialogTrigger deve estar dentro de <Dialog />");
   return /* @__PURE__ */ c("button", { type: "button", onClick: () => r.onOpenChange(!0), ...e, children: t });
 }, fn = ({ className: t, children: e, ...r }) => {
-  const i = $e(ai), n = Ee();
+  const i = $e(ai), n = Ae();
   return /* @__PURE__ */ c(
     "div",
     {
@@ -12577,7 +12577,7 @@ const S4 = () => {
     o
   );
 }, B4 = () => {
-  const t = Ae(null), e = ce((i) => i.opacity), r = (i) => {
+  const t = Re(null), e = ce((i) => i.opacity), r = (i) => {
     ze.set({ opacity: i / 100 }), t.current && clearTimeout(t.current), t.current = setTimeout(() => N2.trackEvent("opacity_change", { opacity: i }), 2e3);
   };
   return /* @__PURE__ */ c("div", { children: [
@@ -12687,7 +12687,7 @@ const S4 = () => {
     )
   ] });
 }, Q4 = ({ open: t, onOpenChange: e }) => {
-  const r = Ee(), i = ne((u) => u.region), n = ce((u) => u.opacity), { theme: o, setTheme: s } = u2(), a = () => {
+  const r = Ae(), i = ne((u) => u.region), n = ce((u) => u.opacity), { theme: o, setTheme: s } = u2(), a = () => {
     const u = p2[0];
     s("light"), X.set({ region: u }), ze.set({ opacity: 1 });
   }, l = Ve(() => i.abbreviation === "BR" && n === 1 && o === "light", [i, n, o]);
@@ -12725,7 +12725,7 @@ const S4 = () => {
     ] })
   ] }) });
 }, K4 = () => {
-  const t = Ee(), [e, r] = le(!1);
+  const t = Ae(), [e, r] = le(!1);
   return /* @__PURE__ */ c(ge, { children: [
     /* @__PURE__ */ c(
       yt,
@@ -12742,7 +12742,7 @@ const S4 = () => {
     /* @__PURE__ */ c(Q4, { open: e, onOpenChange: r })
   ] });
 }, X4 = [2.5, 2, 1.5, 1], J4 = () => {
-  const t = Ee(), e = ne((o) => o.speed), { setSpeed: r } = Pe(), i = (o, s) => {
+  const t = Ae(), e = ne((o) => o.speed), { setSpeed: r } = Pe(), i = (o, s) => {
     (o.key === "Enter" || o.key === " ") && (o.preventDefault(), n(s));
   }, n = (o) => {
     r(o);
@@ -12798,7 +12798,7 @@ const S4 = () => {
     ]
   }
 ), e9 = () => {
-  const t = Ee(), { toggleSubtitles: e } = Pe(), { showSubtitles: r, isPlayingWelcome: i } = ne(Je("showSubtitles", "isPlayingWelcome"));
+  const t = Ae(), { toggleSubtitles: e } = Pe(), { showSubtitles: r, isPlayingWelcome: i } = ne(Je("showSubtitles", "isPlayingWelcome"));
   return /* @__PURE__ */ c(
     yt,
     {
@@ -12857,7 +12857,7 @@ const S4 = () => {
     }
   );
 }, r9 = ({ className: t, ...e }) => /* @__PURE__ */ c("div", { className: B("h-4", t), ...e }), i9 = "@media screen and (max-width:640px){body[data-vlibras-expanded=true]{overflow:hidden!important}}", n9 = () => {
-  const t = Ee(), { isOpen: e, isExpanded: r } = ce(Je("isOpen", "isExpanded"));
+  const t = Ae(), { isOpen: e, isExpanded: r } = ce(Je("isOpen", "isExpanded"));
   F(() => {
     const { root: s } = Bt.get();
     !s || e || (delete s.dataset.expanded, delete document.body.dataset.vlibrasExpanded);
@@ -12896,7 +12896,7 @@ const S4 = () => {
     }
   );
 }, o9 = ({ open: t, onOpenChange: e }) => {
-  const r = Ae(null), i = ce((f) => f.isTranslating), { play: n } = Pe(), [o, s] = le(""), { mutateAsync: a, isPending: l } = C2(), u = C0(s, 300), d = async () => {
+  const r = Re(null), i = ce((f) => f.isTranslating), { play: n } = Pe(), [o, s] = le(""), { mutateAsync: a, isPending: l } = C2(), u = C0(s, 300), d = async () => {
     const f = r.current?.value || "";
     if (f)
       try {
@@ -12962,7 +12962,7 @@ const S4 = () => {
     ] })
   ] }) });
 }, _i = ({ label: t, onClick: e, icon: r }) => {
-  const i = Ee(), n = r;
+  const i = Ae(), n = r;
   return /* @__PURE__ */ c(
     "li",
     {
@@ -12987,7 +12987,7 @@ const S4 = () => {
     }
   );
 }, s9 = () => {
-  const t = Ee(), e = nt((o) => o.open), r = at((o) => o.onOpenChange), [i, n] = le(!1);
+  const t = Ae(), e = nt((o) => o.open), r = at((o) => o.onOpenChange), [i, n] = le(!1);
   return /* @__PURE__ */ c(ge, { children: [
     /* @__PURE__ */ c("div", { className: "dropdown dropdown-bottom z-1", children: [
       /* @__PURE__ */ c(
@@ -13012,7 +13012,7 @@ const S4 = () => {
     /* @__PURE__ */ c(o9, { open: i, onOpenChange: n })
   ] });
 }, a9 = () => {
-  const { onPointerDown: t } = ln(), { pause: e } = Pe(), r = Ee(), i = ce((s) => s.setOpen), n = at((s) => s.open), o = () => {
+  const { onPointerDown: t } = ln(), { pause: e } = Pe(), r = Ae(), i = ce((s) => s.setOpen), n = at((s) => s.open), o = () => {
     i(!1), e();
   };
   return /* @__PURE__ */ c("div", { className: B("relative bottom-auto z-50 bg-primary px-2 py-1.5 sm:rounded-t-xl"), children: [
@@ -13064,7 +13064,7 @@ const S4 = () => {
     ] })
   ] }) });
 }, c9 = () => {
-  const [t, e] = le(!1), r = Ee(), i = ce((o) => o.isExpanded);
+  const [t, e] = le(!1), r = Ae(), i = ce((o) => o.isExpanded);
   return at((o) => o.open) ? null : /* @__PURE__ */ c(ge, { children: [
     /* @__PURE__ */ c(
       Y,
@@ -13089,14 +13089,13 @@ const S4 = () => {
   const { path: e } = ki.getState();
   return `${e}/assets/images/avatars/${t}`;
 }, d9 = () => {
-  const t = Ae(null), { toggleAvatar: e } = Pe(), r = ne((a) => a.avatar), i = at((a) => a.open), n = $n.find(({ name: a }) => a === r), o = qa(n?.path || $n[0].path), s = (a) => {
-    t.current?.blur(), setTimeout(() => e(a), 150);
+  const { toggleAvatar: t } = Pe(), e = ne((s) => s.avatar), r = at((s) => s.open), i = $n.find(({ name: s }) => s === e), n = qa(i?.path || $n[0].path), o = (s) => {
+    document.activeElement?.blur(), setTimeout(() => t(s), 150);
   };
   return /* @__PURE__ */ c(
     "div",
     {
-      ref: t,
-      inert: i,
+      inert: r,
       autofocus: !0,
       className: B(
         "dropdown dropdown-top dropdown-end z-1 h-9 animate-move-up focus-within:**:data-[slot=tooltip-content]:hidden"
@@ -13117,39 +13116,39 @@ const S4 = () => {
                 variant: "outline",
                 size: "icon",
                 className: "rounded-full bg-background hover:bg-muted! data-[highlight=true]:animate-highlight-primary",
-                children: /* @__PURE__ */ c("img", { src: o, alt: r })
+                children: /* @__PURE__ */ c("img", { src: n, alt: e })
               }
             )
           }
         ),
-        /* @__PURE__ */ c("ul", { className: "dropdown-content mb-2 space-y-2", children: $n.filter(({ name: a }) => a !== r).map((a) => /* @__PURE__ */ c("li", { className: "flex animate-move-up items-center justify-end gap-2", children: [
+        /* @__PURE__ */ c("ul", { className: "dropdown-content mb-2 space-y-2", children: $n.filter(({ name: s }) => s !== e).map((s) => /* @__PURE__ */ c("li", { className: "flex animate-move-up items-center justify-end gap-2", children: [
           /* @__PURE__ */ c(
             Y,
             {
               tabindex: -1,
-              onClick: () => s(a.name),
+              onClick: () => o(s.name),
               variant: "outline",
               className: "rounded-full bg-background capitalize hover:bg-muted!",
               size: "xs",
-              children: a.name
+              children: s.name
             }
           ),
           /* @__PURE__ */ c(
             Y,
             {
-              onClick: () => s(a.name),
+              onClick: () => o(s.name),
               variant: "outline",
               className: "rounded-full bg-background hover:bg-muted!",
               size: "icon",
-              children: /* @__PURE__ */ c("img", { src: qa(a.path), alt: a.name })
+              children: /* @__PURE__ */ c("img", { src: qa(s.path), alt: s.name })
             }
           )
-        ] }, a.name)) })
+        ] }, s.name)) })
       ]
     }
   );
 }, u9 = () => {
-  const t = Ee(), { stop: e } = Pe(), { status: r, gloss: i } = ne(Je("status", "gloss")), { isExpanded: n, isTranslating: o, text: s } = ce(Je("isExpanded", "text", "isTranslating")), a = r === "playing", l = at((g) => g.open), { action: u, content: d } = O2(Je("action", "content"));
+  const t = Ae(), { stop: e } = Pe(), { status: r, gloss: i } = ne(Je("status", "gloss")), { isExpanded: n, isTranslating: o, text: s } = ce(Je("isExpanded", "text", "isTranslating")), a = r === "playing", l = at((g) => g.open), { action: u, content: d } = O2(Je("action", "content"));
   return /* @__PURE__ */ c("div", { className: "absolute inset-x-3 bottom-15 flex animate-move-up items-end justify-end gap-1.5", children: [
     /* @__PURE__ */ c("div", { className: "mr-auto flex flex-wrap-reverse items-center gap-1.5", children: [
       u && d && r === "idle" && /* @__PURE__ */ c(
@@ -13288,7 +13287,7 @@ const S4 = () => {
   let i = t.pageX, n = t.pageY - 36, o = "bottom";
   return i < 34 && (i = 34, o = "left"), i + r.width > window.innerWidth && (i = window.innerWidth - r.width + 12, o = "right"), t.clientY < 46 ? (n = t.pageY + r.height * 2, o = o === "right" ? "top-right" : "top-left") : o = o === "right" ? "bottom-right" : "bottom-left", { x: i, y: n, arrow: o };
 }, b9 = () => {
-  const t = Ae(null), { type: e, event: r, onClick: i, isActive: n, render: o } = Ri(), [s, a] = le({ x: 0, y: 0, arrow: "bottom" });
+  const t = Re(null), { type: e, event: r, onClick: i, isActive: n, render: o } = Ri(), [s, a] = le({ x: 0, y: 0, arrow: "bottom" });
   return F(() => {
     const l = (u) => {
       t.current && !t.current.contains(u.target) && Pi.set({ isActive: !1 });
@@ -13339,7 +13338,7 @@ const S4 = () => {
     (i instanceof ShadowRoot ? i.host : i).classList.toggle("dark", r === "dark");
   }, [r, e]), t;
 }, w9 = () => {
-  const t = Ae(null), e = ce((r) => r.isOpen);
+  const t = Re(null), e = ce((r) => r.isOpen);
   return F(() => {
     const r = qt("#vlibras-access-wrapper")?.shadowRoot, i = r ? qt("#vlibras-access", r) : null;
     i && (t.current = i);
