@@ -186,8 +186,13 @@
       </div>
     </main>
   </body>
-  <!-- <script>
-    window.vw_app_root = "http://127.0.0.1:5500/app";
-  </script> -->
-  <script type="module" src="./vlibras-plugin.js"></script>
+
+  <script src="./vlibras-plugin.js"></script>
+
+  <script>
+    new window.VLibras.Widget(
+      null,
+      "https://vlibras.gov.br/config/default_logo.json",
+    );
+  </script>
 </html>
