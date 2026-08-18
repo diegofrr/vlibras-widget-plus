@@ -1,1 +1,1 @@
-import"./vlibras-initial-DviXmKWI.js";
+import"./vlibras-initial-BQ3R09Rn.js";
