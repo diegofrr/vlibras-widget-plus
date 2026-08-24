@@ -190,9 +190,10 @@
   <script src="vlibras-plugin.js"></script>
 
   <script>
-    new window.VLibras.Widget(
-      null,
-      "https://vlibras.gov.br/config/default_logo.json",
-    );
+    new window.VLibras.Widget({
+      rootPath: null,
+      position: "L",
+      personation: "https://vlibras.gov.br/config/default_logo.json",
+    });
   </script>
 </html>
