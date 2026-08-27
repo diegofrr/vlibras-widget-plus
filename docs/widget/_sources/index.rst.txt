@@ -1,0 +1,40 @@
+.. Manual de Instalação da Ferramenta VLibras Widget documentation master file, created by
+   sphinx-quickstart on Thu May  2 13:53:05 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Manual de Instalação da Ferramenta VLibras Widget
+=================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Introdução
+
+   introduction/presentation
+   introduction/overview
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Instalação
+
+   installation/system-requirements
+   installation/web-page-integration
+   installation/content-security-policy
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Funcionalidades
+
+   functionalities/text-translation
+   functionalities/translator
+   functionalities/playpauserestart
+   functionalities/speed-option
+   functionalities/subtitle-option
+   functionalities/expanded-mode
+   functionalities/avatar-change
+   functionalities/widget-position
+   functionalities/widget-opacity
+   functionalities/regionalism
+   functionalities/dictionary
+   functionalities/review
+   functionalities/customize-avatar
